@@ -13,9 +13,13 @@
                 <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="desc"
                     #descInput="ngModel" ngModel></textarea>
+                <label for="file" class="form-label">plik</label>
+                <input class="form-control" name="file" type="file" id="formFile" #formFileInput="ngModel" ngModel (change)="onFileChange($event)">
+            
+                      
             </form>
             <button class="mt-3 bg-success text-white" type="submit" value="add form"
-                (click)="onFormSubmit(form.value); onNameClicked(); clearFields(firstNameInput, lastNameInput, emailInput, descInput)">Submit</button><br>
+                (click)="onFormSubmit(form.value); onNameClicked(); clearFields(firstNameInput, lastNameInput, emailInput, descInput, formFileInput)">Submit</button><br>
             <p>{{message}}</p>
         </div>
     </div>

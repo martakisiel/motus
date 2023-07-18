@@ -13,7 +13,11 @@ import { GallerySampleComponent } from './gallery-sample/gallery-sample.componen
 import { ContactFormsComponent } from './contact-forms/contact-forms.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CalendarComponent } from './calendar/calendar.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatCardModule} from '@angular/material/card';
+import {MatNativeDateModule} from '@angular/material/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,14 +28,18 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     JoinComponent,
     GallerySampleComponent,
-    ContactFormsComponent
+    ContactFormsComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
-
+    FormsModule,
+    BrowserAnimationsModule,
+    MatDatepickerModule,
+    MatCardModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

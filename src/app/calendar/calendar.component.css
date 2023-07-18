@@ -1,0 +1,41 @@
+div{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    background-color: green;
+}
+mat-calendar{
+    width: 500px;
+}
+/* ::ng-deep .mat-calendar {
+    max-width: 100px;
+    color: aliceblue;
+    /* background-color: blueviolet; 
+  }
+::ng-deep .mat-calendar-body-label{
+    color: green;
+      }
+::ng-deep .mat-calendar-body-cell-content{
+    color:aliceblue;
+   background-color: green;
+   font-size: 2vh;
+   max-width: 50px;
+   max-height: 50px;
+}
+::ng-deep .mat-calendar-body-cell-preview{
+    max-width: 50px;
+}
+::ng-deep .mat-calendar-body-cell::after{
+    max-width: 50px;
+}
+::ng-deep .mat-calendar-body-cell-container{
+    max-width: 50px;
+}
+::ng-deep .mat-calendar-body-cell{
+    max-width: 50px;
+}
+
+td{
+    max-width: 50px;
+    max-height: 50px;
+} */
