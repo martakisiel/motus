@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-* {
+body {
     background-color: black;
-    color: rgb(47, 116, 33);
+    
 }
 
 a {
@@ -26,9 +26,8 @@ a:hover {
 .welcomeText {
     font-size: 7vh;
     font-family: 'Changa';
-    color: aliceblue
+    color: aliceblue;
         /*rgb(47, 116, 33)*/
-    ;
     padding-left: 10%;
     margin-top: 5%;
     background: none;
@@ -41,13 +40,42 @@ a:hover {
 }
 
 .welcomeBanner {
-    background: url('src/assets/banner1.jpg') no-repeat center top scroll;
+    background: url('src/assets/banner1.jpg') no-repeat center top fixed;
     /* background-repeat: no-repeat; */
     /* background-position:top; */
     /* background-attachment: scroll; jest duża róznica miedzy fixed i scroll */
     background-size: cover;
     height: 500px;
     margin-top: -150px;
+    
 
 
 }
+
+.adCol{
+    width: 600px;
+    height: 300px;
+    background-color: aliceblue;
+}
+
+.textIntro{
+    font-family: 'lato';
+    font-size: 3vh;
+    color: aliceblue;
+}
+
+.textChanga{
+    font-family: 'changa';
+}
+
+.iconGreen{
+    color:rgb(47, 116, 33);
+}
+
+.contactForm{
+    color: aliceblue;
+    font-size: 3vh;
+    background: url('src/assets/banner3.jpg') no-repeat center top fixed;
+    width: auto;
+}
+
