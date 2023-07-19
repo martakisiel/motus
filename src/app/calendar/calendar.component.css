@@ -2,40 +2,50 @@ div{
     display: flex;
     justify-content: center;
     color: aliceblue;
-    background-color: green;
+    font-family: 'lato';
+    background-color: black;
+    justify-content: center;
+    align-items: center;
 }
 mat-calendar{
-    width: 500px;
+    width: 300px;
 }
-/* ::ng-deep .mat-calendar {
-    max-width: 100px;
-    color: aliceblue;
-    /* background-color: blueviolet; 
-  }
+
 ::ng-deep .mat-calendar-body-label{
-    color: green;
+    color: aliceblue;
+    font-size: 2vh;
+    font-family: 'lato';
       }
 ::ng-deep .mat-calendar-body-cell-content{
     color:aliceblue;
-   background-color: green;
+   background-color: black;
    font-size: 2vh;
    max-width: 50px;
    max-height: 50px;
+   font-size: 2vh;
+    font-family: 'lato';
 }
-::ng-deep .mat-calendar-body-cell-preview{
-    max-width: 50px;
-}
-::ng-deep .mat-calendar-body-cell::after{
-    max-width: 50px;
-}
+
+
 ::ng-deep .mat-calendar-body-cell-container{
     max-width: 50px;
+    font-size: 4vh;
+    font-family: 'lato';
 }
 ::ng-deep .mat-calendar-body-cell{
     max-width: 50px;
+    font-size: 2vh;
+    font-family: 'lato';
 }
 
-td{
+::ng-deep .mat-calendar-table-header th{ /*nagłowki dni tygodnia*/
     max-width: 50px;
-    max-height: 50px;
-} */
+    font-size: 2vh;
+    font-family: 'lato';
+    color: aliceblue;
+}
+::ng-deep .mdc-button__label{
+    font-size: 2vh;
+    font-family: 'lato';
+    color: aliceblue;   
+}

@@ -1,11 +1,15 @@
-
-   <div>
-   <mat-calendar></mat-calendar>  
+<div class="row justify-content-center mt-4 mb-4">
+    <div class="col-sm">
+        <mat-calendar [(selected)]="selectedDate"></mat-calendar><br>
+        <p >wybrana data: {{selectedDate | date:'shortDate'}}</p>
+        <!-- <span class="text-white">Selected date: {{selected}}</span> -->
+    </div>
+    <div class="col-sm">
+    
+        <button type="button" class="btn btn-lg btn-success" > <a routerLink='#wydarzenia'>Zobacz najbliższe
+                wydarzenia</a></button>
+        <button type="button" class="btn btn-lg btn-success"> <a  routerLink='#noweWydarzenie'[queryParams]="{date:selectedDate | date:'shortDate'}">utwórz wydarzenie</a></button>
+            </div>
+    
+   
 </div>
-   <!-- <div class="row justify-content-center">
-    <mat-calendar class="mat-calendar text-white" [(selected)]="selected"> 
-
-    </mat-calendar>
-
-  <p class="text-white">Selected date: {{selected}}</p>
-  </div> -->
