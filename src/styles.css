@@ -23,40 +23,14 @@ a:hover {
     color: aliceblue;
 }
 
-.welcomeText {
-    font-size: 7vh;
-    font-family: 'Changa';
-    color: aliceblue;
-        /*rgb(47, 116, 33)*/
-    padding-left: 10%;
-    margin-top: 5%;
-    background: none;
-    z-index: 1;
-}
+
 
 .textMenu{
     font-family: 'lato';
     font-size: 3vh;
 }
 
-.welcomeBanner {
-    background: url('src/assets/banner1.jpg') no-repeat center top fixed;
-    /* background-repeat: no-repeat; */
-    /* background-position:top; */
-    /* background-attachment: scroll; jest duża róznica miedzy fixed i scroll */
-    background-size: cover;
-    height: 500px;
-    margin-top: -150px;
-    
 
-
-}
-
-.adCol{
-    width: 600px;
-    height: 300px;
-    background-color: aliceblue;
-}
 
 .textIntro{
     font-family: 'lato';
@@ -77,6 +51,12 @@ a:hover {
     font-size: 3vh;
     background: url('src/assets/banner3.jpg') no-repeat center top fixed;
     width: auto;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*css kalendarza są w calendar.component.css*/
 

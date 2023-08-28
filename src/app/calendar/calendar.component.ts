@@ -11,7 +11,7 @@ import { Pipe } from '@angular/core';
   // imports: [MatCardModule, MatDatepickerModule, MatNativeDateModule],
 })
 export class CalendarComponent {
-  selectedDate: Date | null | undefined = new Date();
+  selectedDate: Date = new Date();
   clicked(){
     console.log('klik'+ this.selectedDate)
    }

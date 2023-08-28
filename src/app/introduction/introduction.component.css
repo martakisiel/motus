@@ -1,0 +1,19 @@
+button{
+    height: 15vh;
+    width: 20vw;
+}
+.join{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+@media (max-width: 600px) {
+   button{
+    height: 20vh;
+    width: 70vw;
+}
+   
+   .join{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+}

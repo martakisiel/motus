@@ -22,7 +22,9 @@ import { EventsComponent } from './events/events.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { MainPageComponent } from './main-page/main-page.component';
 import { NewEventComponent } from './new-event/new-event.component';
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +50,10 @@ import { NewEventComponent } from './new-event/new-event.component';
     BrowserAnimationsModule,
     MatDatepickerModule,
     MatCardModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatFormFieldModule, 
+    MatInputModule, 
+    MatIconModule
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]

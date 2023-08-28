@@ -1,7 +1,8 @@
 <div class="container-fluid d-flex pt-1 flex-wrap justify-content-center contactForm">
     <div class="col-sm-6 align-self-center mt-5">Napisz do nas jeśli masz jakieś pytania:
         <div class="mt-3">
-            <form id="myForm" #form="ngForm" (ngSubmit)="onFormSubmit(form.value)">
+            <form id="myForm" #form="ngForm" (ngSubmit)="onFormSubmit(form.value)" action="https://formsubmit.co/kobizuwu@mailgolem.com" method="POST" > 
+                <input type="hidden" name="_subject" value="New submission!">
                 <label for="fname">Imię:</label><br>
                 <input type="text" id="fname" name="fname" #firstNameInput="ngModel" ngModel><br>
                 <label for="lname">Nazwisko:</label><br>

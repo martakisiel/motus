@@ -1,0 +1,22 @@
+img{
+    width: 50vw;
+
+    margin: 0%;
+}
+
+.imgCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+.carousel-item {
+    position: relative;
+    display: flex;
+    /* float: left; */
+    width: 100%;
+    /* margin-right: -100%; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}

@@ -1,1 +1,33 @@
-<p>new-event works!</p>
+
+
+<p>
+    <mat-form-field appearance="outline">
+      <mat-label></mat-label>
+      <input matInput placeholder="Placeholder">
+      <mat-label>Miejsce rozgrywki</mat-label>
+      <input matInput placeholder="Placeholder">
+      <mat-label>Data</mat-label>
+      <input matInput placeholder="Placeholder">{{date|date}}
+      
+    </mat-form-field>
+  </p>
+  <form id="newEvent" #form="ngForm" (ngSubmit)="onNewEventSubmit(form.value)">
+    <label for="sport">Dyscyplina:</label><br>
+    <input type="text" id="sport" name="sport" #sportInput="ngModel" ngModel><br>
+    <label for="place">Miejsce rozgrywki</label><br>
+    <input type="text" id="place" name="place" #placeInput="ngModel" ngModel><br>
+    <label for="date">data</label><br>
+    <input type="text" id="date" name="date" #placeInput="ngModel" ngModel>{{date}}<br>
+    <label for="h">godzina</label><br>
+    <input type="text" id="h" name="h" #placeInput="ngModel" ngModel>{{date}}<br>
+   <label for="tel">Telefon do organizatora:</label><br>
+    <input type="tel" id="tel" name="tel" ngModel><br> 
+    <label for="textArea" class="form-label">Uwagi:</label>
+    <textarea class="form-control" id="textArea" rows="4" name="desc"
+        #descInput="ngModel" ngModel></textarea>
+    
+          
+</form>
+<button class="mt-3 bg-success text-white" type="submit" value="add form"
+    (click)="onNewEventSubmit(form.value); onNameClicked(); ">Submit</button><br>
+<p>{{message}}</p>
