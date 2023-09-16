@@ -1,0 +1,17 @@
+button{
+    z-index: 1;
+}
+.buttonUp {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+
+    width: fit-content;
+    height: fit-content;
+
+    color: aliceblue;
+}
+.arrow {
+    height: 15px;
+    margin: 0px 4px 3px;
+}

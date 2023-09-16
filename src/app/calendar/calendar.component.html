@@ -1,15 +1,81 @@
-<div class="row justify-content-center mt-4 mb-4">
-    <div class="col-sm">
-        <mat-calendar [(selected)]="selectedDate"></mat-calendar><br>
-        <p >wybrana data: {{selectedDate | date:'shortDate'}}</p>
+<div class="row mt-4 mb-4  ">
+    <div class="col-md-4 align-top">
+        <div class="row mb-4 mt-4">
+          
+
+        <mat-calendar [(selected)]="selectedDate"   
+        ></mat-calendar>
+        <!-- <p >wybrana data: {{selectedDate | date:'shortDate'}}</p> -->
         <!-- <span class="text-white">Selected date: {{selected}}</span> -->
     </div>
-    <div class="col-sm">
-    
-        <button type="button" class="btn btn-lg btn-success" > <a routerLink='#wydarzenia'>Zobacz najbliższe
-                wydarzenia</a></button>
-        <button type="button" class="btn btn-lg btn-success"> <a  routerLink='#noweWydarzenie'[queryParams]="{date:selectedDate | date:'shortDate'}">utwórz wydarzenie</a></button>
+    <div class="row">
+   <button type="button" class="btn btn-lg btn-success" > <a routerLink='#wydarzenia'>Zobacz najbliższe
+        wydarzenia</a></button>
+    </div>
+</div>
+    <div class="col-md-6 align-bottom ">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/b1.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/b2.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/b3.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/b4.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/b5.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/b6.JPG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!-- <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item " data-bs-interval="10000">
+                <img src="assets/b1.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="assets/b2.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="assets/b3.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="assets/b4.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="assets/b5.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="assets/b6.JPG" class="d-block w-100" alt="...">
+              </div>
+            </div> -->
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> -->
+          </div>
+        
+        <!-- <button type="button" class="btn btn-lg btn-success"> <a  routerLink='#noweWydarzenie'[queryParams]="{date:selectedDate | date:'shortDate'}">utwórz wydarzenie</a></button> -->
             </div>
     
    
-</div>

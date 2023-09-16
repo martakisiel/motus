@@ -25,6 +25,7 @@ import { NewEventComponent } from './new-event/new-event.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { AktualnosciComponent } from './aktualnosci/aktualnosci.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     CalendarComponent,
     EventsComponent,
     MainPageComponent,
-    NewEventComponent
+    NewEventComponent,
+    AktualnosciComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatNativeDateModule,
     MatFormFieldModule, 
     MatInputModule, 
-    MatIconModule
+    MatIconModule,
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]

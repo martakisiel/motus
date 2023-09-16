@@ -1,0 +1,11 @@
+.actualnosciOverflow{
+   
+    width: fit-content;
+    height: fit-content;
+ 
+    overflow: auto;
+}
+.src{
+    height:auto ;
+    width: 20vw;
+}

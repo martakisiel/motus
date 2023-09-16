@@ -1,4 +1,35 @@
+.textFooterHeader{
+    font-family: 'changa';
+    font-size: 2vh;
+    color: aliceblue;
+}
 .textFooter{
     font-family: 'lato';
-    font-size: 2vh;
+    font-size: 1.5vh;
+    color: aliceblue;
+    line-height: 1.5;
 }
+.textFooterMK{
+    font-family: 'lato';
+    font-size: 1vh;
+    color: aliceblue;
+
+}
+i{
+    font-size: 1.5vh;
+
+}
+.sponsors{
+    animation:forwards slide-left 5s linear ;
+  }
+    @keyframes slide-left {
+        from {
+          -webkit-transform: translateX(0%);
+                  transform: translateX(0%);
+        }
+        to {
+          -webkit-transform: translateX(-40%);
+                  transform: translateX(-40%);
+        }
+      }
+    

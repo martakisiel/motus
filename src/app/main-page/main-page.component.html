@@ -1,10 +1,16 @@
 <div class="container-fluid">
-<app-welcome-banner></app-welcome-banner>
-<app-introduction></app-introduction>
-<app-ads></app-ads>
-<app-calendar></app-calendar>
+    <div>
+        <button type="button" *ngIf="isTopButtonVisible" class="buttonUp btn btn-success" (click)="scrollToTop()" data-aos="fade-up"
+            data-aos-duration="3000" data-aos-anchor-placement="top-center"><img src="assets/up.png" class="arrow">
+            top</button>
+    </div>
+    <app-welcome-banner></app-welcome-banner>
+    <app-introduction></app-introduction>
+    <app-ads></app-ads>
+    <app-aktualnosci></app-aktualnosci>
+   <!-- <app-calendar></app-calendar>-->
 
 
-<!-- <app-contact-forms></app-contact-forms> -->
-<app-gallery-sample></app-gallery-sample>
+    <!-- <app-contact-forms></app-contact-forms> -->
+    <!-- <app-gallery-sample></app-gallery-sample> -->
 </div>

@@ -27,19 +27,20 @@ a:hover {
 
 .textMenu{
     font-family: 'lato';
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 
 
 .textIntro{
     font-family: 'lato';
-    font-size: 3vh;
+    font-size: 2vh;
     color: aliceblue;
 }
 
 .textChanga{
     font-family: 'changa';
+    color: aliceblue;
 }
 
 .iconGreen{
@@ -60,5 +61,17 @@ a:hover {
 }
 /*css kalendarza są w calendar.component.css*/
 
+.black{
+    color: aliceblue;
+    background-color: black;
+}
+.news-message{
+    display : flex;
+    flex-shrink: 0;
+    height: 50px;
+    align-items: center;
+    animation: slide-left 10s linear infinite;
+    font-family: impact, sans-serif;
+    background: none;
+}
 
-  
