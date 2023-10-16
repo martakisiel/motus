@@ -1,11 +1,59 @@
-.actualnosciOverflow{
-   
+.actualnosciOverflow {
+
     width: fit-content;
     height: fit-content;
- 
+
     overflow: auto;
 }
-.src{
-    height:auto ;
-    width: 20vw;
+.date{
+    color: aliceblue;
+    font-family: 'lato';
+    font-style: italic;
+    font-size: 2vh;
+    margin-bottom: 0px;
+}
+.card{
+    width: 80%; /*na małym ekranie zmienić do 100%*/
+    background-color: rgb(47, 116, 33);
+    margin-bottom: 2vh;
+}
+.card-img-top{
+    object-fit: cover;
+    object-position: 100% 16%;
+    height: 30vh;
+    opacity: 0.6;
+    margin:10px 5px 2px 1px;
+}
+.card-title{
+    color: aliceblue;
+    margin-bottom: 0%;
+    font-family: 'lato';
+}
+.card-text:last-child {
+    color: aliceblue;
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-family: 'lato';
+}
+fieldset {
+    
+    border-width: 5px 0px 0px 0px;
+    border-style: solid;
+    border-color: rgb(47, 116, 33);
+    padding: 0 30vw; /*20 na małym*/
+    filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
+    height: fit-content;
+    width: fit-content;
+}
+
+legend {
+    width: 260px; /*50vw na małym*/
+    height: 50px;
+    margin-top: -24px;
+    margin-left:1vw; /*20 na małym*/
+    background-color: black;
+}
+.center{
+    display: flex;
+    justify-content: center;
 }
