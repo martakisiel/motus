@@ -1,7 +1,6 @@
 <div class="container-fluid bg-success">
     <div class="row">
         <div class="col-md-4 justify-content-start p-3">
-
             <div class="textFooterHeader"> KS MOTUS Lesko <div>
                     <div class="textFooter"><i class="fa-solid fa-at" style="color: #ffffff;"></i> <a
                             href="mailto:ksmotus@gmail.com"> ksmotus@gmail.com</a> | <i
@@ -13,23 +12,21 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 text-center align-items-center p-3 ">
+        <div class="col-md-4 text-center align-items-center p-3 order-first order-md-0 ">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="assets/3.jpg" class=" justify-content-center " alt="...">
+        
+                  <div *ngFor = 'let sponsor of sponsors' class="carousel-item active">
+                    <a [href]="sponsor.link" target="_blank">
+                    <img [src]="sponsor.url" [alt]="sponsor.alt"  class=" justify-content-center " >
+                </a>
                   </div>
-                  <div class="carousel-item">
-                    <img src="assets/2.jpg" class=" justify-content-center " alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/1.jpg" class=" justify-content-center " alt="...">
-                  </div>
+                 
                 </div>
         </div>
-       <div class="col-md-4"></div>
+      
     </div>
-    <div class="row">
+    <div class="row order-last">
         <div class=" bg-success container-fluid textFooterMK d-flex justify-content-center">
             <div><a href="https://github.com/martakisiel" target="_blank">
                     <i class="fa-brands fa-github" style="color: #ffffff;"></i></a>

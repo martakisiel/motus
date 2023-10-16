@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ServiceService, Sponsors } from '../service.service';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
+sponsors: Sponsors[]= [];
+
+constructor( private logoSponsors: ServiceService){
+}
+ngOnInit():void{
+  this.sponsors=this.logoSponsors.getLogoSponsors();
+}
 
 }

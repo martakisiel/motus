@@ -2,6 +2,13 @@ button{
     height: 15vh;
     width: 20vw;
 }
+
+.textIntro{
+    font-family: 'lato';
+    /* font-size: 2vh; */
+    color: aliceblue;
+}
+
 .join{
     margin-top: 0px;
     margin-bottom: 0px;

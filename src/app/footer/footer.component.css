@@ -32,4 +32,8 @@ i{
                   transform: translateX(-40%);
         }
       }
-    
+
+     /* @media screen and (orientation: portrait) and (max-width: 620px) {
+   
+
+     } */

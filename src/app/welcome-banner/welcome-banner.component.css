@@ -3,8 +3,8 @@ background: url(src/assets/banner1.jpg) no-repeat center top fixed;
 /* background-repeat: no-repeat; */
 /* background-position: top; */
 background-size: cover;
-height: 80vh;
-margin-top: -550px;
+height: 120vh;
+margin-top: -530px;
 }
 .welcomeText {
     font-size: 9vh;
