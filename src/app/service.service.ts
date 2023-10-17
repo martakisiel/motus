@@ -8,7 +8,7 @@ export class ServiceService {
   constructor() { }
   private logoSponsors: Sponsors[] = [
     { alt: "SkyWorldGames", url: "assets/sponsorzy/1.png", link: "https://skyworldgames.com/" },
-    { alt: "sponsor", url: "assets/sponsorzy/2.jpg", link: "https://skyworldgames.com/" },
+    { alt: "gmina Lesko", url: "assets/sponsorzy/2.jpg", link: "https://www.lesko.pl/" },
 
   ]
 
