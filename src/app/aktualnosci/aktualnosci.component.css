@@ -1,3 +1,9 @@
+.aktualnosci{
+    margin-top: 20vh;
+}
+.intro{
+    margin-top: 10vh;
+}
 .actualnosciOverflow {
 
     width: fit-content;
@@ -76,6 +82,10 @@ legend {
 }
 
 @media screen and (max-width: 650px) {
+    
+    .intro{
+        margin-top: 5vh;
+    }
     legend {
         width: 50vw;
         /*50vw na małym*/

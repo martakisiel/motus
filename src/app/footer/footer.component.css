@@ -1,3 +1,10 @@
+.intro{
+  margin-top: 10vh;
+}
+.bgFooter{
+  background-color: rgb(47, 116, 33);
+}
+
 .textFooterHeader{
     font-family: 'changa';
     font-size: 2vh;

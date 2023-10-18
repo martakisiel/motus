@@ -5,10 +5,11 @@ button{
     position: fixed;
     bottom: 0px;
     right: 0px;
-
+background-color: rgb(47, 116, 33);
+border-color: aliceblue;
     width: fit-content;
     height: fit-content;
-
+margin-right: 5vw;
     color: aliceblue;
 }
 .arrow {
