@@ -20,6 +20,9 @@ export class ServiceService {
     { url: "assets/galerySample/gs5.JPG", alt: "siatkówka" }
 
   ]
+
+  //DOROBIC TABLICE Z AKTUALNOSCIAMI
+  
   getLogoSponsors() {
     return this.logoSponsors;
   }

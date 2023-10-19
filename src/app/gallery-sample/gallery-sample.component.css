@@ -1,10 +1,9 @@
 .caruselTop{
-    margin-top: 10vh;
+    margin-top: 5vh;
+    justify-content: center;
 }
 img{
     width: 50vw;
-
-    margin: 0%;
 }
 
 .imgCenter {
