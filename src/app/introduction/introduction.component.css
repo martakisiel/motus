@@ -1,6 +1,7 @@
 .intro {
     margin-top: 30vh;
 }
+
 .intro1 {
     margin-top: 15vh;
 }
@@ -11,9 +12,48 @@
     align-items: center;
 }
 
-.src {
-    height: 50vh;
-    width: auto;
+.row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textDiv1 {
+    background-color: rgb(47, 116, 33);
+    text-align: start;
+    padding-bottom: 3vh;
+    padding-right: 4vw;
+    padding-left: 3vw;
+    align-items: center;
+    display: flex;
+    height: 25vh;
+    width: 35vw;
+    padding-top: 3vw;
+    font-family: 'lato';
+    font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+}
+
+.src1Div {
+    position: relative;
+    margin-top: -20px;
+    display: flex;
+    justify-content: left;
+}
+
+.src1 {
+    max-width: 50vw;
+    height: auto;
+
+}
+
+.btn1 {
+    min-width: 45vw;
+    position: absolute;
+    top: 80%;
+    left: -23%;
+    transform: translate(0%, 0vh);
 
 }
 
@@ -31,6 +71,10 @@
     z-index: 1;
     margin-right: -20px;
 
+    font-family: 'lato';
+    font-size: 2vh;
+    color: aliceblue;
+
 }
 
 .textOnPic2 {
@@ -40,6 +84,10 @@
 
     width: 35vw;
     z-index: 1;
+
+    font-family: 'lato';
+    font-size: 2vh;
+    color: aliceblue;
 }
 
 .Pic {
@@ -54,7 +102,7 @@
 .Pic2 {
     padding: 50px;
     z-index: 1;
-    margin-right: -25px;
+
 
 }
 
@@ -85,12 +133,7 @@ button:hover {
     /* font-size: 18px; */
 }
 
-.textIntro {
-    font-family: 'lato';
-    font-size: 2vh;
-    color: aliceblue;
 
-}
 
 .join {
     margin-top: 0px;
@@ -108,10 +151,57 @@ button:hover {
     background-color: rgb(47, 116, 33);
 }
 
-@media (max-width: 600px) {
+@media (min-width: 250px) and (max-width: 399px) {
+    .row1 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .textDiv1 {
+        background-color: rgb(47, 116, 33);
+        text-align: start;
+        /* padding-bottom: 3vh; */
+        padding-right: 10vw;
+        padding-left: 3vw;
+        align-items: center;
+        display: flex;
+        height: 20vh;
+        width: 80vw;
+        padding-top: 5vw;
+        font-family: 'lato';
+        font-size: 2vh;
+        color: aliceblue;
+        z-index: 1;
+    }
+
+    .src1Div {
+        position: relative;
+        margin-top: -20px;
+        display: flex;
+        justify-content: left;
+    }
+
+    .src1 {
+        max-width: 90vw;
+        height: auto;
+        margin-top: -20px;
+        display: flex;
+
+    }
+
+    .btn1 {
+        position: absolute;
+        top: 110%;
+        left: 15%;
+        transform: translate(0%, 0vh);
+
+    }
+
     .intro {
         margin-top: 30vh;
     }
+
     .intro1 {
         margin-top: 5vh;
     }
@@ -121,16 +211,19 @@ button:hover {
         width: 70vw;
     }
 
-    .src {
-        height: 30vh;
-        margin-right: 0px;
-        margin-left: -5vw;
+
+    .src2 {
+        max-width: 90vw;
+        height: auto;
+
     }
+
 
     .join {
         margin-top: -20px;
-
-        margin-bottom: -25px;
+        display: flex;
+        justify-content: right;
+        margin-bottom: -70px;
     }
 
     .onPicCenter {
@@ -146,13 +239,12 @@ button:hover {
     }
 
     .textOnPic {
-        text-align: end;
+        text-align: start;
         padding-bottom: 5vh;
-        padding-right: 10vw;
+        padding-right: 15vw;
         align-items: center;
-        height: 25vh;
-        width: 35vh;
-        margin-left: 25vw;
+        height: 30vh;
+        width: 40vh;
     }
 
     .textOnPic2 {
@@ -164,3 +256,212 @@ button:hover {
         margin-left: 25vw;
     }
 }
+
+@media (min-width: 400px) and (max-width: 599px) {
+    .row1 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .textDiv1 {
+        background-color: rgb(47, 116, 33);
+        text-align: start;
+        /* padding-bottom: 3vh; */
+        padding-right: 10vw;
+        padding-left: 3vw;
+        align-items: center;
+        display: flex;
+        height: 30vh;
+        width: 55vw;
+        padding-top: 5vw;
+        font-family: 'lato';
+        font-size: 2vh;
+        color: aliceblue;
+        z-index: 1;
+    }
+
+    .src1Div {
+        margin-top: -20px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .src1 {
+        max-width: 90vw;
+        height: auto;
+        margin-top: -20px;
+        display: flex;
+
+    }
+
+    .btn1 {
+        position: absolute;
+        top: 90%;
+        left: 15%;
+        transform: translate(-0%, -0%);
+    }
+
+    .intro {
+        margin-top: 30vh;
+    }
+
+    .intro1 {
+        margin-top: 5vh;
+    }
+
+    button {
+        height: 10vh;
+        width: 70vw;
+    }
+
+
+    .src2 {
+        max-width: 90vw;
+        height: auto;
+
+    }
+
+
+    .join {
+        margin-top: -20px;
+        display: flex;
+        justify-content: right;
+        margin-bottom: -70px;
+    }
+
+    .onPicCenter {
+        position: absolute;
+        top: 155vh;
+        left: 50%;
+        transform: translate(-32%, -310%);
+        ;
+    }
+
+    .textIntro {
+        padding-bottom: 0%;
+    }
+
+    .textOnPic {
+        text-align: start;
+        padding-bottom: 5vh;
+        padding-right: 15vw;
+        align-items: center;
+        height: 30vh;
+        width: 40vh;
+    }
+
+    .textOnPic2 {
+        text-align: revert;
+        padding-bottom: 5vh;
+        padding-left: 4vw;
+        height: 25vh;
+        width: 75vw;
+        margin-left: 25vw;
+    }
+}
+
+/* @media (min-width: 600px) {
+    .row1 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .textDiv1 {
+        background-color: rgb(47, 116, 33);
+        text-align: start;
+        /* padding-bottom: 3vh; 
+        padding-top: 10vw;
+        padding-right: 10vw;
+        padding-left: 3vw;
+        align-items: center;
+        display: flex;
+        height: 20vh;
+        width: 80vw;
+        
+        font-family: 'lato';
+        font-size: 2vh;
+        color: aliceblue;
+        z-index: 1;
+    }
+
+    .src1Div {
+        margin-top: -20px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .src1 {
+        max-width: 80vw;
+        height: auto;
+        margin-top: -20px;
+        display: flex;
+
+
+    }
+
+    .btn1 {
+        position: absolute;
+        top: 145vh;
+        left: 50%;
+        transform: translate(-45%, -250%);
+    }
+
+    .intro {
+        margin-top: 30vh;
+    }
+
+    .intro1 {
+        margin-top: 5vh;
+    }
+
+    button {
+        height: 10vh;
+        width: 70vw;
+    }
+
+
+    .src2 {
+        max-width: 90vw;
+        height: auto;
+
+    }
+
+
+    .join {
+        margin-top: -20px;
+        display: flex;
+        justify-content: right;
+        margin-bottom: -70px;
+    }
+
+    .onPicCenter {
+        position: absolute;
+        top: 155vh;
+        left: 50%;
+        transform: translate(-32%, -310%);
+        ;
+    }
+
+    .textIntro {
+        padding-bottom: 0%;
+    }
+
+    .textOnPic {
+        text-align: start;
+        padding-bottom: 5vh;
+        padding-right: 15vw;
+        align-items: center;
+        height: 30vh;
+        width: 40vh;
+    }
+
+    .textOnPic2 {
+        text-align: revert;
+        padding-bottom: 5vh;
+        padding-left: 4vw;
+        height: 25vh;
+        width: 75vw;
+        margin-left: 25vw;
+    }
+} */
