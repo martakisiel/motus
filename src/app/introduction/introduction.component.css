@@ -33,6 +33,7 @@
     font-size: 2vh;
     color: aliceblue;
     z-index: 1;
+    margin-right:-2vw; /*to odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
 }
 
 .src1Div {
@@ -57,6 +58,9 @@
 
 }
 
+.row2{
+    margin-top: 10vh;
+}
 .src2 {
     height: 50vh;
     width: auto;
