@@ -1,3 +1,10 @@
+.row{
+    border: 0px;
+    padding:0%;
+
+
+}
+
 .aktualnosci{
     margin-top: 15vh;
 }
@@ -23,22 +30,25 @@
 .card {
     width: 80%;
     /*na małym ekranie zmienić do 100%*/
-    background-color: rgb(47, 116, 33);
+    background-color:black;
     margin-bottom: 2vh;
+    border: 0%;
 }
+.card-body{
+    border: 0%;
+    background-color: rgb(47, 116, 33);
 
+}
 .card-img-top {
     object-fit: cover;
-    object-position: 100% 16%;
+    object-position: top;
     height: 30vh;
     opacity: 1;
-    margin: 10px 5px 2px 1px;
+    /* margin: 10px 5px 2px 1px; */
     transition: .5s ease;
     backface-visibility: hidden;
 }
-.card-img-top :hover  {
-    opacity: 0.3;
-  }
+
   
 
 .card-title {
