@@ -79,7 +79,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    height: 25vh;
+    height: 30vh;
     width: 35vw;
     padding-top: 3vw;
     font-family: 'lato';
@@ -87,7 +87,7 @@
     color: aliceblue;
     z-index: 1;
     margin-right: 0vw;
-    margin-left: -20vw;
+    margin-left: -10vw;
     /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
 }
 

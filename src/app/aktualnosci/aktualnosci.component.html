@@ -18,7 +18,7 @@
     </div>
 
     <!-- WSZYSTKIE POZYCJE Z TABLICY -->
-       <!-- <div class="row">
+    <!-- <div class="row">
         <div class="col-sm center" *ngFor="let item of aktualnosci">
             <div class="card">
                 <img src="assets/banner1.JPG" class="card-img-top" alt="siatkowka">
@@ -36,17 +36,16 @@
 
     <!-- PIERWSZE X POZYCJI Z TABLICY OKRESLONYCH W .ts -->
     <div class="col-sm center" *ngFor="let item of aktualnosci.slice(0, 2)">
-            <div class="card">
-                <img src="assets/banner1.JPG" class="card-img-top" alt="siatkowka">
-                <div class="card-body">
-                    <h5 class="card-title">{{item.title}}</h5>
-                    <span class="date">
-                        {{item.date}}
-                    </span>
-                    <p class="card-text">{{item.content}}
-                    </p>
-                </div>
+        <div class="card">
+        <img  [src]="item.url" [alt]="item.alt" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{item.title}}</h5>
+                <span class="date">
+                    {{item.date}}
+                </span>
+                <p class="card-text module line-clamp3">{{item.content}}
+                </p>
             </div>
         </div>
     </div>
-   
+</div>

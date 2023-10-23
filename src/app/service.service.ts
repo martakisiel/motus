@@ -63,9 +63,10 @@ export interface GalerySample {
   //   link: string;
 }
 export interface Aktualnosci {
+  url: string;
   alt: string;
   title: string;
-  date: string ;
+  date: string;
   content: string;
 
 }

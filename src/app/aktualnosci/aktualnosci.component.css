@@ -56,11 +56,23 @@
     font-family: 'lato';
 }
 
+.line-clamp3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+  }
+  .module {
+    width: 200px;
+    margin: 0 0 1em 0;
+    overflow: hidden;
+  }
 .card-text:last-child {
     color: aliceblue;
     margin-bottom: 0;
     margin-top: 15px;
     font-family: 'lato';
+    /* text truncation */
+       
 }
 
 fieldset {

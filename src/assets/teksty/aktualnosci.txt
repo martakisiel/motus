@@ -1,27 +1,51 @@
-[
+[  
   {
-    "alt":"alt1",
-    "title": "Mecz siatkówki na hali SP Lesko",
-    "date": "10.10.2023",
-    "content": "1Mecz na hali"
+    "url":"assets/atak.jpg",
+    "alt":"atak",
+    "title": "Treningi na hali SP Lesko",
+    "date": "16.10.2023",
+    "content": "Klub otrzymuje oficjalną rezerwację hali sportowej przy SP w Lesku"
+    }, 
+    {
+    "url":"assets/IMG_3446.JPG",
+    "alt":"atak",
+    "title": "Pierwsza krótka",
+    "date": "22.08.2023",
+    "content": "Pierwsza próba ataku z krótkiej piłki"
+    }, 
+    {
+    "url":"assets/siatkowka1.jpg",
+    "alt":"blok",
+    "title": "Potrójny blok",
+    "date": "27.07.2023",
+    "content": "Pierwszy potrójny blok. Skuteczny!"
+    },
+    {
+    "url":"assets/atak.jpg",
+    "alt":"KS motus",
+    "title": "Pożegnanie Walerii",
+    "date": "29.06.2023",
+    "content": "Pierwsza inicjatywa klubu - pożegnanie naszej koleżanki Walerii."
+    },
+  {
+	"url":"assets/team.jpg",
+    "alt":"KS motus", 
+    "title": "Jesteśmy klubem!",
+    "date": "23.06.2023",
+    "content": "Założenie KS Motus Lesko zostaje oficjalnie potwierdzone przez starostę Leskiego"
+  },
+  {
+	"url":"assets/banner4.jpg",
+    "alt":"ks Motus",
+    "title": "Spotkanie założycielskie",
+    "date": "16.06.2023",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
 {
-    "alt":"alt2", 
-    "title": "Wspin na Kamieniu Leskim",
-    "date": "11.11.2023",
-    "content": "Trutututu"
-  },
-  {
-    "alt":"alt4",
-    "title": "Mecz siatkówki na hali SP Lesko",
-    "date": "10.10.2023",
-    "content": "1Mecz na hali"
-  },
-{
-    "alt":"alt3",
-    "title": "Wspin na Kamieniu Leskim",
-    "date": "11.11.2023",
-    "content": "Trutututu"
+	"url":"assets/IMG_3491.JPG",
+    "alt":"mecz siatkowki",
+    "title": "Pierwsza rozgywka",
+    "date": "28.07.2022",
+    "content": "Pierwsza, nieformalna, rozgrywka siatkarska założycieli Klubu"
   }
-
 ]
