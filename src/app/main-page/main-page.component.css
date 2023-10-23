@@ -5,12 +5,16 @@ button{
     position: fixed;
     bottom: 0px;
     right: 0px;
+    padding: 1%;
 background-color: rgb(47, 116, 33);
 border-color: aliceblue;
     width: fit-content;
     height: fit-content;
-margin-right: 5vw;
-    color: aliceblue;
+margin-right: 3vw;
+color: aliceblue;
+font-family: 'lato';
+font-size: 2vh;
+border-radius: 0%;
 }
 .arrow {
     height: 15px;
