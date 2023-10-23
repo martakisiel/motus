@@ -63,7 +63,7 @@ export interface GalerySample {
   //   link: string;
 }
 export interface Aktualnosci {
-
+  alt: string;
   title: string;
   date: string ;
   content: string;

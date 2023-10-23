@@ -1,1 +1,24 @@
-<p class="text-white">events works!</p>
+<div class="row center aktualnosci">
+    <fieldset role="presentation"> <!--obejmuje wszystkie elementy aktualności-->
+        <legend role="presentation">
+            <h2 class="textChanga center mb-2"> AKTUALNOŚCI </h2>
+        </legend>
+    </fieldset>
+<!-- Co zrobić, żeby nie dorabiać kolejnej podstrony tylko żeby tutaj możnabyło kliknac i wyswietlic wiecej informacji? Uzyć pop-out? -->
+    <div class="row">
+        <div class="col-sm-4 center" *ngFor="let item of aktualnosci">
+            <div class="card">
+                <img src="assets/banner1.JPG" class="card-img-top" alt="siatkowka">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.title}}</h5>
+                    <span class="date">
+                        {{item.date}}
+                    </span>
+                    <p class="card-text">{{item.content}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
