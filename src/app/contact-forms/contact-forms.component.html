@@ -1,7 +1,33 @@
+<!-- <app-welcome-banner></app-welcome-banner> -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <i class="fa-solid fa-at" style="color: #ffffff;"></i> <a href="mailto:ksmotus@gmail.com">
+                ksmotus@gmail.com</a>
+        </div>
+        <div class="col-sm">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18477.8736653029!2d22.310551142927984!3d49.47338058023399!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473c0b221be876e9%3A0x566d1ce23ac8f83e!2sHala%20sportowa%2C%20Mickiewicza%2C%2038-600%20Lesko!5e0!3m2!1sen!2spl!4v1698046650573!5m2!1sen!2spl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div> <!--MAPA z ZAZNACZONYM LESKIEM!!!!!!-->
+    <div class="row">
+        <div class="col-md">  </div>
+        <div class="col-md"> <i class="fa-solid fa-mobile-screen" style="color: #ffffff;"></i> <a href="+48515052545">
+                515052545</a></div>
+        <div class="col-md"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> ul. Osiedlowa
+            17, 38-600 Lesko </div>
+        <div class="col-md">NIP: 6881306830 | REGON: 525809436 </div>
+    </div>
+</div>
+
+
 <div class="container-fluid d-flex pt-1 flex-wrap justify-content-center contactForm">
     <div class="col-sm-6 align-self-center mt-5">Napisz do nas jeśli masz jakieś pytania:
         <div class="mt-3">
-            <form id="myForm" #form="ngForm" (ngSubmit)="onFormSubmit(form.value)" action="https://formsubmit.co/kobizuwu@mailgolem.com" method="POST" > 
+            <form id="myForm" #form="ngForm" (ngSubmit)="onFormSubmit(form.value)"
+                action="https://formsubmit.co/kobizuwu@mailgolem.com" method="POST">
                 <input type="hidden" name="_subject" value="New submission!">
                 <label for="fname">Imię:</label><br>
                 <input type="text" id="fname" name="fname" #firstNameInput="ngModel" ngModel><br>
@@ -14,13 +40,11 @@
                 <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="desc"
                     #descInput="ngModel" ngModel></textarea>
-                <label for="file" class="form-label">plik</label>
-                <input class="form-control" name="file" type="file" id="formFile" #formFileInput="ngModel" ngModel (change)="onFileChange($event)">
-            
-                      
+                <!-- <label for="file" class="form-label">plik</label>
+                <input class="form-control" name="file" type="file" id="formFile" #formFileInput="ngModel" ngModel (change)="onFileChange($event)">  -->
             </form>
             <button class="mt-3 bg-success text-white" type="submit" value="add form"
-                (click)="onFormSubmit(form.value); onNameClicked(); clearFields(firstNameInput, lastNameInput, emailInput, descInput, formFileInput)">Submit</button><br>
+                (click)="onFormSubmit(form.value); onNameClicked(); clearFields(firstNameInput, lastNameInput, emailInput, descInput)">Submit</button><br>
             <p>{{message}}</p>
         </div>
     </div>

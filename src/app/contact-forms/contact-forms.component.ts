@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { NgForm, NgModel } from '@angular/forms';
+import {ClipboardModule} from '@angular/cdk/clipboard';
 
 @Component({
   selector: 'app-contact-forms',
   templateUrl: './contact-forms.component.html',
-  styleUrls: ['./contact-forms.component.css']
+  styleUrls: ['./contact-forms.component.css'],
 })
 export class ContactFormsComponent {
   message: string | undefined;
@@ -20,14 +21,14 @@ export class ContactFormsComponent {
   }
   onNameClicked (): void{
     
-    this.message="Dziękujemy za wiadomość!"; //message is a string from header album-name.component passed by $event
+    this.message="Dziękujemy za wiadomość! Jesteśmy w kontakcie:)"; //message is a string from header album-name.component passed by $event
   }
-  clearFields(firstNameInput: NgModel, lastNameInput: NgModel, emailInput:NgModel, descInput:NgModel, formFileInput:NgModel): void {
+  clearFields(firstNameInput: NgModel, lastNameInput: NgModel, emailInput:NgModel, descInput:NgModel): void {
     firstNameInput.reset();
     lastNameInput.reset();
     emailInput.reset();
     descInput.reset();
-    formFileInput.reset();
+
   }
   onFileChange(event: any) {
     if (event?.target) {

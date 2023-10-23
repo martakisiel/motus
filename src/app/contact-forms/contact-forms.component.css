@@ -1,0 +1,21 @@
+.col-md{
+    height: 15vh;
+    width: 15vw;
+    background-color: rgb(47, 116, 33);
+    color: aliceblue;
+    font-family: 'lato';
+    font-size: 3vh;
+}
+.col-sm{
+    height: 15vh;
+    width: 15vw;
+    background-color: rgb(47, 116, 33);
+    color: aliceblue;
+    font-family: 'lato';
+    font-size: 3vh;
+}
+iframe{
+    height:50vh;
+    width:50vh;
+    
+}

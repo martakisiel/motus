@@ -5,12 +5,15 @@ import { EventsComponent } from './events/events.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { AppComponent } from './app.component';
 import { NewEventComponent } from './new-event/new-event.component';
+import { ContactFormsComponent } from './contact-forms/contact-forms.component';
+
 
 
 const routes: Routes = [
   { path: '', component: MainPageComponent }, // bez redirecTo!
   { path: '#dolacz', component: JoinComponent },
   { path: '#wydarzenia', component: EventsComponent },
+  { path: '#wesprzyj-nas', component: ContactFormsComponent },
   { path: '#noweWydarzenie', component: NewEventComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
