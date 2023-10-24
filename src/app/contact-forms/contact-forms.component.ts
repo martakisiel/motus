@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import { Clipboard } from '@angular/cdk/clipboard';
 import { NgForm, NgModel } from '@angular/forms';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 
@@ -11,7 +11,15 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
 })
 export class ContactFormsComponent {
   message: string | undefined;
-  constructor(private http: HttpClient) { }
+  copyMessage: string = ""
+  constructor(private http: HttpClient, private clipboard: Clipboard) { }
+  
+  copyText(textToCopy: string) {
+    this.clipboard.copy(textToCopy);
+    }
+    onCopyClicked(copyMessage:string){
+      this.copyMessage = "skopiowano do schowaka";
+    }
 
   onFormSubmit(forms: { fname: string, lname: string, tel: number, email: string, desc: string, file: File, }) {
     //in the value propetrty of ngform object a property with the name of the input element will be created
