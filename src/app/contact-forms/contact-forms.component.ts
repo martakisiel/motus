@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Clipboard } from '@angular/cdk/clipboard';
 import { NgForm, NgModel } from '@angular/forms';
 import { ClipboardModule } from '@angular/cdk/clipboard';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-contact-forms',
@@ -11,16 +12,20 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
 })
 export class ContactFormsComponent {
   message: string | undefined;
-  copyMessage: string = ""
-  constructor(private http: HttpClient, private clipboard: Clipboard) { }
+  constructor(private http: HttpClient, private clipboard: Clipboard, public matSnackBar:MatSnackBar) { }
   
   copyText(textToCopy: string) {
     this.clipboard.copy(textToCopy);
     }
-    onCopyClicked(copyMessage:string){
-      this.copyMessage = "skopiowano do schowaka";
+    openSnackBar(message: string, action: string) {
+      this.matSnackBar.open(message, action, {
+        duration: 2000, // Duration in milliseconds
+      });
     }
-
+    //metoda wywołująca 'skopowano do schowka'
+    showNotification() {
+      this.openSnackBar('Skopiowano do schowka', 'zamknij');
+    }
   onFormSubmit(forms: { fname: string, lname: string, tel: number, email: string, desc: string, file: File, }) {
     //in the value propetrty of ngform object a property with the name of the input element will be created
     //the value that user will enter into each input element will be assign to the proper property
@@ -51,11 +56,5 @@ export class ContactFormsComponent {
 
       reader.readAsDataURL(file);
     }
-
-
-
-
-
-
   }
 }

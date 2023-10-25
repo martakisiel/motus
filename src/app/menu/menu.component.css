@@ -1,6 +1,8 @@
 .bgMenu{
     background-color: rgb(47, 116, 33);
-
+    color: aliceblue;
+    font-family: 'lato';
+    font-size: 2vh;
 }
 nav{
     position: -webkit-sticky; /* Safari */

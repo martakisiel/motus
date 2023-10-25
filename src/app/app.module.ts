@@ -26,6 +26,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { AktualnosciComponent } from './aktualnosci/aktualnosci.component';
+import { MatSnackBarModule} from '@angular/material/snack-bar';
+import { ONasComponent } from './o-nas/o-nas.component';
+import { SekcjeComponent } from './sekcje/sekcje.component';
+import { GaleriaComponent } from './galeria/galeria.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +46,11 @@ import { AktualnosciComponent } from './aktualnosci/aktualnosci.component';
     EventsComponent,
     MainPageComponent,
     NewEventComponent,
-    AktualnosciComponent
+    AktualnosciComponent,
+    ONasComponent,
+    SekcjeComponent,
+    GaleriaComponent,
+ 
   ],
   imports: [
     BrowserModule,
@@ -56,6 +65,7 @@ import { AktualnosciComponent } from './aktualnosci/aktualnosci.component';
     MatFormFieldModule, 
     MatInputModule, 
     MatIconModule,
+    MatSnackBarModule,
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]

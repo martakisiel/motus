@@ -1,60 +1,88 @@
-<nav class="navbar navbar-expand-lg navbar-dark bgMenu textMenu justify-content-evenly">
-    <button class="navbar-toggler bgMenu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse ps-3 justify-content-evenly" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <div class="nav-item col-sm-auto m-3 bgMenu">
-                    <a class="nav-divnk bgMenu text-white" aria-current="page" href="#">Home</a>
-                </div>
-            </li>
-            <li>
-                <div class="nav-item col-sm-auto m-3 bgMenu">
-                    <a class="nav-divnk bgMenu " routerLink="#wydarzenia">Aktualności</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <div class="nav-item col-sm-auto dropdown bgMenu m-3 bgMenu">
-                    <a class="nav-divnk dropdown-toggle bgMenu text-white" data-bs-toggle="dropdown" href="#"
-                        role="button" aria-expanded="false">O Klubie</a>
-                    <div class="dropdown-menu bgMenu">
-                        <div><a class="dropdown-item bgMenu text-white" href="#">Historia</a></div>
-                        <div><a class="dropdown-item bgMenu text-white" href="#">Dokumenty</a></div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="nav-item col-sm-auto m-3 bgMenu">
-                    <a class="nav-divnk bgMenu text-white fw-bold" routerLink="#dolacz">Dołącz do nas!</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <div class="nav-item col-sm-auto dropdown bgMenu m-3 bgMenu">
-                    <a class="nav-divnk col-sm-auto dropdown-toggle bgMenu text-white" data-bs-toggle="dropdown"
-                        href="#" role="button" aria-expanded="false">Sekcje sportowe</a>
-                    <div class="dropdown-menu bgMenu">
-                        <div><a class="dropdown-item bgMenu text-white" href="#">Sekcja siatkarska</a></div>
-                        
-                    </div>
-                </div>
-            </li>
-          
-        
-            <li>
-                <div class="nav-item col-sm-auto m-3 bgMenu">
-                    <a class="nav-divnk bgMenu text-white" href="#">Galeria zdjęć</a>
-                </div>
-            </li>
-            <li>
-                <div class="nav-item col-sm-auto m-3 bgMenu">
-                    <!-- contact-form.component -->
-                    <a class="nav-divnk bgMenu text-white" routerLink="#wesprzyj-nas">Wesprzyj nas</a> 
-                </div>
-            </li>
-
-            <!-- Add more menu items as needed -->
-        </ul>
-    </div>
+<nav
+  class="navbar navbar-expand-lg navbar-dark bgMenu textMenu justify-content-evenly"
+>
+  <button
+    class="navbar-toggler bgMenu"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div
+    class="collapse navbar-collapse ps-3 justify-content-evenly"
+    id="navbarNav"
+  >
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <div class="nav-item col-sm-auto m-3 bgMenu">
+          <a class="nav-divnk bgMenu" aria-current="page" href="#">Home</a>
+        </div>
+      </li>
+      <li>
+        <div class="nav-item col-sm-auto m-3 bgMenu">
+          <a class="nav-divnk bgMenu" routerLink="#wydarzenia">Wydarzenia</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="nav-item col-sm-auto dropdown bgMenu m-3 bgMenu">
+          <a
+            class="nav-divnk dropdown-toggle bgMenu"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >O Klubie</a
+          >
+          <div class="dropdown-menu bgMenu">
+            <div>
+              <a class="dropdown-item bgMenu" routerLink="#o-nas">To my</a>
+            </div>
+            <div><a class="dropdown-item bgMenu" href="#">Dokumenty</a></div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="nav-item col-sm-auto m-3 bgMenu">
+          <a class="nav-divnk bgMenu fw-bold" routerLink="#dolacz"
+            >Dołącz do nas!</a
+          >
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="nav-item col-sm-auto dropdown bgMenu m-3 bgMenu">
+          <a
+            class="nav-divnk col-sm-auto dropdown-toggle bgMenu"
+            data-bs-toggle="dropdown"
+            routerLink="#sekcje"
+            role="button"
+            aria-expanded="false"
+            >Sekcje sportowe</a
+          >
+          <div class="dropdown-menu bgMenu">
+            <div>
+              <a class="dropdown-item bgMenu" href="#">Sekcja siatkarska</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="nav-item col-sm-auto m-3 bgMenu">
+          <a class="nav-divnk bgMenu" routerLink="#galeria">Galeria zdjęć</a>
+        </div>
+      </li>
+      <li>
+        <div class="nav-item col-sm-auto m-3 bgMenu">
+          <!-- contact-form.component -->
+          <a class="nav-divnk bgMenu" routerLink="#wesprzyj-nas"
+            >Wesprzyj nas</a
+          >
+        </div>
+      </li>
+      <!-- Add more menu items as needed -->
+    </ul>
+  </div>
 </nav>

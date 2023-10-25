@@ -66,11 +66,16 @@ button{
     font-size: 2vh;
     border-style: hidden;
     border-radius: 0%;
-    padding: 2%;
+    padding: 1%;
 }
 .copyBtn{
     width: auto;
     height: auto;
+}
+.copyBtnKonto{
+    width: auto;
+    height: auto;
+    color: rgb(242, 255, 0);
 }
 
 .order1{
@@ -98,6 +103,14 @@ button{
         font-family: 'lato';
         font-size: 2vh;
         text-align: end;
+    }
+    .konto{
+        background-color: rgb(47, 116, 33);
+        color: rgb(242, 255, 0);
+        font-family: 'lato';
+        font-size: 2vh;
+        text-align: center;  
+        padding: 2% 3% 0% 3%;
     }
     input{
         width: 60vw;

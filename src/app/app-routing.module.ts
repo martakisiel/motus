@@ -6,7 +6,9 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { AppComponent } from './app.component';
 import { NewEventComponent } from './new-event/new-event.component';
 import { ContactFormsComponent } from './contact-forms/contact-forms.component';
-
+import { ONasComponent } from './o-nas/o-nas.component';
+import { SekcjeComponent } from './sekcje/sekcje.component';
+import { GaleriaComponent } from './galeria/galeria.component';
 
 
 const routes: Routes = [
@@ -14,6 +16,9 @@ const routes: Routes = [
   { path: '#dolacz', component: JoinComponent },
   { path: '#wydarzenia', component: EventsComponent },
   { path: '#wesprzyj-nas', component: ContactFormsComponent },
+  { path: '#o-nas', component:  ONasComponent }, 
+  { path: '#sekcje', component:  SekcjeComponent }, 
+  { path: '#galeria', component:  GaleriaComponent }, 
   { path: '#noweWydarzenie', component: NewEventComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
