@@ -1,1 +1,88 @@
-<p class="text-white">o-nas works!</p>
+<div class="container-fluid">
+  <div>
+    <button
+      type="button"
+      *ngIf="isTopButtonVisible"
+      class="buttonUp btn"
+      (click)="scrollToTop()"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+      data-aos-anchor-placement="top-center"
+    >
+      <img src="assets/up.png" class="arrow" /> top
+    </button>
+  </div>
+  <div class="row1">
+    <div class="col-sm-6 textDiv1">
+      <div class="row">
+        <p>
+          Jesteśmy zespołem lubiącym sport i ruch.<br />
+          Zaczynaliśmy od gry w siatkówkę na sali gimnastycznej w Leskim LO.<br />
+          W 2023 roku zrzeszyliśmy się jako Klub Sportowy Motus<br />
+          i regularnie spotykamy się trenując, grając i spędzając razem czas.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-6 src1Div">
+      <img src="assets/team.jpg" alt="motus lesko" class="src1" />
+    </div>
+  </div>
+  <div class="row2">
+    <fieldset role="presentation">
+      <!--obejmuje wszystkie elementy aktualności-->
+      <legend role="presentation">
+        <h2 class="textChanga center mb-2">ZARZĄD</h2>
+      </legend>
+    </fieldset>
+  </div>
+  <div class="row2">
+    <div class="col namesDiv">
+      <span class="names">
+        Fabian <br />
+        Mach<br />
+        <p class="text">e-mail</p>
+        <p class="text">
+          <a href="http://machfabian.pl/" target="_blank">www</a>
+        </p>
+      </span>
+      <img src="assets/profilSample.JPG" alt="Mach" class="profileImg" />
+    </div>
+    <div class="col namesDiv">
+      <span class="names">
+        Beata <br />
+        Mach<br />
+        <p class="text">e-mail</p>
+        <p class="text">
+          <a href="http://machfabian.pl/" target="_blank">www</a>
+        </p>
+      </span>
+      <img src="assets/profilSample.JPG" alt="Mach" class="profileImg" />
+    </div>
+    <div class="col namesDiv">
+      <span class="names">
+        Kamil <br />
+        X<br />
+        <p class="text">e-mail</p>
+        <p class="text">
+          <a href="http://machfabian.pl/" target="_blank">www</a>
+        </p>
+      </span>
+      <img src="assets/profilSample.JPG" alt="Mach" class="profileImg" />
+    </div>
+    <div class="col namesDiv">
+      <span class="names">
+        X <br />
+        X<br />
+        <p class="text">e-mail</p>
+        <p class="text">
+          <a href="http://machfabian.pl/" target="_blank">www</a>
+        </p>
+      </span>
+      <img src="assets/profilSample.JPG" alt="Mach" class="profileImg" />
+    </div>
+  </div>
+  <div class="row3" id="#statut">
+
+    <app-statut></app-statut>
+  </div>
+</div>

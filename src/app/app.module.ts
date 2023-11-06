@@ -30,6 +30,7 @@ import { MatSnackBarModule} from '@angular/material/snack-bar';
 import { ONasComponent } from './o-nas/o-nas.component';
 import { SekcjeComponent } from './sekcje/sekcje.component';
 import { GaleriaComponent } from './galeria/galeria.component';
+import { StatutComponent } from './statut/statut.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { GaleriaComponent } from './galeria/galeria.component';
     ONasComponent,
     SekcjeComponent,
     GaleriaComponent,
+    StatutComponent,
  
   ],
   imports: [

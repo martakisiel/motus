@@ -1,0 +1,68 @@
+button{
+    z-index: 1;
+}
+.buttonUp {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 1%;
+background-color: rgb(47, 116, 33);
+border-color: aliceblue;
+    width: fit-content;
+    height: fit-content;
+margin-right: 3vw;
+color: aliceblue;
+font-family: 'lato';
+font-size: 2vh;
+border-radius: 0%;
+}
+.arrow {
+    height: 15px;
+    margin: 0px 4px 3px;
+}
+
+
+.text-left{
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+.textStat {
+    
+    text-wrap:wrap ;
+    text-align: left;
+  font-family: "lato";
+  font-size: 2vh;
+  color: aliceblue;
+}
+fieldset {
+    border-width: 5px 0px 0px 0px;
+    border-style: solid;
+    border-color: rgb(47, 116, 33);
+    padding: 0 20vw;
+    /*20 na małym*/
+    filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
+    height: fit-content;
+    width: fit-content;
+  }
+
+  legend {
+    text-align: center;
+    width: 400px;
+    height: 130px;
+    margin-top: -60px;
+    margin-left: 0vw;
+    background-color: black;
+  }
+  .container{
+    margin-top: 20vh;
+    max-width: 979px;
+  }
+@media (min-width: 250px) and (max-width: 399px) {
+    .text-left{
+        padding-left: 0vw;
+        padding-right:0vw;
+    }
+    .text-center{
+        margin: 0px;
+    }
+}

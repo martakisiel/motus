@@ -9,6 +9,7 @@ import { ContactFormsComponent } from './contact-forms/contact-forms.component';
 import { ONasComponent } from './o-nas/o-nas.component';
 import { SekcjeComponent } from './sekcje/sekcje.component';
 import { GaleriaComponent } from './galeria/galeria.component';
+import { StatutComponent } from './statut/statut.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: '#wydarzenia', component: EventsComponent },
   { path: '#wesprzyj-nas', component: ContactFormsComponent },
   { path: '#o-nas', component:  ONasComponent }, 
+  { path: '#o-nas/:id', component:  StatutComponent }, 
   { path: '#sekcje', component:  SekcjeComponent }, 
   { path: '#galeria', component:  GaleriaComponent }, 
   { path: '#noweWydarzenie', component: NewEventComponent },

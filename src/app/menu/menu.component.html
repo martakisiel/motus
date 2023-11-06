@@ -35,21 +35,23 @@
             href="#"
             role="button"
             aria-expanded="false"
-            >O Klubie</a
+            >O nas</a
           >
           <div class="dropdown-menu bgMenu">
             <div>
               <a class="dropdown-item bgMenu" routerLink="#o-nas">To my</a>
             </div>
-            <div><a class="dropdown-item bgMenu" href="#">Dokumenty</a></div>
+            <div>
+              <a class="dropdown-item bgMenu" [routerLink]="['/#o-nas/:statut']"
+                >Statut</a
+              >
+            </div>
           </div>
         </div>
       </li>
       <li>
         <div class="nav-item col-sm-auto m-3 bgMenu">
-          <a class="nav-divnk bgMenu fw-bold" routerLink="#dolacz"
-            >Dołącz do nas!</a
-          >
+          <a class="nav-divnk bgMenu" routerLink="#dolacz">Dołącz do nas!</a>
         </div>
       </li>
       <li class="nav-item">
