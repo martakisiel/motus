@@ -1,27 +1,26 @@
-
-<div class="container">
-    <div>
-        <button
-          type="button"
-          *ngIf="isTopButtonVisible"
-          class="buttonUp btn"
-          (click)="scrollToTop()"
-          data-aos="fade-up"
-          data-aos-duration="3000"
-          data-aos-anchor-placement="top-center"
-        >
-          <img src="assets/up.png" class="arrow" /> top
-        </button>
-      </div>
-<fieldset role="presentation">
+<div>
+  <button
+    type="button"
+    *ngIf="isTopButtonVisible"
+    class="buttonUp btn"
+    (click)="scrollToTop()"
+    data-aos="fade-up"
+    data-aos-duration="3000"
+    data-aos-anchor-placement="top-center"
+  >
+    <img src="assets/up.png" class="arrow" /> top
+  </button>
+</div>
+<div class="row center aktualnosci">
+  <fieldset role="presentation">
     <!--obejmuje wszystkie elementy aktualności-->
     <legend role="presentation">
-      <h2 class="textChanga center mb-2 ps-3">STATUT KLUBU SPORTOWEGO „MOTUS LESKO”</h2>
+      <h2 class="textChanga text-center ps-2 pe-2">
+        STATUT KLUBU SPORTOWEGO „MOTUS LESKO”
+      </h2>
     </legend>
   </fieldset>
-<div class="row">
-  <div class="col-sm textStat">
- 
+  <div class="row textStat">
     <p class="text-center fw-bold fw-bold">
       Rozdział I Postanowienia ogólne<br />
       § 1<br />
@@ -472,4 +471,19 @@
     </p>
   </div>
 </div>
+
+<!-- <div class="container">
+    
+<fieldset role="presentation">
+    <!--obejmuje wszystkie elementy aktualności
+    <legend role="presentation">
+      <h2 class="textChanga center mb-2 ps-3">STATUT KLUBU SPORTOWEGO „MOTUS LESKO”</h2>
+    </legend>
+  </fieldset>
+<div class="row">
+  <div class="col-sm textStat">
+ 
+   
+  </div>
 </div>
+</div> -->
