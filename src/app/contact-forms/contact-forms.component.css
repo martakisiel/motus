@@ -1,6 +1,6 @@
-.bgPic{
+/* .bgPic{
     background: url('src/assets/banner3.jpg') no-repeat center top fixed;
-}
+} */
 .row {
      --bs-gutter-x: 0rem; 
      --bs-gutter-y: 0;
@@ -42,6 +42,7 @@ iframe{
     font-size: 2vh;
     padding-top: 2vh;
     width: auto;
+    background-color: black;
 }
 label{
       color: aliceblue;

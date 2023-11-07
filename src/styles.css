@@ -42,12 +42,12 @@ a:hover {
     color:rgb(47, 116, 33);
 }
 
-.contactForm{
+/* .contactForm{
     color: aliceblue;
     font-size: 3vh;
     background: url('src/assets/banner3.jpg') no-repeat center top fixed;
     width: auto;
-}
+} */
 
 .center{
     display: flex;
