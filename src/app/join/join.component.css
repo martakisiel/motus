@@ -1,3 +1,59 @@
 .container{
     color: aliceblue;
+    margin-top: 10vh;
 }
+fieldset {
+    border-width: 5px 0px 0px 0px;
+    border-style: solid;
+    border-color: rgb(47, 116, 33);
+    padding: 0vw 20vw;
+    /*20 na małym*/
+    margin-bottom: 5vh;
+    filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
+    height: fit-content;
+    width: fit-content;
+  }
+  
+  legend {
+    width: 260px;
+    /*50vw na małym*/
+    height: 50px;
+    margin-top: -42px;
+    margin-left: 0vw;
+    /*20 na małym*/
+    background-color: black;
+  }
+  .textDiv {
+   
+    text-align: start;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+   
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+    
+    /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
+  }
+  .a btnG {
+    color: rgb(47, 116, 33);
+    box-shadow: inset;
+  }
+  .btnG {
+    max-width: 50vw;
+    height: 7vh;
+    width: 15vw;
+    z-index: 1;
+    background-color: rgb(20, 110, 188);
+    color: rgb(47, 116, 33);
+  }
+  .div{
+    background-color: rgb(47, 116, 33);
+    height: fit-content;
+    padding:2% 2% 2% 2%;
+    width: auto;
+  }
+  
+  
