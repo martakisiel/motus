@@ -43,15 +43,15 @@ fieldset {
   }
   .btnG {
     max-width: 50vw;
-    height: 7vh;
-    width: 15vw;
+    height: 70vh;
+    width: 25vw;
     z-index: 1;
     background-color: rgb(20, 110, 188);
     color: rgb(47, 116, 33);
   }
   .div{
     background-color: rgb(47, 116, 33);
-    height: fit-content;
+    height: 70vh;
     padding:2% 2% 2% 2%;
     width: auto;
   }
