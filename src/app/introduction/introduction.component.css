@@ -46,11 +46,13 @@
   height: 10vh;
   width: 30vw;
   z-index: 1;
-  background-color: aliceblue;
-  color: rgb(47, 116, 33);
+  background-color: rgb(20, 110, 188);
+  color: aliceblue;
   border-color: aliceblue;
 }
-
+.btn1:hover {
+  background-color: rgb(20, 110, 188);
+}
 .row2 {
   margin-top: 10vh;
   display: flex;
@@ -139,7 +141,7 @@ button:hover {
 }
 
 .aOnButton {
-  color: rgb(47, 116, 33);
+  color: aliceblue;
   box-shadow: inset;
 }
 

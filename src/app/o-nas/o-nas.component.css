@@ -1,24 +1,24 @@
-button{
-    z-index: 1;
+button {
+  z-index: 1;
 }
 .buttonUp {
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    padding: 1%;
-background-color: rgb(47, 116, 33);
-border-color: aliceblue;
-    width: fit-content;
-    height: fit-content;
-margin-right: 3vw;
-color: aliceblue;
-font-family: 'lato';
-font-size: 2vh;
-border-radius: 0%;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 1%;
+  background-color: rgb(47, 116, 33);
+  border-color: aliceblue;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 3vw;
+  color: aliceblue;
+  font-family: "lato";
+  font-size: 2vh;
+  border-radius: 0%;
 }
 .arrow {
-    height: 15px;
-    margin: 0px 4px 3px;
+  height: 15px;
+  margin: 0px 4px 3px;
 }
 .row1 {
   display: flex;
@@ -193,31 +193,30 @@ legend {
   font-family: "lato";
   font-size: 4vh;
   color: aliceblue;
-  padding: 8vh 6vh 3vh 3vh;
+  padding: 5vh 6vh 1vh 3vh;
 }
 .text {
-  margin: 0px;
-  padding-top: 3px;
+  padding: 0vh 6vh 3vh 3vh;
   font-family: "lato";
   font-size: 2vh;
   color: aliceblue;
 }
 
 .profileImg {
-  width: auto;
-  height: 25vh;
+  width: 40vh;
+  height: 40vh;
   display: flex;
   padding-top: 3vh;
 }
 .row3 {
-    margin-top: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-.text-left{
-    padding-left: 20vw;
-    padding-right: 20vw;
+  margin-top: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-left {
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
 @media (min-width: 250px) and (max-width: 399px) {
   .names {
@@ -386,13 +385,13 @@ legend {
     height: fit-content;
     width: fit-content;
   }
-  .text-left{
+  .text-left {
     padding-left: 0vw;
-    padding-right:0vw;
-}
-.text-center{
+    padding-right: 0vw;
+  }
+  .text-center {
     margin: 0px;
-}
+  }
 }
 @media (min-width: 400px) and (max-width: 700px) {
   .row1 {
@@ -547,9 +546,8 @@ legend {
     height: fit-content;
     width: fit-content;
   }
-  .text-left{
+  .text-left {
     padding-left: 0vw;
-    padding-right:0vw;
-   
-}
+    padding-right: 0vw;
+  }
 }

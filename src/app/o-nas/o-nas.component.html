@@ -35,51 +35,23 @@
       </legend>
     </fieldset>
   </div>
-  <div class="row2">
-    <div class="col namesDiv">
-      <span class="names">
-        Fabian <br />
-        Mach<br />
-        <p class="text">e-mail</p>
-        <p class="text">
-          <a href="http://machfabian.pl/" target="_blank">www</a>
-        </p>
-      </span>
-      <img src="assets/profilSample.JPG" alt="Mach" class="profileImg" />
-    </div>
-    <div class="col namesDiv">
-      <span class="names">
-        Beata <br />
-        Mach<br />
-        <p class="text">e-mail</p>
-        <p class="text">
-          <a href="http://machfabian.pl/" target="_blank">www</a>
-        </p>
-      </span>
-      <img src="assets/profilSample.JPG" alt="Mach" class="profileImg" />
-    </div>
-    <div class="col namesDiv">
-      <span class="names">
-        Kamil <br />
-        X<br />
-        <p class="text">e-mail</p>
-        <p class="text">
-          <a href="http://machfabian.pl/" target="_blank">www</a>
-        </p>
-      </span>
-      <img src="assets/profilSample.JPG" alt="Mach" class="profileImg" />
-    </div>
-    <div class="col namesDiv">
-      <span class="names">
-        X <br />
-        X<br />
-        <p class="text">e-mail</p>
-        <p class="text">
-          <a href="http://machfabian.pl/" target="_blank">www</a>
-        </p>
-      </span>
-      <img src="assets/profilSample.JPG" alt="Mach" class="profileImg" />
-    </div>
-  </div>
 
+  <div class="row center">
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let slide of boardImg">
+        <ng-template carouselSlide [id]="slide.id">
+          <div class="profileImg">
+            <img [src]="slide.url" [alt]="slide.alt" />
+          </div>
+          <div class="names">
+            <p>{{ slide.name }}</p>
+            <p>{{ slide.surname }}</p>
+          </div>
+          <div class="text">
+            <p>{{ slide.position }}</p>
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
 </div>

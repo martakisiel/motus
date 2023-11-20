@@ -2,133 +2,137 @@
     background: url('src/assets/banner3.jpg') no-repeat center top fixed;
 } */
 .row {
-     --bs-gutter-x: 0rem; 
-     --bs-gutter-y: 0;
+  --bs-gutter-x: 0rem;
+  --bs-gutter-y: 0;
 }
-.konto{
-    background-color: rgb(47, 116, 33);
-    color: rgb(242, 255, 0);
-    font-family: 'lato';
-    font-size: 3vh;
-    text-align: center;  
-    padding-top: 1%;
+.konto {
+  background-color: rgb(20, 110, 188);
+  color: aliceblue;
+  font-family: "lato";
+  font-size: 3vh;
+  text-align: center;
+  padding-top: 1%;
 }
-.colCon{
-    height: 15vh;
-    width: 30vw;
-    background-color: rgb(47, 116, 33);
-    color: aliceblue;
-    font-family: 'lato';
-    font-size: 2vh;
-    text-align: end;
-    
+.colCon {
+  height: 15vh;
+  width: 30vw;
+  background-color: rgb(47, 116, 33);
+  color: aliceblue;
+  font-family: "lato";
+  font-size: 2vh;
+  text-align: end;
 }
-.col-md{
-    margin-left: auto;
+.col-md {
+  margin-left: auto;
   margin-right: auto;
 }
 .col-sm {
-    flex: 0 0 auto;
-    width: 30vw;
-    padding-left: 15vw;
+  flex: 0 0 auto;
+  width: 30vw;
+  padding-left: 15vw;
 }
-iframe{
-    height:50vh;
-    width:80vw;
+iframe {
+  height: 50vh;
+  width: 80vw;
 }
-.contactForm{
-    color: aliceblue;
-    font-family: 'lato';
-    font-size: 2vh;
-    padding-top: 2vh;
-    width: auto;
-    background-color: black;
+.contactForm {
+  color: aliceblue;
+  font-family: "lato";
+  font-size: 2vh;
+  padding-top: 2vh;
+  width: auto;
+  background-color: black;
 }
-label{
-      color: aliceblue;
-    font-family: 'lato';
-    font-size: 2vh;
-    margin-top: 2vh;
+label {
+  color: aliceblue;
+  font-family: "lato";
+  font-size: 2vh;
+  margin-top: 2vh;
 }
-input{
-    width: 20vw;
-    margin-top: 1vh;
+input {
+  width: 20vw;
+  margin-top: 1vh;
 }
-textarea{
-    width: 30vw;
+textarea {
+  width: 30vw;
+}
+button {
+  width: 20vw;
+  height: 7vh;
+  background-color: rgb(47, 116, 33);
+  color: aliceblue;
+  font-family: "lato";
+  font-size: 2vh;
+  border-style: hidden;
+  border-radius: 0%;
+  padding: 1%;
+}
+.buttonBlue {
+  width: auto;
+  height: auto;
+  background-color: rgb(20, 110, 188);
+  color: aliceblue;
+  font-family: "lato";
+  font-size: 2vh;
+  border-style: hidden;
+  border-radius: 0%;
+  padding: 1%;
+}
+.copyBtn {
+  width: auto;
+  height: auto;
+}
 
+.order1 {
+  order: 1;
 }
-button{
-    width: 20vw;
-    height: 7vh;
-    background-color: rgb(47, 116, 33);
-    color: aliceblue;
-    font-family: 'lato';
-    font-size: 2vh;
-    border-style: hidden;
-    border-radius: 0%;
-    padding: 1%;
-}
-.copyBtn{
-    width: auto;
-    height: auto;
-}
-.copyBtnKonto{
-    width: auto;
-    height: auto;
-    color: rgb(242, 255, 0);
-}
-
-.order1{
-    order: 1;
-}
-.order2{
-    order: 2;
+.order2 {
+  order: 2;
 }
 @media screen and (max-width: 650px) {
-    .col-md{
-        margin-left: auto;
-      margin-right: auto;
-      padding-left: 4vw;
-    }
-    .col-sm {
-        flex: 0 0 auto;
-        width: 75%;
-        padding-left: 10vw;
-    }
-    .colCon{
-        height: 15vh;
-        width: 85vw;
-        background-color: rgb(47, 116, 33);
-        color: aliceblue;
-        font-family: 'lato';
-        font-size: 2vh;
-        text-align: end;
-    }
-    .konto{
-        background-color: rgb(47, 116, 33);
-        color: rgb(242, 255, 0);
-        font-family: 'lato';
-        font-size: 2vh;
-        text-align: center;  
-        padding: 2% 3% 0% 3%;
-    }
-    input{
-        width: 60vw;
-        margin-top: 1vh;
-    }
-    textarea{
-        width: 75vw;
-    }
-    button{
-        width: 60vw;
-        height: 7vh;
-    }
-    .order1{
-        order: 2;
-        padding-top: 5vh;
-    }
-    .order2{
-        order: 1;
-    }
+  .col-md {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4vw;
+  }
+  .col-sm {
+    flex: 0 0 auto;
+    width: 75%;
+    padding-left: 10vw;
+  }
+  .colCon {
+    height: 15vh;
+    width: 85vw;
+    background-color: rgb(47, 116, 33);
+    color: aliceblue;
+    font-family: "lato";
+    font-size: 2vh;
+    text-align: end;
+  }
+  .konto {
+    background-color: rgb(47, 116, 33);
+    color: rgb(242, 255, 0);
+    font-family: "lato";
+    font-size: 2vh;
+    text-align: center;
+    padding: 2% 3% 0% 3%;
+  }
+  input {
+    width: 60vw;
+    margin-top: 1vh;
+  }
+  textarea {
+    width: 75vw;
+  }
+  button {
+    width: 60vw;
+    height: 7vh;
+  }
+  .order1 {
+    order: 2;
+    padding-top: 5vh;
+  }
+  .order2 {
+    order: 1;
+  }
 }

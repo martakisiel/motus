@@ -31,7 +31,7 @@ import { ONasComponent } from './o-nas/o-nas.component';
 import { SekcjeComponent } from './sekcje/sekcje.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { StatutComponent } from './statut/statut.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,6 +68,7 @@ import { StatutComponent } from './statut/statut.component';
     MatInputModule, 
     MatIconModule,
     MatSnackBarModule,
+    CarouselModule 
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]

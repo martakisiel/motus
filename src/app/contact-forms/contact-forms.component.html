@@ -1,96 +1,232 @@
 <!-- <app-welcome-banner></app-welcome-banner> -->
-<div class="container mt-4 mb-4 ">
-   
-    <div class="row mt-4 mb-4 konto center">
-       <p >Możesz nas wesprzeć wysyłając darowiznę<br>
-        na numer konta KS Motus:<br>
-         60 1020 2980 0000 2502 0152 4834
-         <button (click)="copyText('60 1020 2980 0000 2502 0152 4834')" (click)="showNotification()" class="copyBtnKonto"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"/>
-                </svg>
-            </button>
-        </p>
-       
-    </div> 
-    
+<div class="container mt-4 mb-4">
+  <div class="row mt-4 mb-4 konto center">
+    <p>
+      Możesz nas wesprzeć wysyłając darowiznę<br />
+      na numer konta KS Motus:<br />
+      60 1020 2980 0000 2502 0152 4834
+      <button
+        (click)="copyText('60 1020 2980 0000 2502 0152 4834')"
+        (click)="showNotification()"
+        class="copyBtnKonto buttonBlue"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-copy"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"
+          />
+        </svg>
+      </button>
+    </p>
+  </div>
 </div>
 
 <div class="row">
-    <div class="col center">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8720.810627329622!2d22.32931435005912!3d49.471046538514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473c0b18e0d77e59%3A0x94c9aa6dd254f51d!2s38-600%20Lesko!5e0!3m2!1sen!2spl!4v1698090874484!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+  <div class="col center">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8720.810627329622!2d22.32931435005912!3d49.471046538514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473c0b18e0d77e59%3A0x94c9aa6dd254f51d!2s38-600%20Lesko!5e0!3m2!1sen!2spl!4v1698090874484!5m2!1sen!2spl"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
 </div>
-<div class="container-fluid pt-1 contactForm ">
-    <div class="row align-items-center mt-5 ">
-      <div class="col-md order1">  
-        <div class="col-sm ">Napisz do nas jeśli masz jakieś pytania:
-            <div class="mt-3">
-                <form id="myForm" #form="ngForm" (ngSubmit)="onFormSubmit(form.value)"
-                    action="https://formsubmit.co/ksmotus@gmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="New submission!">
-                    <label for="fname">Imię:</label><br>
-                    <input type="text" id="fname" name="fname" #firstNameInput="ngModel" ngModel><br>
-                    <label for="lname">Nazwisko:</label><br>
-                    <input type="text" id="lname" name="lname" #lastNameInput="ngModel" ngModel><br>
-                    <label for="email">e-mail:</label><br>
-                    <input type="email" id="email" name="email" #emailInput="ngModel" ngModel><br>
-                    <label for="exampleFormControlTextarea1" class="form-label">Wiadomość:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="desc"
-                        #descInput="ngModel" ngModel></textarea>
-                    <!-- <label for="file" class="form-label">plik</label>
+<div class="container-fluid pt-1 contactForm">
+  <div class="row align-items-center mt-5">
+    <div class="col-md order1">
+      <div class="col-sm">
+        Napisz do nas jeśli masz jakieś pytania:
+        <div class="mt-3">
+          <form
+            id="myForm"
+            #form="ngForm"
+            (ngSubmit)="onFormSubmit(form.value)"
+            action="https://formsubmit.co/ksmotus@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New submission!" />
+            <label for="fname">Imię:</label><br />
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              #firstNameInput="ngModel"
+              ngModel
+            /><br />
+            <label for="lname">Nazwisko:</label><br />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              #lastNameInput="ngModel"
+              ngModel
+            /><br />
+            <label for="email">e-mail:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              #emailInput="ngModel"
+              ngModel
+            /><br />
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Wiadomość:</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="4"
+              name="desc"
+              #descInput="ngModel"
+              ngModel
+            ></textarea>
+            <!-- <label for="file" class="form-label">plik</label>
                     <input class="form-control" name="file" type="file" id="formFile" #formFileInput="ngModel" ngModel (change)="onFileChange($event)">  -->
-                </form>
-                <button class="mt-3" type="submit" value="add form"
-                    (click)="onFormSubmit(form.value); onNameClicked(); clearFields(firstNameInput, lastNameInput, emailInput, descInput)">Wyślij</button><br>
-                <p class="mt-3">{{message}}</p>
-            </div>
+          </form>
+          <button
+            class="mt-3"
+            type="submit"
+            value="add form"
+            (click)="
+              onFormSubmit(form.value);
+              onNameClicked();
+              clearFields(firstNameInput, lastNameInput, emailInput, descInput)
+            "
+          >
+            Wyślij</button
+          ><br />
+          <p class="mt-3">{{ message }}</p>
         </div>
-    </div>  
-<div class="col-md order2">
-    <div class="w-100"></div>
-    <div class="col-sm ps-0 colCon center">
-         
+      </div>
+    </div>
+    <div class="col-md order2">
+      <div class="w-100"></div>
+      <div class="col-sm ps-0 colCon center">
         <a href="mailto:ksmotus@gmail.com">
-            <i class="fa-solid fa-at me-1" style="color: #ffffff;"></i>
-            ksmotus@gmail.com
+          <i class="fa-solid fa-at me-1" style="color: #ffffff"></i>
+          ksmotus@gmail.com
         </a>
-            <button (click)="copyText('ksmotus@gmail.com')" (click)="showNotification()" class="copyBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"/>
-                </svg>
-            </button>
+        <button
+          (click)="copyText('ksmotus@gmail.com')"
+          (click)="showNotification()"
+          class="copyBtn"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-copy"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-sm-4 colCon center">
+        <i class="fa-solid fa-mobile-screen me-1" style="color: #ffffff"></i
+        ><a href="+48515052545"> +48 515 052 545</a>
+        <button
+          (click)="copyText('515 052 545')"
+          (click)="showNotification()"
+          class="copyBtn"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-copy"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-sm-4 colCon center">
+        <i class="fa-solid fa-envelope me-1" style="color: #ffffff"></i> ul.
+        Osiedlowa 17, 38-600 Lesko
+        <button
+          (click)="copyText('ul. Osiedlowa 17, 38-600 Lesko')"
+          (click)="showNotification()"
+          class="copyBtn"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-copy"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-sm-4 colCon center">
+        NIP: 6881306830
+        <button
+          (click)="copyText('6881306830')"
+          (click)="showNotification()"
+          class="copyBtn"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-copy"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"
+            />
+          </svg>
+        </button>
+        | REGON: 525809436
+        <button
+          (click)="copyText('525809436')"
+          (click)="showNotification()"
+          class="copyBtn"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-copy"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
-    <div class="w-100"></div>
-    <div class="col-sm-4 colCon center">
-        <i class="fa-solid fa-mobile-screen me-1" style="color: #ffffff;"></i><a href="+48515052545">
-        +48 515 052 545</a>
-        <button (click)="copyText('515 052 545')" (click)="showNotification()" class="copyBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"/>
-                </svg>
-            </button>
-    </div>
-    <div class="w-100"></div>
-        <div class="col-sm-4 colCon center">
-            <i class="fa-solid fa-envelope me-1" style="color: #ffffff;"></i> ul. Osiedlowa
-            17, 38-600 Lesko 
-            <button (click)="copyText('ul. Osiedlowa 17, 38-600 Lesko')" (click)="showNotification()" class="copyBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"/>
-                    </svg>
-                </button>
-        </div>
-            <div class="w-100"></div>
-            <div class="col-sm-4 colCon center">
-                NIP: 6881306830
-                <button (click)="copyText('6881306830')" (click)="showNotification()" class="copyBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"/>
-                        </svg>
-                    </button>
-                | REGON: 525809436 
-                <button (click)="copyText('525809436')" (click)="showNotification()" class="copyBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"/>
-                        </svg>
-                    </button>
-            </div>
-
-    
-</div>
+  </div>
 </div>

@@ -30,6 +30,13 @@ export class ServiceService {
 
   ]
 
+  private boardImg: BoardImg[] = [
+    { url: "assets/boardImg/1.JPG", alt: "CEO", name:"Fabian", surname:"Mach", position:"Prezes", id:"0" },
+    { url: "assets/boardImg/2.JPG", alt: "CEO", name:"Beata", surname:"Mach", position:"Viceprezes",id:"1"},
+    { url: "assets/boardImg/2.JPG", alt: "CEO", name:"Kamil", surname:"X", position:"Skarbnik",id:"2"  },
+    { url: "assets/boardImg/3.JPG", alt: "CEO", name:"XXXXXX", surname:"YYYYYY", position:"COS",id:"3" },
+  ]
+
 
   getAktualnosciFile(): Observable<string> {
     return this.http.get('assets/teksty/aktualnosci.txt', { responseType: 'text' });
@@ -51,6 +58,10 @@ export class ServiceService {
   getSelectedImageIndex() {
     return this.selectedImageIndex;
   }
+getBoardImg(){
+  return this.boardImg;
+}
+
 }
 export interface Sponsors {
   alt: string | undefined;
@@ -69,4 +80,13 @@ export interface Aktualnosci {
   date: string;
   content: string;
 
+}
+
+export interface BoardImg{
+  url: string;
+  alt: string;
+  name: string;
+  surname: string;
+  position: string;
+  id: string;
 }
