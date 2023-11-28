@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./sekcje.component.css']
 })
 export class SekcjeComponent {
+constructor() { }
+
 
 }
