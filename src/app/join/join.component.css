@@ -1,6 +1,5 @@
-.container {
-  color: aliceblue;
-  margin-top: 10vh;
+.marginTop{
+  margin-top: 15vh;
 }
 fieldset {
   border-width: 5px 0px 0px 0px;
@@ -24,11 +23,12 @@ legend {
   background-color: black;
 }
 .textDiv {
-  text-align: start;
+  text-align: center;
   align-items: center;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-
+ 
   font-family: "lato";
   font-size: 2vh;
   color: aliceblue;
@@ -53,7 +53,7 @@ legend {
   z-index: 1;
   background-color: rgb(20, 110, 188);
   cursor: pointer;
-  margin-top: 7vh;
+ 
 }
 .btn:hover {
   background-color: rgb(20, 110, 188);
@@ -61,9 +61,15 @@ legend {
 .div {
   text-align: center;
   background-color: rgb(47, 116, 33);
-  height: 30vh;
+  height: fit-content;
   padding: 2% 2% 2% 2%;
-  width: 30vw;
+  width: 25vw;
+}
+.number{
+  font-family: "lato";
+  font-size: 7vh;
+  color: aliceblue;
+
 }
 .div1 {
   background-color: rgb(47, 116, 33);
