@@ -28,10 +28,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { AktualnosciComponent } from './aktualnosci/aktualnosci.component';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
 import { ONasComponent } from './o-nas/o-nas.component';
-import { SekcjeComponent } from './sekcje/sekcje.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { StatutComponent } from './statut/statut.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { SportGroupsComponent } from './sport-groups/sport-groups.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,9 +49,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     NewEventComponent,
     AktualnosciComponent,
     ONasComponent,
-    SekcjeComponent,
     GaleriaComponent,
     StatutComponent,
+    SportGroupsComponent,
  
   ],
   imports: [

@@ -7,9 +7,9 @@ import { AppComponent } from './app.component';
 import { NewEventComponent } from './new-event/new-event.component';
 import { ContactFormsComponent } from './contact-forms/contact-forms.component';
 import { ONasComponent } from './o-nas/o-nas.component';
-import { SekcjeComponent } from './sekcje/sekcje.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { StatutComponent } from './statut/statut.component';
+import { SportGroupsComponent } from './sport-groups/sport-groups.component';
 
 
 const routes: Routes = [
@@ -19,14 +19,14 @@ const routes: Routes = [
   { path: '#wesprzyj-nas', component: ContactFormsComponent },
   { path: '#o-nas', component:  ONasComponent }, 
   { path: '#o-nas/:id', component:  StatutComponent }, 
-  { path: '#sekcje', component:  SekcjeComponent }, 
+  { path: '#sekcje', component:  SportGroupsComponent }, 
   { path: '#galeria', component:  GaleriaComponent }, 
   { path: '#noweWydarzenie', component: NewEventComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(routes, { useHash: true, scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

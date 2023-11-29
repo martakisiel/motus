@@ -21,6 +21,7 @@ export class ServiceService {
   //   { title: "assets/galerySample/gs5.JPG", date: "10.10.2023", content:"Mecz na hali" }
 
   // ]
+  //ZAMIENIĆ WSZYSTKO TABLICE Z SERVICE NA OSOBNE PLIKI ZACZYTYWANE Z FOLDEROW!!!!
   private galerySample: GalerySample[] = [
     { url: "assets/galerySample/gs1.JPG", alt: "San" },
     { url: "assets/galerySample/gs2.JPG", alt: "serw" },
@@ -41,7 +42,9 @@ export class ServiceService {
   getAktualnosciFile(): Observable<string> {
     return this.http.get('assets/teksty/aktualnosci.txt', { responseType: 'text' });
   }
-
+  getSportGroupsList(): Observable<string> {
+    return this.http.get('assets/sportGroups/sportGroupsList.txt', { responseType: 'text' });
+  }
 
   getLogoSponsors() {
     return this.logoSponsors;
@@ -49,16 +52,13 @@ export class ServiceService {
   getGalerySample() {
     return this.galerySample;
   }
-
-
   setSelectedImageIndex(index: number) {
     this.selectedImageIndex = index;
   }
-
   getSelectedImageIndex() {
     return this.selectedImageIndex;
   }
-getBoardImg(){
+  getBoardImg(){
   return this.boardImg;
 }
 
@@ -79,7 +79,6 @@ export interface Aktualnosci {
   title: string;
   date: string;
   content: string;
-
 }
 
 export interface BoardImg{
@@ -88,5 +87,12 @@ export interface BoardImg{
   name: string;
   surname: string;
   position: string;
+  id: string;
+}
+
+export interface SportGroupsList{
+  url: string;
+  alt: string;
+  title: string;
   id: string;
 }
