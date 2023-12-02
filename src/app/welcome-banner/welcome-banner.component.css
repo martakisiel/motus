@@ -1,23 +1,24 @@
-.welcomeBanner{
-background: url(src/assets/banner1.jpg) no-repeat center top fixed;
-/* background-repeat: no-repeat; */
-/* background-position: top; */
-background-size: cover;
-height: 80vh;
-margin-top: -530px;
+.welcomeBanner {
+  background: url(src/assets/banner1.jpg) no-repeat center top fixed;
+  /* background-repeat: no-repeat; */
+  /* background-position: top; */
+  background-size: cover;
+  height: 80vh;
+  margin-top: -250px;
 }
 .welcomeText {
-    font-size: 9vh;
-    font-family: 'Changa';
-    color: aliceblue;
-        /*rgb(47, 116, 33)*/
-    /* padding-right: 11%; */
-    margin-top: 9%;
-    background: none;
-    z-index: 0;
+  font-size: 9vh;
+  font-family: "Changa";
+  color: aliceblue;
+  /*rgb(47, 116, 33)*/
+  /* padding-right: 11%; */
+  margin-top: 10vh;
+  background: none;
+  z-index: 0;
 }
 @media (max-width: 400px) {
-.welcomeBanner{
+  .welcomeBanner {
     height: 90vh;
-}
+    margin-top: -390px;
+  }
 }

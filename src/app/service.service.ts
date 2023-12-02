@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { text } from '@fortawesome/fontawesome-svg-core';
 import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
@@ -31,13 +32,11 @@ export class ServiceService {
 
   ]
 
-  private boardImg: BoardImg[] = [
-    { url: "assets/boardImg/1.JPG", alt: "CEO", name:"Fabian", surname:"Mach", position:"Prezes", id:"0" },
-    { url: "assets/boardImg/2.JPG", alt: "CEO", name:"Beata", surname:"Mach", position:"Viceprezes",id:"1"},
-    { url: "assets/boardImg/2.JPG", alt: "CEO", name:"Kamil", surname:"X", position:"Skarbnik",id:"2"  },
-    { url: "assets/boardImg/3.JPG", alt: "CEO", name:"XXXXXX", surname:"YYYYYY", position:"COS",id:"3" },
-  ]
+ 
 
+  getBoardImg():Observable<string>{
+    return this.http.get('assets/zarzad/zarzadLista.txt', {responseType:'text'});
+  }
 
   getAktualnosciFile(): Observable<string> {
     return this.http.get('assets/teksty/aktualnosci.txt', { responseType: 'text' });
@@ -58,9 +57,9 @@ export class ServiceService {
   getSelectedImageIndex() {
     return this.selectedImageIndex;
   }
-  getBoardImg(){
-  return this.boardImg;
-}
+//   getBoardImg(){
+//   return this.boardImg;
+// }
 
 }
 export interface Sponsors {

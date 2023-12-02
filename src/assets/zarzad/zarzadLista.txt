@@ -1,0 +1,33 @@
+ [
+    { 
+      "url": "assets/boardImg/1.JPG", 
+      "alt": "CEO", 
+      "name":"Fabian", 
+      "surname":"Mach", 
+      "position":"Prezes",
+      "id":"0" },
+    { 
+      "url": "assets/boardImg/2.JPG",
+      "alt": "CEO",
+      "name":"Beata", 
+      "surname":"Mach", 
+      "position":"Viceprezes", 
+      "id":"1"
+      },
+    { 
+      "url": "assets/boardImg/2.JPG",
+      "alt": "CEO", 
+      "name":"Kamil", 
+      "surname":"Gronek", 
+      "position":"Skarbnik", 
+      "id":"2"
+      },
+    { 
+      "url": "assets/boardImg/3.JPG",
+      "alt": "CEO", 
+      "name":"Edyta", 
+      "surname":"Gronek", 
+      "position":"???", 
+      "id":"3"
+      }
+  ]

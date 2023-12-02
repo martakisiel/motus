@@ -48,10 +48,11 @@
   z-index: 1;
   background-color: rgb(20, 110, 188);
   color: aliceblue;
-  border-color: aliceblue;
 }
-.btn1:hover {
+
+.btn1:hover{
   background-color: rgb(20, 110, 188);
+
 }
 .row2 {
   margin-top: 10vh;
@@ -120,21 +121,6 @@
   color: aliceblue;
 }
 
-/* .Pic {
-    height: 40vh;
-    padding: 50px;
-    width: 35vw;
-    z-index: 1;
-    margin-right: -25px;
-
-}
-
-.Pic2 {
-    padding: 50px;
-    z-index: 1;
-
-
-} */
 
 button:hover {
   background-color: rgb(0, 0, 0);
@@ -219,9 +205,7 @@ button:hover {
     height: 10vh;
     /* width: 25vw; */
     z-index: 1;
-    background-color: aliceblue;
-    color: rgb(47, 116, 33);
-    border-color: aliceblue;
+    background-color: rgb(20, 110, 188);
   }
 
   .intro {
@@ -353,9 +337,8 @@ button:hover {
     height: 10vh;
     /* width: 25vw; */
     z-index: 1;
-    background-color: aliceblue;
-    color: rgb(47, 116, 33);
-    border-color: aliceblue;
+ 
+
   }
 
   .intro {

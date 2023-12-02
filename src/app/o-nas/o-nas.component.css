@@ -127,15 +127,6 @@ button {
   color: aliceblue;
 }
 
-button:hover {
-  background-color: rgb(0, 0, 0);
-}
-
-.aOnButton {
-  color: rgb(47, 116, 33);
-  box-shadow: inset;
-}
-
 .onPicCenter {
   position: absolute;
   top: 110vh;
@@ -226,11 +217,10 @@ legend {
     padding: 6vh 6vh 3vh 3vh;
   }
   .profileImg {
-    width: auto;
-    height: 23vh;
+    width: 40vh;
+    height: 40vh;
     display: flex;
     padding-top: 3vh;
-    padding-right: 3vh;
   }
   .row1 {
     display: flex;

@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { BoardImg, ServiceService } from '../service.service';
 @Component({
@@ -34,10 +34,15 @@ export class ONasComponent {
 
   boardImg: BoardImg[] = [];
   
-  constructor(private serviceService:ServiceService ){
-    this.boardImg = serviceService.getBoardImg();
+  constructor(private serviceService:ServiceService){
   }
+  
+ngOnInit() {
+  this.serviceService.getBoardImg().subscribe((response:string) => { 
+    this.boardImg = JSON.parse(response) as BoardImg[];
+  });
 
+}
   isTopButtonVisible: boolean = false;
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: any) {
