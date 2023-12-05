@@ -17,6 +17,6 @@ export class AktualnosciComponent implements OnInit {
     });
   }
   getRemainingAktualnosci(): Aktualnosci[] {
-    return this.aktualnosci.slice(2); // Returns an array starting from the 4th element
+    return this.aktualnosci.slice(2); // Returns an array starting from the 1st element
   }
 }

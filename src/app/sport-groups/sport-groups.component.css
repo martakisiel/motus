@@ -1,19 +1,17 @@
 .card {
-  width: 20vw;
-  /*na małym ekranie zmienić do 100%*/
+  border: 0%;
+  width: 80%;
   background-color: black;
   margin-bottom: 2vh;
-  border: 0%;
 }
 .card-body {
   border: 0%;
   background-color: rgb(47, 116, 33);
 }
 .card-img-top {
-  object-fit: cover;
-  object-position: top;
-  width: 20vw;
-  height: auto;
+    object-fit: cover;
+    object-position: top;
+    height: 40vh;
   /* margin: 10px 5px 2px 1px; */
 }
 

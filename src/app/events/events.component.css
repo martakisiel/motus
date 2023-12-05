@@ -1,133 +1,147 @@
-.row{
-    /* WAZNE! INACZEJ STRONA POSZERZA SIĘ POZA MENU */
-    border: 0px;
-    padding:0%;
-    margin: 0px;
+.row {
+  /* WAZNE! INACZEJ STRONA POSZERZA SIĘ POZA MENU */
+  border: 0px;
+  padding: 0%;
+  margin: 0px;
 }
-.aktualnosci{
-    margin-top: 15vh;
+.aktualnosci {
+  margin-top: 15vh;
 }
-.intro{
-    margin-top: 10vh;
+.intro {
+  margin-top: 10vh;
 }
 .actualnosciOverflow {
-
-    width: fit-content;
-    height: fit-content;
-    overflow: auto;
+  width: fit-content;
+  height: fit-content;
+  overflow: auto;
 }
 
 .date {
-    color: aliceblue;
-    font-family: 'lato';
-    font-style: italic;
-    font-size: 2vh;
-    margin-bottom: 0px;
+  color: aliceblue;
+  font-family: "lato";
+  font-style: italic;
+  font-size: 2vh;
+  margin-bottom: 0px;
 }
 
 .card {
-    width: 80%;
-    /*na małym ekranie zmienić do 100%*/
-    background-color:black;
-    margin-bottom: 2vh;
-    border: 0%;
+  width: 100%;
+  /*na małym ekranie zmienić do 100%*/
+  background-color: black;
+  margin-bottom: 2vh;
+  border: 0%;
 }
-.card-body{
-    border: 0%;
-    background-color: rgb(47, 116, 33);
-
+.card-body {
+  border: 0%;
+  background-color: rgb(47, 116, 33);
 }
 .card-img-top {
-    object-fit: cover;
-    object-position: top;
-    height: 40vh;
-
+  object-fit: cover;
+  object-position: top;
+  height: 40vh;
 }
 .card-title {
-    color: aliceblue;
-    margin-bottom: 0%;
-    font-family: 'lato';
-    font-size: 3vh;
+  color: aliceblue;
+  margin-bottom: 0%;
+  font-family: "lato";
+  font-size: 3vh;
 }
 .line-clamp4 {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;  
-  }
-  .module {
-    width: 200px;
-    margin: 0 0 1em 0;
-    overflow: hidden;
-  }
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.module {
+  margin: 0 0 1em 0;
+  overflow: hidden;
+}
 .card-text:last-child {
-    color: aliceblue;
-    margin-bottom: 0;
-    margin-top: 15px;
-    font-family: 'lato';
-    font-size: 2vh;
-      /* text truncation */
-    
+  color: aliceblue;
+  margin-bottom: 0;
+  margin-top: 15px;
+  font-family: "lato";
+  font-size: 2vh;
+  /* text truncation */
 }
 
 fieldset {
+  border-width: 5px 0px 0px 0px;
+  border-style: solid;
+  border-color: rgb(47, 116, 33);
+  padding: 0 30vw;
+  /*20 na małym*/
+  filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
+  height: fit-content;
+  width: fit-content;
+  margin-bottom: 3%;
+}
 
+legend {
+  width: 260px;
+  /*50vw na małym*/
+  height: 50px;
+  margin-top: -24px;
+  margin-left: -6vw;
+  /*20 na małym*/
+  background-color: black;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+button {
+  z-index: 1;
+}
+.buttonUp {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 1%;
+  background-color: rgb(47, 116, 33);
+  border-color: aliceblue;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 3vw;
+  color: aliceblue;
+  font-family: "lato";
+  font-size: 2vh;
+  border-radius: 0%;
+}
+.arrow {
+  height: 15px;
+  margin: 0px 4px 3px;
+}
+@media screen and (max-width: 650px) {
+  .intro {
+    margin-top: 5vh;
+  }
+  legend {
+    width: 50vw;
+    /*50vw na małym*/
+    height: 50px;
+    margin-top: -24px;
+    margin-left: 0vw;
+    /*20 na małym*/
+    background-color: black;
+  }
+
+  fieldset {
     border-width: 5px 0px 0px 0px;
     border-style: solid;
     border-color: rgb(47, 116, 33);
-    padding: 0 30vw;
+    padding: 0 20vw;
     /*20 na małym*/
     filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
     height: fit-content;
     width: fit-content;
-    margin-bottom: 3%;
-}
+  }
 
-legend {
-    width: 260px;
-    /*50vw na małym*/
-    height: 50px;
-    margin-top: -24px;
-    margin-left: 1vw;
-    /*20 na małym*/
-    background-color: black;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-}
-
-@media screen and (max-width: 650px) {
-    
-    .intro{
-        margin-top: 5vh;
-    }
-    legend {
-        width: 50vw;
-        /*50vw na małym*/
-        height: 50px;
-        margin-top: -24px;
-        margin-left: 0vw;
-        /*20 na małym*/
-        background-color: black;
-    }
-
-    fieldset {
-
-        border-width: 5px 0px 0px 0px;
-        border-style: solid;
-        border-color: rgb(47, 116, 33);
-        padding: 0 20vw;
-        /*20 na małym*/
-        filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
-        height: fit-content;
-        width: fit-content;
-    }
-
-    .card {
-        width: 100%;
-        /*na małym ekranie zmienić do 100%*/
-        background-color: rgb(47, 116, 33);
-        margin-bottom: 2vh;
-    }
+  .card {
+    width: 100%;
+    /*na małym ekranie zmienić do 100%*/
+    background-color: rgb(47, 116, 33);
+    margin-bottom: 2vh;
+  }
 }

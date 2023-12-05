@@ -1,23 +1,38 @@
-<div class="row center aktualnosci ">
-    <fieldset role="presentation"> <!--obejmuje wszystkie elementy aktualności-->
-        <legend role="presentation">
-            <h2 class="textChanga center mb-2"> WYDARZENIA </h2>
-        </legend>
+<div class="container">
+  <div>
+    <button
+      type="button"
+      *ngIf="isTopButtonVisible"
+      class="buttonUp btn"
+      (click)="scrollToTop()"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+      data-aos-anchor-placement="top-center"
+    >
+      <img src="assets/up.png" class="arrow" /> top
+    </button>
+  </div>
+  <div class="row center aktualnosci">
+    <fieldset role="presentation">
+      <!--obejmuje wszystkie elementy aktualności-->
+      <legend role="presentation">
+        <h2 class="textChanga center mb-2">WYDARZENIA</h2>
+      </legend>
     </fieldset>
     <!--  src="{{item.url}}"Co zrobić, żeby nie dorabiać kolejnej podstrony tylko żeby tutaj możnabyło kliknac i wyswietlic wiecej informacji? Uzyć pop-out? -->
     <div class="row">
-        <div class="col-sm-4 center" *ngFor="let item of aktualnosci">
-            <div class="card">
-                <img class="card-img-top" [src]="item.url" [alt]="item.alt">
-                <div class="card-body">
-                        <h5 class="card-title">{{item.title}}</h5>
-                    <span class="date">
-                        {{item.date}}
-                    </span>
-                    <p class="card-text line-clamp4 module">{{item.content}}
-                    </p>
-                </div>
-            </div>
+      <div class="col-sm-4 center" *ngFor="let item of aktualnosci">
+        <div class="card">
+          <img class="card-img-top" [src]="item.url" [alt]="item.alt" />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <span class="date">
+              {{ item.date }}
+            </span>
+            <p class="card-text line-clamp4 module">{{ item.content }}</p>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>

@@ -3,8 +3,8 @@
   /* background-repeat: no-repeat; */
   /* background-position: top; */
   background-size: cover;
-  height: 80vh;
-  margin-top: -250px;
+  height: 100vh;
+  margin-top: -50vh;
 }
 .welcomeText {
   font-size: 9vh;
@@ -18,7 +18,7 @@
 }
 @media (max-width: 400px) {
   .welcomeBanner {
-    height: 90vh;
-    margin-top: -390px;
+    height: 100vh;
+    margin-top: -60vh;
   }
 }

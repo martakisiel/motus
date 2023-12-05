@@ -39,18 +39,11 @@ legend {
   /* na małym max 25vh i zmienic number na mniejszy */
 }
 
-.btnG {
-  /* position: absolute;
-    top: 35%;
-    left: 45%;
-    transform: translate(0%, 0vh);  */
-  width: auto;
-  height: 30vh;
+.btnBlue {
   margin: auto;
   display: block;
   height: 15vh;
   width: 25vw;
-
   background-color: rgb(20, 110, 188);
   cursor: pointer;
 }
@@ -122,7 +115,7 @@ legend {
     font-size: 2vh;
     color: aliceblue;
   }
-  .btnG {
+  .btnBlue {
     height: 15vh;
     width: 85vw;
     z-index: 0;
