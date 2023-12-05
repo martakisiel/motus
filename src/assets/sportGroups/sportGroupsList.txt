@@ -1,6 +1,6 @@
 [  
   {
-    "url":"assets/sportGroups/volleyball.JPG",
+    "url":"assets/sportGroups/volleyballTeam/volleyball.JPG",
     "alt":"sekcja siatkówki",
     "title": "Sekcja siatkówki",
     "id":"0"

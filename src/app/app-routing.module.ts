@@ -10,6 +10,7 @@ import { ONasComponent } from './o-nas/o-nas.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { StatutComponent } from './statut/statut.component';
 import { SportGroupsComponent } from './sport-groups/sport-groups.component';
+import { VolleyballTeamComponent } from './volleyball-team/volleyball-team.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: '#wesprzyj-nas', component: ContactFormsComponent },
   { path: '#o-nas', component:  ONasComponent }, 
   { path: '#o-nas/:id', component:  StatutComponent }, 
-  { path: '#sekcje', component:  SportGroupsComponent }, 
+  // { path: '#sekcje', component:  SportGroupsComponent }, 
+  { path: '#siatkowka', component: VolleyballTeamComponent }, 
   { path: '#galeria', component:  GaleriaComponent }, 
   { path: '#noweWydarzenie', component: NewEventComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }

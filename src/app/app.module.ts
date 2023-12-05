@@ -32,6 +32,7 @@ import { GaleriaComponent } from './galeria/galeria.component';
 import { StatutComponent } from './statut/statut.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SportGroupsComponent } from './sport-groups/sport-groups.component';
+import { VolleyballTeamComponent } from './volleyball-team/volleyball-team.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +53,7 @@ import { SportGroupsComponent } from './sport-groups/sport-groups.component';
     GaleriaComponent,
     StatutComponent,
     SportGroupsComponent,
+    VolleyballTeamComponent,
  
   ],
   imports: [

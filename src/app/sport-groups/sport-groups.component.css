@@ -9,9 +9,9 @@
   background-color: rgb(47, 116, 33);
 }
 .card-img-top {
-    object-fit: cover;
-    object-position: top;
-    height: 40vh;
+  object-fit: cover;
+  object-position: top;
+  height: 40vh;
   /* margin: 10px 5px 2px 1px; */
 }
 
