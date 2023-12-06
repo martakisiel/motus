@@ -1,43 +1,61 @@
-.src::before{
-    content: '';
-   position:relative;
-   size: cover;
-   height: 100vh;
-   width: auto;
-   z-index: 0;
-   opacity: 0.2;
-}
-.row {
+/* .bg {
+ 
+
+    position: relative;
+    height: 100vh;
+background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
-    margin-bottom: 20vh;
+
   }
+  .bg::before{
+    content: ' ';
+    background-image: url(src/assets/sportGroups/volleyballTeam/VCourt.png);
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity:0.7;
+  } */
+.container {
+  height: 70vh;
+}
 .textDiv {
-    background-color: rgb(47, 116, 33);
-    text-align: start;
-    padding-bottom: 3vh;
-    padding-right: 4vw;
-    padding-left: 3vw;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
-    width: 35vw;
-    padding-top: 3vw;
-    font-family: "lato";
-    font-size: 2vh;
-    color: aliceblue;
-    z-index: 1;
-    margin-right: -2vw;
+  background-size: cover;
+  position: relative;
+  text-align: start;
+  padding-bottom: 3vh;
+  padding-right: 4vw;
+  padding-left: 3vw;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: 35vw;
+  padding-top: 3vw;
+  font-family: "lato";
+  font-size: 2vh;
+  color: aliceblue;
+  z-index: 1;
+  /* margin-right: -2vw;
     /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
-  }
-  .alert{
-    font-family: "lato";
-    font-size: 3vh;
-    color: aliceblue;
-  }
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alert {
+  font-family: "lato";
+  font-size: 3vh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
   .div1 {
     position: relative;
     margin-top: -20px;
@@ -48,4 +66,4 @@
   .srcVTeam {
     max-width: 50vw;
     height: auto;
-  }
+  } */
