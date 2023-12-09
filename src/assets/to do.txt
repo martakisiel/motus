@@ -1,0 +1,3 @@
+ujednolicić nazwy na angielskie
+wrzucić boardIMG do zarzadu
+zmienic teksty na aktualnosci/wydarzenia

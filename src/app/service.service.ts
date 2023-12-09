@@ -39,7 +39,7 @@ export class ServiceService {
   }
 
   getAktualnosciFile(): Observable<string> {
-    return this.http.get('assets/teksty/aktualnosci.txt', { responseType: 'text' });
+    return this.http.get('assets/aktualnosci/aktualnosci.txt', { responseType: 'text' });
   }
   getSportGroupsList(): Observable<string> {
     return this.http.get('assets/sportGroups/sportGroupsList.txt', { responseType: 'text' });

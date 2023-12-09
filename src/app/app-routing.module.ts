@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: '', component: MainPageComponent }, // bez redirecTo!
   { path: '#dolacz', component: JoinComponent },
   { path: '#wydarzenia', component: EventsComponent },
+  { path: '#kontakt', component: ContactFormsComponent },
   { path: '#wesprzyj-nas', component: ContactFormsComponent },
   { path: '#o-nas', component:  ONasComponent }, 
   { path: '#o-nas/:id', component:  StatutComponent }, 

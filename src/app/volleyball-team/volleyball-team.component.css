@@ -22,6 +22,10 @@ background-size: cover;
 .container {
   height: 70vh;
 }
+iframe {
+  height: 50vh;
+  width: auto;
+}
 .textDiv {
   background-size: cover;
   position: relative;
@@ -55,15 +59,29 @@ background-size: cover;
   justify-content: center;
   align-items: center;
 }
-/*
-  .div1 {
-    position: relative;
-    margin-top: -20px;
-    display: flex;
-    justify-content: left;
-  }
-  
-  .srcVTeam {
-    max-width: 50vw;
+@media (min-width: 250px) and (max-width: 399px) {
+  .container {
     height: auto;
-  } */
+    margin-top: 5vh;
+  }
+  .textDiv {
+    width: auto;
+  }
+  iframe {
+    height: 50vh;
+    width: 100vw;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  .container {
+    height: auto;
+    margin-top: 5vh;
+  }
+  .textDiv {
+    width: auto;
+  }
+  iframe {
+    height: 50vh;
+    width: 100vw;
+  }
+}

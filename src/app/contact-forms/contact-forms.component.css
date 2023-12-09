@@ -5,13 +5,23 @@
   --bs-gutter-x: 0rem;
   --bs-gutter-y: 0;
 }
+.rowKonto {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
 .konto {
+  border-radius: 10px 10px 10px 10px;
   background-color: rgb(20, 110, 188);
   color: aliceblue;
   font-family: "lato";
   font-size: 3vh;
   text-align: center;
   padding-top: 1%;
+  width: 50vw;
+  align-items: center;
+  display: flex;
 }
 .colCon {
   height: 15vh;
@@ -42,6 +52,7 @@ iframe {
   padding-top: 2vh;
   width: auto;
   background-color: black;
+  border-radius: 10px 10px 10px 10px;
 }
 label {
   color: aliceblue;
@@ -64,7 +75,7 @@ button {
   font-family: "lato";
   font-size: 2vh;
   border-style: hidden;
-  border-radius: 0%;
+  border-radius: 10px 10px 10px 10px;
   padding: 1%;
 }
 .buttonBlue {
@@ -75,7 +86,7 @@ button {
   font-family: "lato";
   font-size: 2vh;
   border-style: hidden;
-  border-radius: 0%;
+  border-radius: 10px 10px 10px 10px;
   padding: 1%;
 }
 .copyBtn {
@@ -90,6 +101,15 @@ button {
   order: 2;
 }
 @media screen and (max-width: 650px) {
+  .colCon {
+    height: 8vh;
+    width: 30vw;
+    background-color: rgb(47, 116, 33);
+    color: aliceblue;
+    font-family: "lato";
+    font-size: 2vh;
+    text-align: end;
+  }
   .col-md {
     margin-left: auto;
     margin-right: auto;
@@ -110,8 +130,6 @@ button {
     text-align: end;
   }
   .konto {
-    background-color: rgb(47, 116, 33);
-    color: rgb(242, 255, 0);
     font-family: "lato";
     font-size: 2vh;
     text-align: center;

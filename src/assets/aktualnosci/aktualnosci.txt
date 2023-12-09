@@ -27,13 +27,6 @@
     "date": "27.07.2023",
     "content": "Pierwszy potrójny blok. Skuteczny!"
     },
-    {
-    "url":"assets/atak.jpg",
-    "alt":"KS motus",
-    "title": "Pożegnanie Walerii",
-    "date": "29.06.2023",
-    "content": "Pierwsza inicjatywa klubu - pożegnanie naszej koleżanki Walerii."
-    },
   {
 	"url":"assets/team.jpg",
     "alt":"KS motus", 
