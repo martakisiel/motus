@@ -18,13 +18,13 @@
   font-family: "lato";
   font-size: 3vh;
   text-align: center;
-  padding-top: 1%;
+  padding-top: 2%;
   width: 50vw;
   align-items: center;
   display: flex;
 }
 .colCon {
-  height: 15vh;
+  height: 10vh;
   width: 30vw;
   background-color: rgb(47, 116, 33);
   color: aliceblue;
@@ -79,7 +79,7 @@ button {
   padding: 1%;
 }
 .buttonBlue {
-  width: auto;
+  width: 40vw;
   height: auto;
   background-color: rgb(20, 110, 188);
   color: aliceblue;
@@ -100,10 +100,21 @@ button {
 .order2 {
   order: 2;
 }
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .buttonBlue {
+    width: 5vw;
+    height: 1vh;
+    background-color: rgb(20, 110, 188);
+    color: aliceblue;
+    font-family: "lato";
+    font-size: 2vh;
+    border-style: hidden;
+    border-radius: 10px 10px 10px 10px;
+    padding: 1% 1% 1% 5%;
+  }
   .colCon {
     height: 8vh;
-    width: 30vw;
+    width: 80vw;
     background-color: rgb(47, 116, 33);
     color: aliceblue;
     font-family: "lato";
@@ -117,23 +128,15 @@ button {
   }
   .col-sm {
     flex: 0 0 auto;
-    width: 75%;
-    padding-left: 10vw;
-  }
-  .colCon {
-    height: 15vh;
-    width: 85vw;
-    background-color: rgb(47, 116, 33);
-    color: aliceblue;
-    font-family: "lato";
-    font-size: 2vh;
-    text-align: end;
+    width: auto;
+    padding-left: 5vw;
   }
   .konto {
     font-family: "lato";
     font-size: 2vh;
     text-align: center;
     padding: 2% 3% 0% 3%;
+    width: 80vw;
   }
   input {
     width: 60vw;
