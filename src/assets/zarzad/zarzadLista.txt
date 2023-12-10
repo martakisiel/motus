@@ -19,7 +19,7 @@
       "alt": "CEO", 
       "name":"Beata", 
       "surname":"Mach", 
-      "position":"Wiceprezes z funkcją prezesa", 
+      "position":"Wiceprezes z funkcją skarbnika", 
       "id":"2"
       }
   ]
