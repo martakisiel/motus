@@ -9,12 +9,12 @@ import { BoardImg, ServiceService } from '../service.service';
 export class ONasComponent {
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
+    mouseDrag: true,
+    touchDrag: true,
     pullDrag: false,
-    dots: false,
+    dots: true,
     navSpeed: 700,
-    navText: ['', ''],
+    navText: [],
     responsive: {
       0: {
         items: 1
