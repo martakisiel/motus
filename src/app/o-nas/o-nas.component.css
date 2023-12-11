@@ -209,6 +209,15 @@ legend {
   padding-left: 20vw;
   padding-right: 20vw;
 }
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: black;
+  color: #fff;
+  text-decoration: none;
+}
+.owl-carousel .owl-nav .owl-next {
+  background-color: black;
+}
 @media (min-width: 250px) and (max-width: 399px) {
   .names {
     font-family: "lato";

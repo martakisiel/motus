@@ -12,9 +12,9 @@ export class ONasComponent {
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
-    dots: true,
+    dots: false,
     navSpeed: 700,
-    navText: [],
+    navText: ['<','>'],
     responsive: {
       0: {
         items: 1

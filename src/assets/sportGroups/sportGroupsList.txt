@@ -3,6 +3,12 @@
     "url":"assets/sportGroups/volleyballTeam/volleyball.JPG",
     "alt":"sekcja siatkówki",
     "title": "Sekcja siatkówki",
-    "id":"0"
+   
+    }
+  {
+    "url":"assets/sportGroups/WinterSwimmingTeam/francesco-ungaro-0T6E8hB2it0-unsplash.jpg",
+    "alt":"morsy KS motus",
+    "title": "Morsy",
+  
     }
 ] 

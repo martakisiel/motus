@@ -93,5 +93,5 @@ export interface SportGroupsList{
   url: string;
   alt: string;
   title: string;
-  id: string;
+  
 }

@@ -24,7 +24,7 @@
   display: flex;
 }
 .colCon {
-  height: 10vh;
+  height: 7vh;
   width: 30vw;
   background-color: rgb(47, 116, 33);
   color: aliceblue;
@@ -114,7 +114,7 @@ button {
   }
   .colCon {
     height: 8vh;
-    width: 80vw;
+    width: 85vw;
     background-color: rgb(47, 116, 33);
     color: aliceblue;
     font-family: "lato";
