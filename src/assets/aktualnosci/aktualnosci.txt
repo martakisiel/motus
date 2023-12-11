@@ -4,28 +4,7 @@
     "alt":"siatkówka",
     "title": "Termin gry w siatkówkę",
     "date": "04.12.2023",
-    "content": "Od teraz spotykamy się o godz. 19.30 w piątki, na Hali sportowej (ul.Mickiewicza, obok bazaru)."
-    }, 
-  {
-    "url":"assets/atak.jpg",
-    "alt":"atak",
-    "title": "Treningi na hali SP Lesko",
-    "date": "16.10.2023",
-    "content": "Klub otrzymuje oficjalną rezerwację hali sportowej przy SP w Lesku."
-    }, 
-    {
-    "url":"assets/IMG_3446.JPG",
-    "alt":"atak",
-    "title": "Pierwsza krótka",
-    "date": "22.08.2023",
-    "content": "Pierwsza próba ataku z krótkiej piłki."
-    }, 
-    {
-    "url":"assets/siatkowka1.jpg",
-    "alt":"blok",
-    "title": "Potrójny blok",
-    "date": "27.07.2023",
-    "content": "Pierwszy potrójny blok. Skuteczny!"
+    "content": "Od teraz spotykamy się o godz. 19.30 w piątki, na Hali sportowej (ul.Mickiewicza, obok targu)."
     },
   {
 	"url":"assets/team.jpg",
