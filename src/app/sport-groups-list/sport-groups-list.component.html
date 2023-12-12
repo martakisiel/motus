@@ -1,0 +1,46 @@
+<div class="container mt-5 center">
+  <div class="row">
+    <div class="col-sm">
+      <a [routerLink]="['#siatkowka']" class="">
+        <div class="card">
+          <img
+            src="/assets/sportGroups/volleyballTeam/volleyball.JPG"
+            alt="KS motus siatkowka"
+            class="src"
+          />
+          <div class="card-body">
+            <p class="card-title">Sekcja siatkówki</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm">
+      <a [routerLink]="['#morsowanie']" class="">
+        <div class="card">
+          <img
+            src="/assets/sportGroups/WinterSwimmingTeam/francesco-ungaro-0T6E8hB2it0-unsplash.jpg"
+            alt="ks motus morsy"
+            class="src"
+          />
+          <div class="card-body">
+            <p class="card-title">Morsowanie</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- DLACZEGO NIE DZIAŁA ngFOR????!!!
+  <div class="container mt-5">
+  <div class="row center">
+    <div class="col-sm center" *ngFor="let item of sportGroupsList">
+      <div class="card">
+          <img [src]="item.url" [alt]="item.alt" class="card-img-top" />
+        
+        <div class="card-body">
+            <p class="card-title">{{ item.title }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->

@@ -51,6 +51,7 @@
   height: 15vh;
   width: 25vw;
   cursor: pointer;
+  font-size: 3vh;
 }
 
 .btnBlue:hover {
