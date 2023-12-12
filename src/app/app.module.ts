@@ -31,8 +31,10 @@ import { ONasComponent } from './o-nas/o-nas.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { StatutComponent } from './statut/statut.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { SportGroupsComponent } from './sport-groups/sport-groups.component';
 import { VolleyballTeamComponent } from './volleyball-team/volleyball-team.component';
+import { SportGroupsListComponent } from './sport-groups-list/sport-groups-list.component';
+import { SportGroupComponent } from './sport-group/sport-group.component';
+import { SupportComponent } from './support/support.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,8 +54,10 @@ import { VolleyballTeamComponent } from './volleyball-team/volleyball-team.compo
     ONasComponent,
     GaleriaComponent,
     StatutComponent,
-    SportGroupsComponent,
     VolleyballTeamComponent,
+    SportGroupsListComponent,
+    SportGroupComponent,
+    SupportComponent,
  
   ],
   imports: [
