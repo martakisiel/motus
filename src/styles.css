@@ -1,45 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    background-color: black;
-    
+  background-color: rgb(31, 31, 31);
 }
 
 a {
-    color: aliceblue;
-    text-decoration: none;
+  color: aliceblue;
+  text-decoration: none;
 }
 
 a:link {
-    text-decoration: none;
-    color: aliceblue;
+  text-decoration: none;
+  color: aliceblue;
 }
 
 a:active {
-    text-decoration: none;
-    color: aliceblue;
+  text-decoration: none;
+  color: aliceblue;
 }
 
 a:hover {
-    color: aliceblue;
+  color: aliceblue;
 }
 
-
-
-.textMenu{
-    font-family: 'lato';
-    font-size: 2vh;
+.textMenu {
+  font-family: "lato";
+  font-size: 2vh;
 }
 
-
-
-
-.textChanga{
-    font-family: 'changa';
-    color: aliceblue;
+.textChanga {
+  font-family: "changa";
+  color: aliceblue;
 }
 
-.iconGreen{
-    color:rgb(47, 116, 33);
+.iconGreen {
+  color: rgb(47, 116, 33);
 }
 
 /* .contactForm{
@@ -49,24 +43,23 @@ a:hover {
     width: auto;
 } */
 
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*css kalendarza są w calendar.component.css*/
 
-.black{
-    color: aliceblue;
-    background-color: black;
+.black {
+  color: aliceblue;
+  background-color: black;
 }
-.news-message{
-    display : flex;
-    flex-shrink: 0;
-    height: 50px;
-    align-items: center;
-    animation: slide-left 10s linear infinite;
-    font-family: impact, sans-serif;
-    background: none;
+.news-message {
+  display: flex;
+  flex-shrink: 0;
+  height: 50px;
+  align-items: center;
+  animation: slide-left 10s linear infinite;
+  font-family: impact, sans-serif;
+  background: none;
 }
-
