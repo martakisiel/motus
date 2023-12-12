@@ -1,30 +1,76 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <p class="purpuse text-center">
-        Nasz klub został założony z myślą o propagowaniu aktywnego stylu
-        życia<br />
-        poprzez wspólne uprawianie sportu w zróżnicowanym towarzystwie,
-        niezależnie od wieku uczestników. <br />
-        Jesteśmy przekonani, że integracja młodzieży z osobami dorosłymi, jak i
-        odwrotnie, <br />
-        korzystnie wpływa na obie grupy wiekowe.<br />
-        Nasze działania skupiają się nie tylko na lokalnym kontekście,<br />
-        lecz także na nawiązywaniu kontaktów z innymi klubami. <br />
-        Dzięki temu umożliwiamy poszerzanie horyzontów, a także promujemy nasz
-        region.<br />
-        Otwarcie podchodzimy do wielu dyscyplin sportowych, <br />
-        wspierając zróżnicowane zainteresowania naszych członków.<br />
-        Aby zrealizować klubowe cele, potrzebujemy wsparcia finansowego.<br />
-        Jeśli podzielasz nasze przekonania i uważasz, że nasze argumenty są
-        ważne,<br />
-        serdecznie zachęcamy Cię do udzielenia nam wsparcia lub przekazania tej
-        informacji dalej!
-      </p>
+<div class="container-fluid">
+  <div>
+    <button
+      type="button"
+      *ngIf="isTopButtonVisible"
+      class="buttonUp btn"
+      (click)="scrollToTop()"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+      data-aos-anchor-placement="top-center"
+    >
+      <img src="assets/up.png" class="arrow" /> top
+    </button>
+  </div>
+  <div class="row1">
+    <div class="col-sm-6 textDiv1">
+      <div class="row">
+        <p>
+          Nasz klub został założony z myślą o propagowaniu aktywnego stylu życia
+          poprzez wspólne uprawianie sportu w zróżnicowanym towarzystwie,
+          niezależnie od wieku uczestników. <br />
+          Jesteśmy przekonani, że integracja młodzieży z osobami dorosłymi, jak
+          i odwrotnie, <br />
+          korzystnie wpływa na obie grupy wiekowe.<br />
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-6 src1Div">
+      <img
+        src="assets/full-shot-family-cycling-together.jpg"
+        alt="motus lesko"
+        class="src1"
+      />
+    </div>
+  </div>
+  <div class="row1">
+    <div class="col-sm-6 textDiv1">
+      <div class="row center">
+        <img
+          src="assets/close-up-magnifying-glass-globe.jpg"
+          alt="motus lesko"
+          class="srcMap"
+        />
+        <p>
+          Nasze działania skupiają się nie tylko na lokalnym kontekście,<br />
+          lecz także na nawiązywaniu kontaktów z innymi klubami. <br />
+          Dzięki temu umożliwiamy poszerzanie horyzontów, a także promujemy nasz
+          region.<br />
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-6 textDiv1">
+      <div class="row">
+        <img src="assets/sports-tools.jpg" alt="motus lesko" class="src1" />
+        <p>
+          Nasze działania skupiają się nie tylko na lokalnym kontekście,<br />
+          lecz także na nawiązywaniu kontaktów z innymi klubami. <br />
+          Dzięki temu umożliwiamy poszerzanie horyzontów, a także promujemy nasz
+          region.<br />
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row1">
+    <div class="col-sm-6 textDiv1 text-center">
+      Aby zrealizować klubowe cele, potrzebujemy wsparcia finansowego.<br />
+      Jeśli podzielasz nasze przekonania i uważasz, że nasze argumenty są ważne,
+      serdecznie zachęcamy Cię do udzielenia nam wsparcia lub przekazania tej
+      informacji dalej!
     </div>
   </div>
   <div class="container rowKonto">
-    <div class="row konto center">
+    <div class="row konto">
       <p>
         Możesz nas wesprzeć wysyłając darowiznę<br />
         na numer konta KS Motus:<br />
