@@ -37,26 +37,6 @@
   height: auto;
 }
 
-.btnBlue {
-  max-width: 70vw;
-  position: absolute;
-  top: 70%;
-  left: -23%;
-  transform: translate(0%, 0vh);
-  z-index: 1;
-  background-color: rgb(20, 110, 188);
-  color: aliceblue;
-  margin: auto;
-  display: block;
-  height: 15vh;
-  width: 25vw;
-  cursor: pointer;
-  font-size: 3vh;
-}
-
-.btnBlue:hover {
-  background-color: rgb(20, 110, 188);
-}
 .row2 {
   margin-top: 10vh;
   display: flex;

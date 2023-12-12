@@ -1,34 +1,8 @@
 <!-- <app-welcome-banner></app-welcome-banner> -->
-<div class="container rowKonto">
-  <div class="row konto center">
-    <p>
-      Możesz nas wesprzeć wysyłając darowiznę<br />
-      na numer konta KS Motus:<br />
-      60 1020 2980 0000 2502 0152 4834
-      <button
-        (click)="copyText('60 1020 2980 0000 2502 0152 4834')"
-        (click)="showNotification()"
-        class="copyBtnKonto buttonBlue"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-copy"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V2Zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6ZM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1H2Z"
-          />
-        </svg>
-      </button>
-    </p>
-  </div>
-</div>
+<app-support-button></app-support-button>
 
 <div class="container-fluid pt-1 contactForm">
+  <app-contact-form></app-contact-form>
   <div class="row align-items-center mt-5">
     <div class="col-md order1">
       <div class="col-sm">
@@ -38,7 +12,7 @@
             id="myForm"
             #form="ngForm"
             (ngSubmit)="onFormSubmit(form.value)"
-            action="https://formsubmit.co/ksmotus@gmail.com"
+            action="https://formsubmit.co/mkwermikulit@gmail.com"
             method="POST"
           >
             <input type="hidden" name="_subject" value="New submission!" />
@@ -270,4 +244,54 @@
       ></iframe>
     </div>
   </div>
+</div>
+<div class="container">
+  <form
+    action="https://formsubmit.co/marta.kisiel91+form@gmail.com"
+    method="POST"
+  >
+    <div class="form-group mt-3">
+      <div class="form-row">
+        <div class="col">
+          <label for="fname">Name:</label><br />
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="What's your name?"
+            required
+          />
+        </div>
+        <div class="col pt-3">
+          <label for="email">E-mail:</label><br />
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="What's your e-mail?"
+            required
+          />
+        </div>
+      </div>
+    </div>
+    <div class="form-group pt-3">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Message:</label
+      >
+      <textarea
+        placeholder="Your Message"
+        class="form-control"
+        name="message"
+        rows="5"
+        required
+      ></textarea>
+    </div>
+    <input
+      type="hidden"
+      name="_next"
+      value="https://www.martak.pl/#/%23thankyou"
+    />
+    <input type="hidden" name="_template" value="box" />
+    <button type="submit" class="submitButton mt-4">Submit Form</button>
+  </form>
 </div>

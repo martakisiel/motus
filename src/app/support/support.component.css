@@ -32,33 +32,7 @@ button {
   border-radius: 10px 10px 10px 10px;
   padding: 1%;
 }
-.buttonBlue {
-  width: 40vw;
-  height: auto;
-  background-color: rgb(20, 110, 188);
-  color: aliceblue;
-  font-family: "lato";
-  font-size: 2vh;
-  border-style: hidden;
-  border-radius: 10px 10px 10px 10px;
-  padding: 1%;
-}
-.copyBtn {
-  width: auto;
-  height: auto;
-}
-.konto {
-  border-radius: 10px 10px 10px 10px;
-  background-color: rgb(20, 110, 188);
-  color: aliceblue;
-  font-family: "lato";
-  font-size: 3vh;
-  text-align: center;
-  padding-top: 2%;
-  width: 50vw;
-  align-items: center;
-  display: flex;
-}
+
 
 button {
   z-index: 1;

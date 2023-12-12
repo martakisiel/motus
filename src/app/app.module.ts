@@ -35,6 +35,8 @@ import { VolleyballTeamComponent } from './volleyball-team/volleyball-team.compo
 import { SportGroupsListComponent } from './sport-groups-list/sport-groups-list.component';
 import { SportGroupComponent } from './sport-group/sport-group.component';
 import { SupportComponent } from './support/support.component';
+import { SupportButtonComponent } from './support-button/support-button.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,6 +60,8 @@ import { SupportComponent } from './support/support.component';
     SportGroupsListComponent,
     SportGroupComponent,
     SupportComponent,
+    SupportButtonComponent,
+    ContactFormComponent,
  
   ],
   imports: [

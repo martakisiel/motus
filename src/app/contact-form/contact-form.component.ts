@@ -1,16 +1,15 @@
-import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Clipboard } from '@angular/cdk/clipboard';
-import { NgForm, NgModel } from '@angular/forms';
-import { ClipboardModule } from '@angular/cdk/clipboard';
+import { Component } from '@angular/core';
+import { NgModel } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Clipboard } from '@angular/cdk/clipboard';
 
 @Component({
-  selector: 'app-contact-forms',
-  templateUrl: './contact-forms.component.html',
-  styleUrls: ['./contact-forms.component.css'],
+  selector: 'app-contact-form',
+  templateUrl: './contact-form.component.html',
+  styleUrls: ['./contact-form.component.css']
 })
-export class ContactFormsComponent {
+export class ContactFormComponent {
   message: string | undefined;
   constructor(private http: HttpClient, private clipboard: Clipboard, public matSnackBar:MatSnackBar) { }
   
@@ -43,18 +42,4 @@ export class ContactFormsComponent {
     descInput.reset();
 
   }
-  // onFileChange(event: any) {
-  //   if (event?.target) {
-  //     const file: File = event.target.files[0];
-  //     const reader = new FileReader();
-
-  //     reader.onload = (e) => {
-  //       const dataURL = e.target?.result as string;
-  //       console.log('Data URL:', dataURL);
-  //       // You can use the dataURL to display an image preview or send the data to the server.
-  //     };
-
-  //     reader.readAsDataURL(file);
-  //   }
-  // }
 }
