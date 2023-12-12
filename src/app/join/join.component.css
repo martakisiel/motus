@@ -48,7 +48,7 @@ legend {
   cursor: pointer;
 }
 .textBtn {
-  font-family: "lato";
+  font-family: "changa";
   font-size: 2vh;
   color: aliceblue;
 }
@@ -72,6 +72,7 @@ legend {
   height: fit-content;
   padding: 2% 2% 2% 2%;
   width: 25vw;
+  height:fit-content;
   border-radius: 2%;
 }
 .number {

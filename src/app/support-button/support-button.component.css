@@ -8,7 +8,8 @@
     border-radius: 10px 10px 10px 10px;
     background-color: rgb(20, 110, 188);
     color: aliceblue;
-    font-family: "lato";
+    color: aliceblue;
+    font-family: "changa";
     font-size: 3vh;
     text-align: center;
     padding-top: 2%;
@@ -16,45 +17,14 @@
     align-items: center;
     display: flex;
   }
-  .contactForm {
-    color: aliceblue;
-    font-family: "lato";
-    font-size: 2vh;
-    padding-top: 2vh;
-    width: auto;
-    background-color: black;
-    border-radius: 10px 10px 10px 10px;
-  }
-  label {
-    color: aliceblue;
-    font-family: "lato";
-    font-size: 2vh;
-    margin-top: 2vh;
-  }
-  input {
-    width: 20vw;
-    margin-top: 1vh;
-  }
-  textarea {
-    width: 30vw;
-  }
-  button {
-    width: 20vw;
-    height: 7vh;
-    background-color: rgb(47, 116, 33);
-    color: aliceblue;
-    font-family: "lato";
-    font-size: 2vh;
-    border-style: hidden;
-    border-radius: 10px 10px 10px 10px;
-    padding: 1%;
-  }
+  
+
   .buttonBlue {
     width: 40vw;
     height: auto;
     background-color: rgb(20, 110, 188);
     color: aliceblue;
-    font-family: "lato";
+    font-family: "changa";
     font-size: 2vh;
     border-style: hidden;
     border-radius: 10px 10px 10px 10px;
