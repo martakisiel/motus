@@ -161,7 +161,6 @@ fieldset {
   height: fit-content;
   width: fit-content;
 }
-
 legend {
   width: 260px;
   /*50vw na małym*/
@@ -171,8 +170,7 @@ legend {
   /*20 na małym*/
   background-color: black;
 }
-
-.namesDiv {
+namesDiv {
   background-color: rgb(47, 116, 33);
   /* padding-left: 3vw; */
   align-items: top;
@@ -192,7 +190,6 @@ legend {
   font-size: 2.5vh;
   color: aliceblue;
 }
-
 .profileImg {
   width: 40vh;
   height: 40vh;
@@ -210,14 +207,6 @@ legend {
   padding-right: 20vw;
 }
 
-.owl-theme .owl-nav [class*="owl-"]:hover {
-  background: black;
-  color: #fff;
-  text-decoration: none;
-}
-.owl-carousel .owl-nav .owl-next {
-  background-color: black;
-}
 @media (min-width: 250px) and (max-width: 399px) {
   .names {
     font-family: "lato";
@@ -365,10 +354,10 @@ legend {
     margin-left: 25vw;
   }
   legend {
-    width: 50vw;
+    width: 40vw;
     /*50vw na małym*/
     height: 50px;
-    margin-top: -24px;
+    margin-top: -18px;
     margin-left: 0vw;
     /*20 na małym*/
     background-color: black;
@@ -378,7 +367,7 @@ legend {
     border-width: 5px 0px 0px 0px;
     border-style: solid;
     border-color: rgb(47, 116, 33);
-    padding: 0 20vw;
+    padding: 0 26vw;
     /*20 na małym*/
     filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
     height: fit-content;

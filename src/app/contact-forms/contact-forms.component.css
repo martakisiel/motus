@@ -5,23 +5,10 @@
   --bs-gutter-x: 0rem;
   --bs-gutter-y: 0;
 }
-.rowKonto {
-  display: flex;
-  justify-content: center;
-  margin-top: 10vh;
-  margin-bottom: 5vh;
-}
-.konto {
-  border-radius: 10px 10px 10px 10px;
-  background-color: rgb(20, 110, 188);
+.textL {
   color: aliceblue;
   font-family: "lato";
-  font-size: 3vh;
-  text-align: center;
-  padding-top: 2%;
-  width: 50vw;
-  align-items: center;
-  display: flex;
+  font-size: 2.5vh;
 }
 .colCon {
   height: 7vh;
@@ -72,23 +59,13 @@ button {
   height: 7vh;
   background-color: rgb(47, 116, 33);
   color: aliceblue;
-  font-family: "lato";
+  font-family: "changa";
   font-size: 2vh;
   border-style: hidden;
   border-radius: 10px 10px 10px 10px;
   padding: 1%;
 }
-.buttonBlue {
-  width: 40vw;
-  height: auto;
-  background-color: rgb(20, 110, 188);
-  color: aliceblue;
-  font-family: "lato";
-  font-size: 2vh;
-  border-style: hidden;
-  border-radius: 10px 10px 10px 10px;
-  padding: 1%;
-}
+
 .copyBtn {
   width: auto;
   height: auto;
@@ -101,17 +78,6 @@ button {
   order: 2;
 }
 @media screen and (min-width: 200px) and (max-width: 650px) {
-  .buttonBlue {
-    width: 5vw;
-    height: 1vh;
-    background-color: rgb(20, 110, 188);
-    color: aliceblue;
-    font-family: "lato";
-    font-size: 2vh;
-    border-style: hidden;
-    border-radius: 10px 10px 10px 10px;
-    padding: 1% 1% 1% 5%;
-  }
   .colCon {
     height: 8vh;
     width: 85vw;
@@ -131,13 +97,7 @@ button {
     width: auto;
     padding-left: 5vw;
   }
-  .konto {
-    font-family: "lato";
-    font-size: 2vh;
-    text-align: center;
-    padding: 2% 3% 0% 3%;
-    width: 80vw;
-  }
+
   input {
     width: 60vw;
     margin-top: 1vh;

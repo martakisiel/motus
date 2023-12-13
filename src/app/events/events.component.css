@@ -5,7 +5,7 @@
   margin: 0px;
 }
 .aktualnosci {
-  margin-top: 15vh;
+  margin-top: 7vh;
 }
 .intro {
   margin-top: 10vh;
@@ -121,7 +121,7 @@ button {
     width: 50vw;
     /*50vw na małym*/
     height: 50px;
-    margin-top: -24px;
+    margin-top: -18px;
     margin-left: 0vw;
     /*20 na małym*/
     background-color: black;

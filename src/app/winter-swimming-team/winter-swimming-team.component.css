@@ -1,6 +1,85 @@
-p{
-    color: aliceblue;
-    margin-bottom: 0%;
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+  }
+  
+  .textDiv1 {
+    background-color: rgb(47, 116, 33);
+    text-align: start;
+    padding-bottom: 3vh;
+    padding-right: 4vw;
+    padding-left: 3vw;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 35vw;
+    padding-top: 3vw;
     font-family: "lato";
     font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+    margin-right: -2vw;
+    /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
+  }
+  
+  .src1Div {
+    position: relative;
+    margin-top: -20px;
+    display: flex;
+    justify-content: left;
+  }
+  
+  .src1 {
+    max-width: 50vw;
+    height: auto;
+  }
+  @media (min-width: 250px) and (max-width: 399px) {
+   
+    .row1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5vh;
+      margin-bottom: 10vh;
+    }
+  
+    .textDiv1 {
+      background-color: rgb(47, 116, 33);
+      text-align: start;
+      /* padding-bottom: 3vh; */
+      padding-right: 10vw;
+      padding-left: 3vw;
+      align-items: center;
+      display: flex;
+      height: fit-content;
+      width: 85vw;
+      padding-top: 5vh;
+      font-family: "lato";
+      font-size: 2vh;
+      color: aliceblue;
+      z-index: 1;
+      padding-bottom: 3vh;
+    }
+  
+    .src1Div {
+      position: relative;
+      margin-top: -20px;
+      display: flex;
+      justify-content: center;
+
+    }
+  
+    .src1 {
+      max-width: 90vw;
+      height: auto;
+      margin-top: -10px;
+      display: flex;
+      
+    }
 }

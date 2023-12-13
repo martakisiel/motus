@@ -1,37 +1,59 @@
 .rowKonto {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+.konto {
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgb(20, 110, 188);
+  color: aliceblue;
+  font-family: "changa";
+  font-size: 3vh;
+  text-align: center;
+  padding-top: 2%;
+  width: 50vw;
+  align-items: center;
+  display: flex;
+}
+.alert {
+  font-size: 3vh;
+}
+.buttonBlue {
+  width: 40vw;
+  height: auto;
+  background-color: rgb(20, 110, 188);
+  color: aliceblue;
+  font-family: "changa";
+  font-size: 2vh;
+  border-style: hidden;
+  border-radius: 10px 10px 10px 10px;
+  padding: 1%;
+}
+.copyBtn {
+  width: auto;
+  height: auto;
+}
+@media (min-width: 250px) and (max-width: 399px) {
+  .rowKonto {
     display: flex;
     justify-content: center;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 5vh;
   }
   .konto {
     border-radius: 10px 10px 10px 10px;
     background-color: rgb(20, 110, 188);
     color: aliceblue;
-    color: aliceblue;
     font-family: "changa";
-    font-size: 3vh;
+    font-size: 2.3vh;
     text-align: center;
     padding-top: 2%;
-    width: 50vw;
+    width: 90vw;
     align-items: center;
     display: flex;
   }
-  
+}
 
-  .buttonBlue {
-    width: 40vw;
-    height: auto;
-    background-color: rgb(20, 110, 188);
-    color: aliceblue;
-    font-family: "changa";
-    font-size: 2vh;
-    border-style: hidden;
-    border-radius: 10px 10px 10px 10px;
-    padding: 1%;
-  }
-  .copyBtn {
-    width: auto;
-    height: auto;
-  }
-  
+@media (min-width: 400px) and (max-width: 700px) {
+}

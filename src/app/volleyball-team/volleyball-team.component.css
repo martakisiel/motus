@@ -19,20 +19,25 @@ background-size: cover;
     background-attachment: fixed;
     opacity:0.7;
   } */
+  .row {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+  }
 .container {
   height: 70vh;
 }
 iframe {
   height: 50vh;
-  width: auto;
+  width: 25vw;
 }
 .textDiv {
+  background-color: rgb(47, 116, 33);
   background-size: cover;
   position: relative;
   text-align: start;
-  padding-bottom: 3vh;
-  padding-right: 4vw;
-  padding-left: 3vw;
+  padding-bottom: 2vh;
+  padding-right: 2vw;
+  padding-left: 2vw;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -47,10 +52,10 @@ iframe {
     /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
 }
 .row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 .alert {
   font-family: "lato";
   font-size: 3vh;
@@ -65,12 +70,13 @@ iframe {
     margin-top: 5vh;
   }
   .textDiv {
-    width: auto;
+    width: 85vw;
   }
   iframe {
     height: 50vh;
-    width: 100vw;
+    width: 90vw;
   }
+
 }
 @media (min-width: 400px) and (max-width: 700px) {
   .container {
@@ -78,10 +84,10 @@ iframe {
     margin-top: 5vh;
   }
   .textDiv {
-    width: auto;
+    width: 85vw;
   }
   iframe {
     height: 50vh;
-    width: 100vw;
+    width:90vw;
   }
 }
