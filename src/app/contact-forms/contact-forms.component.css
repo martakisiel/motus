@@ -13,7 +13,7 @@
 .colCon {
   height: 7vh;
   width: 30vw;
-  background-color: rgb(47, 116, 33);
+  background-color: rgb(23, 130, 60);
   color: aliceblue;
   font-family: "lato";
   font-size: 2vh;
@@ -57,7 +57,7 @@ textarea {
 button {
   width: 20vw;
   height: 7vh;
-  background-color: rgb(47, 116, 33);
+  background-color: rgb(23, 130, 60);
   color: aliceblue;
   font-family: "changa";
   font-size: 2vh;
@@ -81,7 +81,7 @@ button {
   .colCon {
     height: 8vh;
     width: 85vw;
-    background-color: rgb(47, 116, 33);
+    background-color: rgb(23, 130, 60);
     color: aliceblue;
     font-family: "lato";
     font-size: 2vh;

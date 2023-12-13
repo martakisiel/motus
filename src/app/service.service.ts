@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ServiceService {
   private selectedImageIndex = 0;
+  private configUrl = "assets/sportGroups/";
   constructor(private http: HttpClient) { }
   private logoSponsors: Sponsors[] = [
     { alt: "SkyWorldGames", url: "assets/sponsorzy/1.png", link: "https://skyworldgames.com/" },
@@ -34,7 +35,7 @@ export class ServiceService {
 
  
 
-  getBoardImg():Observable<string>{
+  getBoard():Observable<string>{
     return this.http.get('assets/zarzad/zarzadLista.txt', {responseType:'text'});
   }
 
@@ -80,7 +81,7 @@ export interface Aktualnosci {
   content: string;
 }
 
-export interface BoardImg{
+export interface Board{
   url: string;
   alt: string;
   name: string;

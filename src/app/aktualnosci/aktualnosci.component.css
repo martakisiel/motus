@@ -34,7 +34,7 @@
 }
 .card-body {
   border: 0%;
-  background-color: rgb(47, 116, 33);
+  background-color: rgb(23, 130, 60);
 }
 .card-img-top {
   object-fit: cover;
@@ -71,7 +71,7 @@
 fieldset {
   border-width: 5px 0px 0px 0px;
   border-style: solid;
-  border-color: rgb(47, 116, 33);
+  border-color: rgb(23, 130, 60);
   padding: 0 30vw;
   /*20 na małym*/
   filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
@@ -111,7 +111,7 @@ legend {
   fieldset {
     border-width: 5px 0px 0px 0px;
     border-style: solid;
-    border-color: rgb(47, 116, 33);
+    border-color: rgb(23, 130, 60);
     padding: 0 20vw;
     /*20 na małym*/
     filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
@@ -122,7 +122,7 @@ legend {
   .card {
     width: 100%;
     /*na małym ekranie zmienić do 100%*/
-    background-color: rgb(47, 116, 33);
+    background-color: rgb(23, 130, 60);
     margin-bottom: 2vh;
   }
 }

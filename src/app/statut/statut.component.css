@@ -16,8 +16,7 @@ button {
   bottom: 0px;
   right: 0px;
   padding: 1%;
-  background-color: rgb(47, 116, 33);
-  border-color: aliceblue;
+  background-color: rgb(23, 130, 60);
   width: fit-content;
   height: fit-content;
   margin-right: 3vw;
@@ -46,7 +45,7 @@ button {
 fieldset {
   border-width: 5px 0px 0px 0px;
   border-style: solid;
-  border-color: rgb(47, 116, 33);
+  border-color: rgb(23, 130, 60);
   padding: 0 30vw;
   /*20 na małym*/
   filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
@@ -102,7 +101,7 @@ legend {
   fieldset {
     border-width: 5px 0px 0px 0px;
     border-style: solid;
-    border-color: rgb(47, 116, 33);
+    border-color: R23 G130 B60;
     padding: 0 25vw;
     /*20 na małym*/
     filter: drop-shadow(0 1px 1px rgba(grey, 0.25));

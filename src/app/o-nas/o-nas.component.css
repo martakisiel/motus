@@ -6,8 +6,7 @@ button {
   bottom: 0px;
   right: 0px;
   padding: 1%;
-  background-color: rgb(47, 116, 33);
-  border-color: aliceblue;
+  background-color: rgb(23, 130, 60);
   width: fit-content;
   height: fit-content;
   margin-right: 3vw;
@@ -29,7 +28,7 @@ button {
 }
 
 .textDiv1 {
-  background-color: rgb(47, 116, 33);
+  background-color: rgb(23, 130, 60);
   text-align: start;
   padding-bottom: 3vh;
   padding-right: 4vw;
@@ -79,7 +78,7 @@ button {
 }
 
 .text2Div {
-  background-color: rgb(47, 116, 33);
+  background-color: rgb(23, 130, 60);
   text-align: start;
   padding-bottom: 3vh;
   padding-right: 4vw;
@@ -148,13 +147,13 @@ button {
 }
 
 .bgGreen {
-  background-color: rgb(47, 116, 33);
+  background-color: rgb(23, 130, 60);
 }
 
 fieldset {
   border-width: 5px 0px 0px 0px;
   border-style: solid;
-  border-color: rgb(47, 116, 33);
+  border-color: rgb(23, 130, 60);
   padding: 0 40vw;
   /*20 na małym*/
   filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
@@ -170,8 +169,8 @@ legend {
   /*20 na małym*/
   background-color: black;
 }
-namesDiv {
-  background-color: rgb(47, 116, 33);
+.namesDiv {
+  background-color: rgb(23, 130, 60);
   /* padding-left: 3vw; */
   align-items: top;
   display: flex;
@@ -230,7 +229,7 @@ namesDiv {
   }
 
   .textDiv1 {
-    background-color: rgb(47, 116, 33);
+    background-color: rgb(23, 130, 60);
     text-align: start;
     /* padding-bottom: 3vh; */
     padding-right: 10vw;
@@ -271,7 +270,7 @@ namesDiv {
     /* width: 25vw; */
     z-index: 1;
     background-color: aliceblue;
-    color: rgb(47, 116, 33);
+    color: rgb(23, 130, 60);
     border-color: aliceblue;
   }
 
@@ -297,7 +296,7 @@ namesDiv {
   }
 
   .text2Div {
-    background-color: rgb(47, 116, 33);
+    background-color: rgb(23, 130, 60);
     text-align: start;
     padding-bottom: 3vh;
     padding-right: 4vw;
@@ -366,7 +365,7 @@ namesDiv {
   fieldset {
     border-width: 5px 0px 0px 0px;
     border-style: solid;
-    border-color: rgb(47, 116, 33);
+    border-color: rgb(23, 130, 60);
     padding: 0 26vw;
     /*20 na małym*/
     filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
@@ -390,7 +389,7 @@ namesDiv {
   }
 
   .textDiv1 {
-    background-color: rgb(47, 116, 33);
+    background-color: rgb(23, 130, 60);
     text-align: start;
     /* padding-bottom: 3vh; */
     padding-right: 10vw;
@@ -433,7 +432,7 @@ namesDiv {
     /* width: 25vw; */
     z-index: 1;
     background-color: aliceblue;
-    color: rgb(47, 116, 33);
+    color: rgb(23, 130, 60);
     border-color: aliceblue;
   }
 
@@ -458,7 +457,7 @@ namesDiv {
   }
 
   .text2Div {
-    background-color: rgb(47, 116, 33);
+    background-color: rgb(23, 130, 60);
     text-align: start;
     padding-bottom: 3vh;
     padding-right: 4vw;
@@ -527,7 +526,7 @@ namesDiv {
   fieldset {
     border-width: 5px 0px 0px 0px;
     border-style: solid;
-    border-color: rgb(47, 116, 33);
+    border-color: rgb(23, 130, 60);
     padding: 0 20vw;
     /*20 na małym*/
     filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
