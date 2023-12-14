@@ -93,7 +93,7 @@ legend {
     padding: 0vw 15vw;
   }
   .src {
-    width: 80vw;
+    width: 95vw;
     height: auto;
     margin: auto;
     display: block;
@@ -107,9 +107,9 @@ legend {
   .div {
     text-align: center;
     background-color: rgb(23, 130, 60);
-    height: 30vh;
+    height: 32vh;
     padding: 2% 2% 2% 2%;
-    width: 80vw;
+    width: 85vw;
     border-radius: 2%;
   }
   .textDiv {
@@ -126,6 +126,134 @@ legend {
     background-color: #007AE4;
     cursor: pointer;
     margin-top: 1vh;
+  }
+  .textBtn{
+    font-size: 2vh;
+  }
+  .number{
+    font-size: 5vh;
+  }
+  .adres{
+    font-size: 1.7vh;
+  }
+  .row {
+    justify-content: center;
+  }
+}
+@media (min-width: 400px) and (max-width: 767px) {
+  legend {
+    width: 60vw;
+    height: 8vh;
+    margin-top: -36px;
+    margin-left: 2vw;
+    background-color: black;
+  }
+  fieldset{
+    padding: 0vw 15vw;
+  }
+  .src {
+    width: 95vw;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+  .div1 {
+    background-color: rgb(23, 130, 60);
+    height: 30vh;
+    padding: 2% 2% 2% 2%;
+    width: 100vw;
+  }
+  .div {
+    text-align: center;
+    background-color: rgb(23, 130, 60);
+    height: 32vh;
+    padding: 2% 2% 2% 2%;
+    width: 85vw;
+    border-radius: 2%;
+  }
+  .textDiv {
+    text-align: center;
+    justify-content: center;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+  }
+  .btnBlue {
+    height: 15vh;
+    width: 85vw;
+    z-index: 0;
+    background-color: #007AE4;
+    cursor: pointer;
+    margin-top: 1vh;
+  }
+  .textBtn{
+    font-size: 2vh;
+  }
+  .number{
+    font-size: 5vh;
+  }
+  .adres{
+    font-size: 1.7vh;
+  }
+  .row {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768) and (max-width: 991px) {
+  legend {
+    width: 60vw;
+    height: 8vh;
+    margin-top: -36px;
+    margin-left: 2vw;
+    background-color: black;
+  }
+  fieldset{
+    padding: 0vw 15vw;
+  }
+  .src {
+    width: 95vw;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+  .div1 {
+    background-color: rgb(23, 130, 60);
+    height: 30vh;
+    padding: 2% 2% 2% 2%;
+    width: 100vw;
+  }
+  .div {
+    text-align: center;
+    background-color: rgb(23, 130, 60);
+    height: 32vh;
+    padding: 2% 2% 2% 2%;
+    width: 85vw;
+    border-radius: 2%;
+  }
+  .textDiv {
+    text-align: center;
+    justify-content: center;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+  }
+  .btnBlue {
+    height: 15vh;
+    width: 85vw;
+    z-index: 0;
+    background-color: #007AE4;
+    cursor: pointer;
+    margin-top: 1vh;
+  }
+  .textBtn{
+    font-size: 2vh;
+  }
+  .number{
+    font-size: 5vh;
+  }
+  .adres{
+    font-size: 1.7vh;
   }
   .row {
     justify-content: center;

@@ -37,6 +37,9 @@
   height: auto;
 }
 
+.pI {
+  font-style: italic;
+}
 .row2 {
   margin-top: 10vh;
   display: flex;
@@ -110,7 +113,7 @@
   left: -23%;
   transform: translate(0%, 0vh);
   z-index: 1;
-  background-color: #007AE4;
+  background-color: #007ae4;
   color: aliceblue;
   margin: auto;
   display: block;
@@ -122,10 +125,8 @@
 }
 
 .btnBlue:hover {
-  background-color: #007AE4;
+  background-color: #007ae4;
 }
-
-
 
 .aOnButton {
   color: aliceblue;
@@ -206,7 +207,7 @@
     height: 10vh;
     /* width: 25vw; */
     z-index: 1;
-    background-color: #007AE4;
+    background-color: #007ae4;
   }
 
   .intro {
@@ -287,11 +288,11 @@
     margin-left: 25vw;
   }
 }
-@media (min-width: 400px) and (max-width: 700px) {
+@media (min-width: 400px) and (max-width: 767px) {
   .row1 {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    display: block;
+    /* justify-content: start;
+    align-items: center; */
     margin-top: 5vh;
   }
 
@@ -303,7 +304,7 @@
     padding-left: 3vw;
     align-items: center;
     display: flex;
-    height: 20vh;
+    height: 38vh;
     width: 85vw;
     padding-top: 5vh;
     font-family: "lato";
@@ -327,21 +328,26 @@
     display: flex;
   }
 
-  .btn1 {
+  .btnBlue {
+    max-width: 90vw;
     position: absolute;
-    top: 110%;
-    left: 15%;
+    top: 92%;
+    left: 0%;
     transform: translate(0%, 0vh);
-
-    min-width: 70vw;
-
-    height: 10vh;
-    /* width: 25vw; */
     z-index: 1;
+    background-color: #007ae4;
+    color: aliceblue;
+    margin: auto;
+    display: block;
+    height: 15vh;
+    width: 85vw;
+    cursor: pointer;
+    font-family: "changa";
+    font-size: 3vh;
   }
 
-  .intro {
-    margin-top: 30vh;
+  .btnBlue:hover {
+    background-color: #007ae4;
   }
 
   .intro1 {
@@ -369,7 +375,7 @@
     /* align-items: center; */
     display: flex;
     justify-content: right;
-    height: 30vh;
+    height: 38vh;
     width: 85vw;
     padding-top: 11vw;
     font-family: "lato";
@@ -416,5 +422,116 @@
     height: 25vh;
     width: 75vw;
     margin-left: 25vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .row1 {
+    display: block;
+    /* justify-content: start;
+    align-items: center; */
+    margin-top: 5vh;
+  }
+
+  .textDiv1 {
+    background-color: rgb(23, 130, 60);
+    text-align: start;
+    /* padding-bottom: 3vh; */
+    padding-right: 7vw;
+    padding-left: 7vw;
+    align-items: center;
+    display: flex;
+    height: 30vh;
+    width: 85vw;
+    padding-top: 5vh;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+    padding-bottom: 4vh;
+  }
+
+  .src1Div {
+    position: relative;
+    margin-top: -20px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .src1 {
+    max-width: 77vw;
+    height: auto;
+    margin-top: -10px;
+    display: flex;
+    margin-left: 4vw;
+  }
+
+  .btn1 {
+    position: absolute;
+    top: 110%;
+    left: 15%;
+    transform: translate(0%, 0vh);
+
+    min-width: 70vw;
+
+    height: 10vh;
+    /* width: 25vw; */
+    z-index: 1;
+  }
+  .btnBlue {
+    max-width: 60vw;
+    position: absolute;
+    top: 94%;
+    left: 25%;
+    transform: translate(0%, 0vh);
+    z-index: 1;
+    background-color: #007ae4;
+    color: aliceblue;
+    margin: auto;
+    display: block;
+    height: 15vh;
+    width: 60vw;
+    cursor: pointer;
+    font-family: "changa";
+    font-size: 3vh;
+  }
+
+  .btnBlue:hover {
+    background-color: #007ae4;
+  }
+
+  .text2Div {
+    background-color: rgb(23, 130, 60);
+    text-align: start;
+    padding-bottom: 3vh;
+    padding-right: 4vw;
+    padding-left: 3vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 29vh;
+    width: 85vw;
+    padding-top: 6vw;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+    margin-right: 0vw;
+    margin-left: 0px;
+    margin-top: -10vh;
+    position: absolute;
+    /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
+  }
+
+  .row2 {
+    margin-top: 18vh;
+    display: block;
+    margin-bottom: 28vh;
+  }
+
+  .src2 {
+    height: 50vh;
+    width: auto;
+    margin-right: 0vw;
   }
 }

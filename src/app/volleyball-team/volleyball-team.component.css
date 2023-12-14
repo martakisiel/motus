@@ -78,7 +78,20 @@ iframe {
   }
 
 }
-@media (min-width: 400px) and (max-width: 700px) {
+@media (min-width: 400px) and (max-width: 767px) {
+  .container {
+    height: auto;
+    margin-top: 5vh;
+  }
+  .textDiv {
+    width: 85vw;
+  }
+  iframe {
+    height: 50vh;
+    width:90vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   .container {
     height: auto;
     margin-top: 5vh;

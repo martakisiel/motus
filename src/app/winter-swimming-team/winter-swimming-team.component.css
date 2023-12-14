@@ -83,3 +83,88 @@
       
     }
 }
+@media (min-width: 400px) and (max-width: 767px) {
+  .row1 {
+    display: block;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+  }
+
+  .textDiv1 {
+    background-color: rgb(23, 130, 60);
+    text-align: start;
+    /* padding-bottom: 3vh; */
+    padding-right: 10vw;
+    padding-left: 3vw;
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    width: 94vw;
+    padding-top: 5vh;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    /* z-index: 1; */
+    padding-bottom: 3vh;
+    margin-left: 3vw;
+  }
+
+  .src1Div {
+    position: relative;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .src1 {
+    max-width: 90vw;
+    height: auto;
+    margin-top: -10px;
+    display: flex;
+    
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .row1 {
+    display: block;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+  }
+
+  .textDiv1 {
+    background-color: rgb(23, 130, 60);
+    text-align: start;
+    /* padding-bottom: 3vh; */
+    padding-right: 10vw;
+    padding-left: 3vw;
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    width: 94vw;
+    padding-top: 5vh;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    /* z-index: 1; */
+    padding-bottom: 3vh;
+    margin-left: 3vw;
+  }
+
+  .src1Div {
+    position: relative;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .src1 {
+    max-width: 90vw;
+    height: auto;
+    margin-top: -10px;
+    margin-left: 50vw;
+    display: flex;
+    
+  }
+}
