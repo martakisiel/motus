@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { BoardImg, ServiceService } from '../service.service';
+import { Board, ServiceService } from '../service.service';
 @Component({
   selector: 'app-o-nas',
   templateUrl:'./o-nas.component.html',
@@ -32,14 +32,14 @@ export class ONasComponent {
     nav: true
   }
 
-  boardImg: BoardImg[] = [];
+  board: Board[] = [];
   
   constructor(private serviceService:ServiceService){
   }
   
 ngOnInit() {
-  this.serviceService.getBoardImg().subscribe((response:string) => { 
-    this.boardImg = JSON.parse(response) as BoardImg[];
+  this.serviceService.getBoard().subscribe((response:string) => { 
+    this.board = JSON.parse(response) as Board[];
   });
 
 }
