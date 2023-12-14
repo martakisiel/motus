@@ -25,11 +25,13 @@ export class ServiceService {
   // ]
   //ZAMIENIĆ WSZYSTKO TABLICE Z SERVICE NA OSOBNE PLIKI ZACZYTYWANE Z FOLDEROW!!!!
   private galerySample: GalerySample[] = [
-    { url: "assets/galerySample/gs1.JPG", alt: "San" },
-    { url: "assets/galerySample/gs2.JPG", alt: "serw" },
-    { url: "assets/galerySample/gs3.JPG", alt: "Wspinaczka" },
-    { url: "assets/galerySample/gs4.JPG", alt: "kajaki" },
-    { url: "assets/galerySample/gs5.JPG", alt: "siatkówka" }
+    { url: "assets/galerySample/gs1.JPG", alt: "siatkówka" },
+    { url: "assets/galerySample/gs2.JPG", alt: "siatkówka" },
+    { url: "assets/galerySample/gs3.JPG", alt: "siatkówka" },
+    { url: "assets/galerySample/gs4.JPG", alt: "siatkówka" },
+    { url: "assets/galerySample/gs5.JPG", alt: "Wspinaczka" },
+    { url: "assets/galerySample/gs6.JPG", alt: "San" },
+    { url: "assets/galerySample/gs7.JPG", alt: "kajaki" }
 
   ]
 
