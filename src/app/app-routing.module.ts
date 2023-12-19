@@ -14,6 +14,7 @@ import { WinterSwimmingTeamComponent } from './winter-swimming-team/winter-swimm
 import { SportGroupsListComponent } from './sport-groups-list/sport-groups-list.component';
 import { SportGroupComponent } from './sport-group/sport-group.component';
 import { SupportComponent } from './support/support.component';
+import { FormComponent } from './form/form.component';
 
 
 const routes: Routes = [
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: '#o-nas', component:  ONasComponent }, 
   { path: '#o-nas/:id', component:  StatutComponent }, 
   { path: '#sekcje', component:  SportGroupsListComponent }, //osobna strona lista sekcji
+  { path: '#formularz', component:  FormComponent }, //osobna strona lista sekcji
   
   { path: '#sekcje/#siatkowka', component:  VolleyballTeamComponent }, //konkretna sekcja/:nazwaSekcji dodawaj kolejne przy tworzeniu następnych sekcji
   { path: '#sekcje/#morsowanie', component:  WinterSwimmingTeamComponent }, //konkretna sekcja/:nazwaSekcji dodawaj kolejne przy tworzeniu następnych sekcji

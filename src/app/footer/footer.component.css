@@ -39,7 +39,12 @@ i{
                   transform: translateX(-40%);
         }
       }
-
+      .logo {
+        height: 17vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
      /* @media screen and (orientation: portrait) and (max-width: 620px) {
    
 

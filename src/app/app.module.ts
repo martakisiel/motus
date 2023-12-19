@@ -37,6 +37,7 @@ import { SportGroupComponent } from './sport-group/sport-group.component';
 import { SupportComponent } from './support/support.component';
 import { SupportButtonComponent } from './support-button/support-button.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FormComponent } from './form/form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,6 +63,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     SupportComponent,
     SupportButtonComponent,
     ContactFormComponent,
+    FormComponent
  
   ],
   imports: [

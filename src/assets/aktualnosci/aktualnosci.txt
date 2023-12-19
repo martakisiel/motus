@@ -1,24 +1,24 @@
 [  
   {
-    "url":"assets/IMG_3491.JPG",
+    "url":"assets/IMG_3131.jpg",
     "alt":"siatkówka",
     "title": "Termin gry w siatkówkę",
     "date": "04.12.2023",
     "content": "Od teraz spotykamy się o godz. 19.30 w piątki, na Hali sportowej (ul.Mickiewicza, obok targu)."
     },
   {
-	"url":"assets/team.jpg",
+	"url":"assets/Logo KS Motus/Logo 3.png",
     "alt":"KS motus", 
     "title": "Jesteśmy klubem!",
     "date": "23.06.2023",
     "content": "Założenie KS Motus Lesko zostaje oficjalnie potwierdzone przez starostę Leskiego."
   },
   {
-	"url":"assets/banner4.jpg",
+	"url":"assets/volleyballTeam.jpg",
     "alt":"ks Motus",
     "title": "Spotkanie założycielskie",
     "date": "16.06.2023",
-    "content": ""
+    "content": "Zapadła decyzja! Chcemy rozwijać nasze sportowe pasje, dlatego ruszamy z utworzeniem KS."
   },
 {
 	"url":"assets/IMG_3491.JPG",

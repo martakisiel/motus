@@ -1,0 +1,48 @@
+.bg {
+  height: 85vh;
+  width: 90vw;
+
+  text-align: start;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1%;
+}
+.submitButton {
+  font-family: "Lato";
+  font-size: 20px;
+  background-color: #315c35;
+  color: aliceblue;
+  border: 2px solid #315c35;
+  border-radius: 5px;
+  padding: 5px 30px 5px 30px;
+}
+
+.formText {
+  font-family: "lato";
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.sliteintest {
+  height: 120vh;
+  background-color: aliceblue;
+}
+
+
+@media (max-width: 360px) {
+  .center {
+    display: block;
+
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+  .pt {
+    padding-top: 100%;
+  }
+}

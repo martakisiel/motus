@@ -9,11 +9,11 @@ export class ServiceService {
   private selectedImageIndex = 0;
   private configUrl = "assets/sportGroups/";
   constructor(private http: HttpClient) { }
-  private logoSponsors: Sponsors[] = [
-    { alt: "SkyWorldGames", url: "assets/sponsorzy/1.png", link: "https://skyworldgames.com/" },
-    { alt: "gmina Lesko", url: "assets/sponsorzy/2.jpg", link: "https://www.lesko.pl/" },
+  // private logoSponsors: Sponsors[] = [
+  //   { alt: "SkyWorldGames", url: "assets/sponsorzy/1.png", link: "https://skyworldgames.com/" },
+  //   { alt: "gmina Lesko", url: "assets/sponsorzy/2.jpg", link: "https://www.lesko.pl/" },
 
-  ]
+  // ]
 
   // private aktualnosci: Aktualnosci[] = [
   //   { title: "Mecz siatkówki na hali SP Lesko", date: "21.09.2023", content:"W czwartek 21.09.2023 o godzinie 19:00 odbędzie się koleżeński mecz siatkówki."},
@@ -36,7 +36,9 @@ export class ServiceService {
   ]
 
  
-
+getSponsors():Observable<string>{
+  return this.http.get('assets/sponsors/sponsorsList.txt', {responseType:'text'})
+}
   getBoard():Observable<string>{
     return this.http.get('assets/zarzad/zarzadLista.txt', {responseType:'text'});
   }
@@ -48,9 +50,9 @@ export class ServiceService {
     return this.http.get('assets/sportGroups/sportGroupsList.txt', { responseType: 'text' });
   }
 
-  getLogoSponsors() {
-    return this.logoSponsors;
-  }
+  // getLogoSponsors() {
+  //   return this.logoSponsors;
+  // }
   getGalerySample() {
     return this.galerySample;
   }
@@ -66,9 +68,10 @@ export class ServiceService {
 
 }
 export interface Sponsors {
-  alt: string | undefined;
   url: string;
-  link: string;
+  logo: string;
+  name: string;
+  id: string;
 }
 export interface GalerySample {
   alt: string | undefined;

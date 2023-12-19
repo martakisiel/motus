@@ -1,6 +1,6 @@
 <div class="container-fluid bgFooter intro">
     <div class="row">
-        <div class="col-md-4 justify-content-start p-3">
+        <div class="col-md justify-content-start p-3">
             <div class="textFooterHeader"> KS MOTUS Lesko <div>
                     <div class="textFooter"><i class="fa-solid fa-at" style="color: #ffffff;"></i> <a
                             href="mailto:ksmotus@gmail.com"> ksmotus@gmail.com</a> | <i
@@ -13,18 +13,23 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 text-center align-items-center p-3 order-first order-md-0 ">
+        <div class="col-md text-center align-items-center p-3 order-first order-md-0 ">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
 
                     <div *ngFor='let sponsor of sponsors' class="carousel-item active">
-                        <a [href]="sponsor.link" target="_blank">
-                            <img [src]="sponsor.url" [alt]="sponsor.alt" class=" justify-content-center ">
+                        <a [href]="sponsor.url" target="_blank">
+                            <img [src]="sponsor.logo" [alt]="sponsor.name" class=" justify-content-center ">
                         </a>
                     </div>
 
                 </div>
             </div>
+
+        </div>
+        <div class="col-md logo">
+            <img src="assets/Logo KS Motus/Logo 4.png" alt="KS motus Lesko" class="logo cos">
+
 
         </div>
         <div class="row order-last mb-2">
