@@ -15,9 +15,9 @@
     background-color: rgb(23, 130, 60);
   }
   .card-img-top {
-    object-fit: cover;
+    object-fit:cover;
     object-position: top;
-    height: 40vh;
+    height: 30vh;
     /* margin: 10px 5px 2px 1px; */
   }
   

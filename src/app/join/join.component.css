@@ -210,6 +210,7 @@ legend {
   }
   fieldset{
     padding: 0vw 15vw;
+    margin-bottom: 10vh;
   }
   .src {
     width: 95vw;

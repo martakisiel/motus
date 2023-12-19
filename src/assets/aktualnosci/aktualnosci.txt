@@ -18,7 +18,7 @@
     "alt":"ks Motus",
     "title": "Spotkanie założycielskie",
     "date": "16.06.2023",
-    "content": "Zapadła decyzja! Chcemy rozwijać nasze sportowe pasje, dlatego ruszamy z utworzeniem KS."
+    "content": "Zapadła decyzja! Chcemy rozwijać nasze sportowe pasje, dlatego zakładamy KS."
   },
 {
 	"url":"assets/IMG_3491.JPG",
