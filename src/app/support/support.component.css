@@ -4,12 +4,13 @@
 }
 .support {
   font-family: "lato";
-  font-size: 2vh;
+  font-size: 2.5vh;
   color: aliceblue;
   background-color: rgb(23, 130, 60);
-  padding: 3vh;
+  padding: 5vh;
   text-align: center;
   width: 90vw;
+  height: 21vh;
 }
 
 button {
@@ -58,10 +59,7 @@ button {
 .textDiv1 {
   background-color: rgb(23, 130, 60);
   text-align: start;
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-  padding-right: 3vw;
-  padding-left: 3vw;
+  padding: 3vw;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -115,9 +113,7 @@ button {
 .text2Div {
   background-color: rgb(23, 130, 60);
   text-align: start;
-  padding-bottom: 3vh;
-  padding-right: 4vw;
-  padding-left: 3vw;
+  padding: 3vw;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -161,10 +157,11 @@ button {
   .textDiv1 {
     background-color: rgb(23, 130, 60);
     text-align: start;
-    padding-right: 3vw;
-    padding-left: 3vw;
+    padding-right: 4vw;
+    padding-left: 6vw;
     padding-top: 2vh;
     padding-bottom: 3vh;
+    margin-left: -6vw;
     align-items: center;
     display: flex;
     height: fit-content;
@@ -179,7 +176,8 @@ button {
     position: relative;
     margin-top: -6vh;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    margin-left: -2vw;
     z-index: 1;
   }
 
@@ -202,7 +200,7 @@ button {
     text-align: start;
     padding-bottom: 3vh;
     padding-right: 4vw;
-    padding-left: 4vw;
+    padding-left: 6vw;
     /* align-items: center; */
     display: flex;
     justify-content: right;
@@ -213,7 +211,7 @@ button {
     font-size: 2vh;
     color: aliceblue;
     z-index: 0;
-    margin-right: 0vw;
+    margin-right: -1vw;
     margin-left: 0vw;
     /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
     margin-top: 0vh;
@@ -225,8 +223,16 @@ button {
     justify-content: center;
     z-index: 1;
   }
+  .srcMapDiv {
+    position: relative;
+    margin-top: -4vh;
+    display: flex;
+    justify-content: start;
+    z-index: 0;
+    margin-right: 2vw;
+  }
   .srcMap {
-    max-height: 37vh;
+    height: 30vh;
     width: auto;
     z-index: 1;
   }

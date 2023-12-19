@@ -14,7 +14,7 @@
     "content": "Założenie KS Motus Lesko zostaje oficjalnie potwierdzone przez starostę Leskiego."
   },
   {
-	"url":"assets/volleyballTeam.jpg",
+	"url":"assets/zarzad/zarzad.jpg",
     "alt":"ks Motus",
     "title": "Spotkanie założycielskie",
     "date": "16.06.2023",
