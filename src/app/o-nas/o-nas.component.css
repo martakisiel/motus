@@ -99,47 +99,6 @@ button {
   /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
 }
 
-.textOnPic {
-  align-items: center;
-  height: 40vh;
-  padding: 50px;
-
-  width: 35vw;
-  z-index: 1;
-  margin-right: -20px;
-
-  font-family: "lato";
-  font-size: 2vh;
-  color: aliceblue;
-}
-
-.textOnPic2 {
-  align-items: center;
-  height: 40vh;
-  padding: 50px;
-
-  width: 35vw;
-  z-index: 1;
-
-  font-family: "lato";
-  font-size: 2vh;
-  color: aliceblue;
-}
-
-.onPicCenter {
-  position: absolute;
-  top: 110vh;
-  left: 50%;
-  transform: translate(-49%, 470%);
-  /* font-size: 18px; */
-}
-
-.join {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
-}
-
 .center {
   display: flex;
   justify-content: center;
@@ -154,7 +113,7 @@ fieldset {
   border-width: 5px 0px 0px 0px;
   border-style: solid;
   border-color: rgb(23, 130, 60);
-  padding: 0 40vw;
+  padding: 0 35vw;
   /*20 na małym*/
   filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
   height: fit-content;
@@ -200,10 +159,6 @@ legend {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.text-left {
-  padding-left: 20vw;
-  padding-right: 20vw;
 }
 
 @media (min-width: 250px) and (max-width: 399px) {
@@ -257,29 +212,117 @@ legend {
     max-width: 90vw;
     height: auto;
     margin-top: -10px;
+    margin-left: 3vw;
     display: flex;
   }
-
-  .btn1 {
-    position: absolute;
-    top: 110%;
-    left: 15%;
-    transform: translate(0%, 0vh);
-    min-width: 70vw;
-    height: 10vh;
-    /* width: 25vw; */
-    z-index: 1;
-    background-color: aliceblue;
-    color: rgb(23, 130, 60);
-    border-color: aliceblue;
-  }
-
-  .intro {
-    margin-top: 30vh;
-  }
-
-  .intro1 {
+  .row2 {
     margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+
+  .src2 {
+    max-width: 90vw;
+    height: auto;
+    margin-right: 0%;
+  }
+
+  .text2Div {
+    background-color: rgb(23, 130, 60);
+    text-align: start;
+    padding-bottom: 3vh;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    /* align-items: center; */
+    display: flex;
+    justify-content: right;
+    height: 40vh;
+    width: 85vw;
+    padding-top: 11vw;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+    margin-right: 0vw;
+    margin-left: 0vw;
+    /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
+    margin-top: -5vh;
+  }
+  legend {
+    width: 40vw;
+    /*50vw na małym*/
+    height: 50px;
+    margin-top: -18px;
+    margin-left: 0vw;
+    /*20 na małym*/
+    background-color: black;
+  }
+
+  fieldset {
+    border-width: 5px 0px 0px 0px;
+    border-style: solid;
+    border-color: rgb(23, 130, 60);
+    padding: 0 26vw;
+    /*20 na małym*/
+    filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
+    height: fit-content;
+    width: fit-content;
+  }
+}
+@media (min-width: 400px) and (max-width: 767px) {
+  .names {
+    font-family: "lato";
+    font-size: 4vh;
+    color: aliceblue;
+    padding: 6vh 6vh 3vh 3vh;
+  }
+  .profileImg {
+    width: 40vh;
+    height: 40vh;
+    display: flex;
+    padding-top: 3vh;
+  }
+  .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+  }
+
+  .textDiv1 {
+    background-color: rgb(23, 130, 60);
+    text-align: start;
+    /* padding-bottom: 3vh; */
+    padding-right: 10vw;
+    padding-left: 3vw;
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    width: 85vw;
+    padding-top: 5vh;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+    padding-bottom: 3vh;
+  }
+
+  .src1Div {
+    position: relative;
+    margin-top: -20px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .src1 {
+    max-width: 90vw;
+    height: auto;
+    margin-top: -10px;
+    margin-left: 6vw;
+    display: flex;
   }
 
   .row2 {
@@ -316,42 +359,6 @@ legend {
     /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
     margin-top: -5vh;
   }
-
-  .join {
-    margin-top: -20px;
-    display: flex;
-    justify-content: right;
-    margin-bottom: -70px;
-  }
-
-  .onPicCenter {
-    position: absolute;
-    top: 155vh;
-    left: 50%;
-    transform: translate(-32%, -310%);
-  }
-
-  .textIntro {
-    padding-bottom: 0%;
-  }
-
-  .textOnPic {
-    text-align: start;
-    padding-bottom: 5vh;
-    padding-right: 15vw;
-    align-items: center;
-    height: 30vh;
-    width: 40vh;
-  }
-
-  .textOnPic2 {
-    text-align: revert;
-    padding-bottom: 5vh;
-    padding-left: 4vw;
-    height: 25vh;
-    width: 75vw;
-    margin-left: 25vw;
-  }
   legend {
     width: 40vw;
     /*50vw na małym*/
@@ -363,178 +370,11 @@ legend {
   }
 
   fieldset {
-    border-width: 5px 0px 0px 0px;
-    border-style: solid;
-    border-color: rgb(23, 130, 60);
-    padding: 0 26vw;
-    /*20 na małym*/
-    filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
-    height: fit-content;
-    width: fit-content;
-  }
-  .text-left {
-    padding-left: 0vw;
-    padding-right: 0vw;
-  }
-  .text-center {
-    margin: 0px;
+    padding: 0 29vw;
   }
 }
-@media (min-width: 400px) and (max-width: 700px) {
-  .row1 {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-top: 5vh;
-  }
-
-  .textDiv1 {
-    background-color: rgb(23, 130, 60);
-    text-align: start;
-    /* padding-bottom: 3vh; */
-    padding-right: 10vw;
-    padding-left: 3vw;
-    align-items: center;
-    display: flex;
-    height: 20vh;
-    width: 85vw;
-    padding-top: 5vh;
-    font-family: "lato";
-    font-size: 2vh;
-    color: aliceblue;
-    z-index: 1;
-    padding-bottom: 3vh;
-  }
-
-  .src1Div {
-    position: relative;
-    margin-top: -20px;
-    display: flex;
-    justify-content: left;
-  }
-
-  .src1 {
-    max-width: 90vw;
-    height: auto;
-    margin-top: -10px;
-    display: flex;
-  }
-
-  .btn1 {
-    position: absolute;
-    top: 110%;
-    left: 15%;
-    transform: translate(0%, 0vh);
-
-    min-width: 70vw;
-
-    height: 10vh;
-    /* width: 25vw; */
-    z-index: 1;
-    background-color: aliceblue;
-    color: rgb(23, 130, 60);
-    border-color: aliceblue;
-  }
-
-  .intro {
-    margin-top: 30vh;
-  }
-
-  .intro1 {
-    margin-top: 5vh;
-  }
-
-  .row2 {
-    margin-top: 15vh;
-    display: flex;
-    justify-content: right;
-  }
-
-  .src2 {
-    max-width: 90vw;
-    height: auto;
-    margin-right: 0%;
-  }
-
-  .text2Div {
-    background-color: rgb(23, 130, 60);
-    text-align: start;
-    padding-bottom: 3vh;
-    padding-right: 4vw;
-    padding-left: 4vw;
-    /* align-items: center; */
-    display: flex;
-    justify-content: right;
-    height: 30vh;
-    width: 85vw;
-    padding-top: 11vw;
-    font-family: "lato";
-    font-size: 2vh;
-    color: aliceblue;
-    z-index: 1;
-    margin-right: 0vw;
-    margin-left: 0vw;
-    /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
-    margin-top: -5vh;
-  }
-
-  .join {
-    margin-top: -20px;
-    display: flex;
-    justify-content: right;
-    margin-bottom: -70px;
-  }
-
-  .onPicCenter {
-    position: absolute;
-    top: 155vh;
-    left: 50%;
-    transform: translate(-32%, -310%);
-  }
-
-  .textIntro {
-    padding-bottom: 0%;
-  }
-
-  .textOnPic {
-    text-align: start;
-    padding-bottom: 5vh;
-    padding-right: 15vw;
-    align-items: center;
-    height: 30vh;
-    width: 40vh;
-  }
-
-  .textOnPic2 {
-    text-align: revert;
-    padding-bottom: 5vh;
-    padding-left: 4vw;
-    height: 25vh;
-    width: 75vw;
-    margin-left: 25vw;
-  }
-  legend {
-    width: 50vw;
-    /*50vw na małym*/
-    height: 50px;
-    margin-top: -24px;
-    margin-left: 0vw;
-    /*20 na małym*/
-    background-color: black;
-  }
-
+@media (min-width: 768px) and (max-width: 991px) {
   fieldset {
-    border-width: 5px 0px 0px 0px;
-    border-style: solid;
-    border-color: rgb(23, 130, 60);
-    padding: 0 20vw;
-    /*20 na małym*/
-    filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
-    height: fit-content;
-    width: fit-content;
-  }
-  .text-left {
-    padding-left: 0vw;
-    padding-right: 0vw;
+    padding: 0 29vw;
   }
 }

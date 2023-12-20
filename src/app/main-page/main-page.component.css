@@ -1,3 +1,7 @@
+.row .container {
+  --bs-gutter-x: 0rem !important;
+  --bs-gutter-y: 0;
+}
 button {
   z-index: 1;
 }
@@ -9,11 +13,11 @@ button {
   background-color: rgb(23, 130, 60);
   width: fit-content;
   height: fit-content;
-  margin-right: 3vw;
   color: aliceblue;
   font-family: "lato";
   font-size: 2vh;
   border-radius: 0%;
+  z-index: 2;
 }
 .arrow {
   height: 15px;

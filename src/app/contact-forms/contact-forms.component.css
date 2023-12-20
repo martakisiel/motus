@@ -12,7 +12,7 @@
 }
 .colCon {
   height: 7vh;
-  width: 30vw;
+  width: 40vw;
   background-color: rgb(23, 130, 60);
   color: aliceblue;
   font-family: "lato";
@@ -63,7 +63,7 @@ button {
   font-size: 2vh;
   border-style: hidden;
   border-radius: 10px 10px 10px 10px;
-  padding: 1%;
+  padding-left: 4vw;
 }
 
 .copyBtn {
@@ -84,7 +84,7 @@ button {
     background-color: rgb(23, 130, 60);
     color: aliceblue;
     font-family: "lato";
-    font-size: 2vh;
+    font-size: 1.5vh;
     text-align: end;
   }
   .col-md {
@@ -108,6 +108,7 @@ button {
   button {
     width: 60vw;
     height: 7vh;
+    
   }
   .order1 {
     order: 2;

@@ -2,7 +2,7 @@ fieldset {
   border-width: 5px 0px 0px 0px;
   border-style: solid;
   border-color: rgb(23, 130, 60);
-  padding: 0vw 20vw;
+  padding: 0vw 33vw;
   /*20 na małym*/
   margin-bottom: 5vh;
   margin-top: 10vh;
@@ -11,14 +11,10 @@ fieldset {
 }
 
 legend {
-  width: 20vw;
-  /* dł.zielonej kreski */
-  /*50vw na małym*/
-  height: 5vh;
-  margin-top: -25px;
+  width: 25vw;
+  height: 9vh;
+  margin-top: -32px;
   margin-left: 2vw;
-  /* wyjustowanie */
-  /*20 na małym*/
   background-color: black;
 }
 
@@ -43,8 +39,8 @@ legend {
   margin: auto;
   display: block;
   height: 15vh;
-  width: 25vw;
-  background-color: #007AE4;
+  width: 50vw;
+  background-color: #007ae4;
   cursor: pointer;
 }
 .textBtn {
@@ -72,7 +68,7 @@ legend {
   height: fit-content;
   padding: 2% 2% 2% 2%;
   width: 25vw;
-  height:fit-content;
+  height: fit-content;
   border-radius: 2%;
 }
 .number {
@@ -84,12 +80,12 @@ legend {
 @media (min-width: 250px) and (max-width: 399px) {
   legend {
     width: 60vw;
-    height: 8vh;
-    margin-top: -36px;
+    height: 6vh;
+    margin-top: -29px;
     margin-left: 2vw;
     background-color: black;
   }
-  fieldset{
+  fieldset {
     padding: 0vw 15vw;
   }
   .src {
@@ -123,24 +119,24 @@ legend {
     height: 15vh;
     width: 85vw;
     z-index: 0;
-    background-color: #007AE4;
+    background-color: #007ae4;
     cursor: pointer;
     margin-top: 1vh;
   }
-  .textBtn{
+  .textBtn {
     font-size: 2vh;
   }
-  .number{
+  .number {
     font-size: 5vh;
   }
-  .adres{
+  .adres {
     font-size: 1.7vh;
   }
   .row {
     justify-content: center;
   }
 }
-@media (min-width: 400px) and (max-width: 767px) {
+@media (min-width: 400px) and (max-width: 524px) {
   legend {
     width: 60vw;
     height: 8vh;
@@ -148,11 +144,11 @@ legend {
     margin-left: 2vw;
     background-color: black;
   }
-  fieldset{
+  fieldset {
     padding: 0vw 15vw;
   }
   .src {
-    width: 95vw;
+    width: 75vw;
     height: auto;
     margin: auto;
     display: block;
@@ -166,7 +162,7 @@ legend {
   .div {
     text-align: center;
     background-color: rgb(23, 130, 60);
-    height: 32vh;
+    height: 25vh;
     padding: 2% 2% 2% 2%;
     width: 85vw;
     border-radius: 2%;
@@ -182,17 +178,17 @@ legend {
     height: 15vh;
     width: 85vw;
     z-index: 0;
-    background-color: #007AE4;
+    background-color: #007ae4;
     cursor: pointer;
     margin-top: 1vh;
   }
-  .textBtn{
+  .textBtn {
     font-size: 2vh;
   }
-  .number{
+  .number {
     font-size: 5vh;
   }
-  .adres{
+  .adres {
     font-size: 1.7vh;
   }
   .row {
@@ -200,36 +196,30 @@ legend {
   }
 }
 
-@media (min-width: 768) and (max-width: 991px) {
+@media (min-width: 525px) and (max-width: 575px) {
   legend {
     width: 60vw;
     height: 8vh;
-    margin-top: -36px;
+    margin-top: -20px;
     margin-left: 2vw;
     background-color: black;
   }
-  fieldset{
+  fieldset {
     padding: 0vw 15vw;
-    margin-bottom: 10vh;
   }
   .src {
-    width: 95vw;
+    width: 75vw;
     height: auto;
     margin: auto;
     display: block;
   }
-  .div1 {
-    background-color: rgb(23, 130, 60);
-    height: 30vh;
-    padding: 2% 2% 2% 2%;
-    width: 100vw;
-  }
+
   .div {
     text-align: center;
     background-color: rgb(23, 130, 60);
     height: 32vh;
     padding: 2% 2% 2% 2%;
-    width: 85vw;
+    width: 75vw;
     border-radius: 2%;
   }
   .textDiv {
@@ -241,22 +231,33 @@ legend {
   }
   .btnBlue {
     height: 15vh;
-    width: 85vw;
+    width: 75vw;
     z-index: 0;
-    background-color: #007AE4;
+    background-color: #007ae4;
     cursor: pointer;
     margin-top: 1vh;
   }
-  .textBtn{
+  .textBtn {
     font-size: 2vh;
   }
-  .number{
+  .number {
     font-size: 5vh;
   }
-  .adres{
+  .adres {
     font-size: 1.7vh;
   }
   .row {
     justify-content: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .btnBlue {
+    width: 75vw;
+  }
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    justify-content: center;
+    display: flex;
   }
 }
