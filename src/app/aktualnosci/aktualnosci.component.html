@@ -19,13 +19,13 @@
     <!-- PIERWSZE X POZYCJI Z TABLICY OKRESLONYCH W .ts -->
     <div class="col-sm center" *ngFor="let item of aktualnosci.slice(0, 2)">
         <div class="card">
-        <img  [src]="item.url" [alt]="item.alt" class="card-img-top">
+        <img  [src]="item.url" [alt]="item.alt" class="card-img-top" >
             <div class="card-body">
                 <p class="card-title">{{item.title}}</p>
                 <span class="date">
                     {{item.date}}
                 </span>
-                <p class="card-text module line-clamp3">{{item.content}}
+                <p class="card-text module line-clamp">{{item.content}}
                 </p>
             </div>
         </div>

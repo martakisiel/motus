@@ -7,6 +7,13 @@
     "content": "Od teraz spotykamy się o godz. 19.30 w piątki, na Hali sportowej (ul.Mickiewicza, obok targu)."
     },
   {
+    "url":"assets/Waleria.jpg",
+    "alt":"Do zobaczenia Walerio!", 
+    "title": "Do zobaczenia Walerio!",
+    "date": "29.06.2023",
+    "content": "Przez pare miesięcy mieliśmy przyjemność grać w siatkówkę z Walerią- genialną rozgrywającą:). Waleria postanowiła jednak wrócić w rodzinne strony na Ukraine. Mamy nadzieję, że wojna szybko się skończy!"
+  },
+  {
 	"url":"assets/Logo KS Motus/Logo 3.png",
     "alt":"KS motus", 
     "title": "Jesteśmy klubem!",
