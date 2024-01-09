@@ -26,7 +26,7 @@
 }
 
 .card {
-  /* width: 31vw; */
+  width: 31vw;
   /*na małym ekranie zmienić do 100%*/
   background-color: black;
   margin-bottom: 2vh;
@@ -85,6 +85,7 @@ legend {
   height: 50px;
   margin-top: -24px;
   margin-left: 1vw;
+  padding-left: 2vw;
   /*20 na małym*/
   background-color: black;
 }
@@ -103,6 +104,7 @@ legend {
     width: 50vw;
     /*50vw na małym*/
     height: 50px;
+    padding: 2vw 0vw 0vw 5vw;
     margin-top: -24px;
     margin-left: 0vw;
     /*20 na małym*/

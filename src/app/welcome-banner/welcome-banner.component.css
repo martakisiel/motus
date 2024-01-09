@@ -1,10 +1,9 @@
 .welcomeBanner {
   background: url(src/assets/banner1.jpg) no-repeat center top fixed;
-  /* background-repeat: no-repeat; */
-  /* background-position: top; */
   background-size: cover;
-  height: 100vh;
-  margin-top: -50vh;
+  height: 140vh;
+  width: 100vw;
+  margin: -90vh 0vh 0vh 0vh;
 }
 .welcomeText {
   font-size: 9vh;
@@ -12,14 +11,16 @@
   color: aliceblue;
   /*rgb(23, 130, 60)*/
   /* padding-right: 11%; */
-  margin-top: 10vh;
-  /* margin-right: 5vw; */
+  margin-top: 22vh;
+  margin-right: 5vw;
   background: none;
   z-index: 0;
 }
 .logo {
   height: 50vh;
   /* 45 */
+  margin-top: 13vh;
+  margin-left: 5vw;
   display: flex;
   align-items: center;
   justify-content: start;

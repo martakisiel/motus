@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5vh;
+  margin-top: 10vh;
 }
 
 .textDiv1 {
@@ -41,7 +41,7 @@
   font-style: italic;
 }
 .row2 {
-  margin-top: 10vh;
+  margin-top: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@
 .src2 {
   height: 45vh;
   width: auto;
-  margin-left: -6vw;
+  margin-left: -4vw;
 }
 
 .align {
@@ -76,7 +76,7 @@
   color: aliceblue;
   z-index: 1;
   margin-right: 0vw;
-  margin-left: -17vw;
+  margin-left: -22vw;
   /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
 }
 
@@ -170,7 +170,7 @@
     background-color: rgb(23, 130, 60);
     text-align: start;
     padding: 4vh 10vw 2vh 8vw;
-    margin-left: -3vw;
+    margin-left: 3vw;
     align-items: center;
     display: flex;
     height: 37vh;
@@ -192,6 +192,7 @@
     max-width: 90vw;
     height: auto;
     margin-top: -10px;
+    margin-left: 8vw;
     display: flex;
   }
 
@@ -230,7 +231,7 @@
   .text2Div {
     background-color: rgb(23, 130, 60);
     text-align: start;
-    padding: 4vh 10vw 2vh 8vw;
+    padding: 4vh 6vw 4vh 6vw;;
     /* align-items: center; */
     display: flex;
     justify-content: right;
@@ -240,7 +241,7 @@
     font-size: 2vh;
     color: aliceblue;
     z-index: 1;
-    margin-right: 0vw;
+    margin-right: 3vw;
     margin-left: 0vw;
     /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
     margin-top: -5vh;
