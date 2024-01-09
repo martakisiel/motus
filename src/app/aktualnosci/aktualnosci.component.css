@@ -26,20 +26,20 @@
 }
 
 .card {
-  width: 31vw;
+  /* width: 31vw; */
   /*na małym ekranie zmienić do 100%*/
   background-color: black;
   margin-bottom: 2vh;
   border: 0%;
 }
 .card-body {
-  border: 0%;
+  min-height: 23vh;
   background-color: rgb(23, 130, 60);
 }
 .card-img-top {
   object-fit: cover;
   object-position: top;
-  height: 64vh;
+  height: 50vh;
   /* margin: 10px 5px 2px 1px; */
 }
 
@@ -92,6 +92,7 @@ legend {
 .center {
   display: flex;
   justify-content: center;
+  align-items: start;
 }
 
 @media screen and (max-width: 650px) {
@@ -121,15 +122,20 @@ legend {
 
   .card {
     width: 100%;
+
     /*na małym ekranie zmienić do 100%*/
     background-color: none;
     margin-bottom: 2vh;
   }
-
+  .card-img-top {
+    object-fit: cover;
+    object-position: top;
+    height: 30vh;
+    /* margin: 10px 5px 2px 1px; */
+  }
   .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
   }
-
 }
