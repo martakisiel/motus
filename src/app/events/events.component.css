@@ -28,7 +28,10 @@
   width: 100%;
   /*na małym ekranie zmienić do 100%*/
   background-color: black;
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
+  border-color: black;
+  border-radius: 0%;
+  border-style: none;
  
 }
 .card-body {
@@ -39,7 +42,8 @@
 .card-img-top {
   object-fit: cover;
   object-position: top;
-  height: 51vh;
+  height: 52vh;
+  border-radius: 0%;
 }
 .card-title {
   color: aliceblue;
@@ -62,6 +66,7 @@
   margin-top: 15px;
   font-family: "lato";
   font-size: 2vh;
+  
   /* text truncation */
 }
 
@@ -141,7 +146,9 @@ button {
   .card {
     width: 100%;
     /*na małym ekranie zmienić do 100%*/
-    background-color: rgb(23, 130, 60);
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
+    border-color: black;
+    border-radius: 0%;
+    border-style: none;
   }
 }
