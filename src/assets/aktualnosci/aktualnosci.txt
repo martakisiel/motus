@@ -4,7 +4,7 @@
     "alt":"siatkówka",
     "title": "Termin gry w siatkówkę",
     "date": "04.12.2023",
-    "content": "Od teraz spotykamy się o godz. 19.30 w piątki, na Hali sportowej (ul.Mickiewicza, obok targu)."
+    "content": "Od teraz spotykamy się o godz. 19.30 w piątki, na Hali sportowej (ul.Mickiewicza, obok placu targowego)."
     },
   {
     "url":"assets/Waleria.jpg",
