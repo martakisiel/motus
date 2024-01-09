@@ -36,9 +36,7 @@
   height: 50vh;
   width: auto;
 }
-.rowRead {
-  /* margin-right: -17vw; */
-}
+
 .pI {
   font-style: italic;
 }
@@ -50,9 +48,9 @@
 }
 
 .src2 {
-  height: 50vh;
+  height: 45vh;
   width: auto;
-  margin-left: -9vw;
+  margin-left: -6vw;
 }
 
 .align {
@@ -78,7 +76,7 @@
   color: aliceblue;
   z-index: 1;
   margin-right: 0vw;
-  margin-left: -15vw;
+  margin-left: -17vw;
   /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
 }
 
@@ -295,19 +293,17 @@
   .textDiv1 {
     background-color: rgb(23, 130, 60);
     text-align: start;
-    /* padding-bottom: 3vh; */
-    padding-right: 10vw;
-    padding-left: 3vw;
+    padding: 4vh 10vw 2vh 8vw;
     align-items: center;
     display: flex;
     height: 38vh;
     width: 85vw;
-    padding-top: 5vh;
     font-family: "lato";
     font-size: 2vh;
     color: aliceblue;
     z-index: 1;
-    padding-bottom: 3vh;
+    margin-left: -3vw;
+
   }
 
   .src1Div {
@@ -322,6 +318,7 @@
     height: auto;
     margin-top: -10px;
     display: flex;
+    z-index: -1;
   }
 
   .btnBlue {
@@ -360,20 +357,18 @@
     max-width: 90vw;
     height: auto;
     margin-right: 0%;
+    margin-left: -1vw;
   }
 
   .text2Div {
     background-color: rgb(23, 130, 60);
     text-align: start;
-    padding-bottom: 3vh;
-    padding-right: 4vw;
-    padding-left: 4vw;
+    padding: 4vh 10vw 2vh 8vw;
     /* align-items: center; */
     display: flex;
     justify-content: right;
     height: 38vh;
     width: 85vw;
-    padding-top: 11vw;
     font-family: "lato";
     font-size: 2vh;
     color: aliceblue;
