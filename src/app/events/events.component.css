@@ -5,7 +5,7 @@
   margin: 0px;
 }
 .aktualnosci {
-  margin-top: 7vh;
+  margin-top: 10vh;
 }
 .intro {
   margin-top: 10vh;
@@ -29,16 +29,17 @@
   /*na małym ekranie zmienić do 100%*/
   background-color: black;
   margin-bottom: 2vh;
-  border: 0%;
+ 
 }
 .card-body {
-  border: 0%;
+  min-height: 27vh;
+
   background-color: rgb(23, 130, 60);
 }
 .card-img-top {
   object-fit: cover;
   object-position: top;
-  height: 40vh;
+  height: 51vh;
 }
 .card-title {
   color: aliceblue;
