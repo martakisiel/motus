@@ -11,16 +11,20 @@
   font-size: 2.5vh;
 }
 .colCon {
-  height: 7vh;
-  width: 40vw;
+  height: 8vh;
+  width: 94vw;
   background-color: rgb(23, 130, 60);
   color: aliceblue;
   font-family: "lato";
   font-size: 2vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0 35vw 0 0;
   text-align: end;
 }
 .col-md {
-  margin-left: 35vw;
+  margin-left: 2vw;
   margin-right: auto;
 }
 .col-sm {
@@ -77,7 +81,7 @@ button {
 .order2 {
   order: 2;
 }
-@media (min-width: 250px) and (max-width: 399px) {
+@media (min-width: 250px) and (max-width: 400px) {
   .colCon {
     height: 8vh;
     width: 94vw;
@@ -85,11 +89,15 @@ button {
     color: aliceblue;
     font-family: "lato";
     font-size: 1.5vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 17vw 0 0;
     text-align: end;
   }
   .col-md {
-    margin-left: -1vw;
-    margin-right: 1vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
     padding-left: 0vw;
   }
   .col-sm {
@@ -108,7 +116,54 @@ button {
   button {
     width: 60vw;
     height: 7vh;
-    
+  }
+  .order1 {
+    order: 2;
+    padding-top: 5vh;
+  }
+  .order2 {
+    order: 1;
+  }
+}
+@media (min-width: 401px) and (max-width: 719px) {
+  .row{
+    --bs-gutter-x: 0rem !important;
+    --bs-gutter-y: 0;
+  }
+  .colCon {
+    height: 8vh;
+    width: 85vw;
+    background-color: rgb(23, 130, 60);
+    color: aliceblue;
+    font-family: "lato";
+    font-size: 1.5vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 17vw 0 0;
+    text-align: end;
+  }
+  .col-md {
+    margin-left: 3vw;
+    margin-right: 0vw;
+    padding-left: 0vw;
+  }
+  .col-sm {
+    flex: 0 0 auto;
+    width: auto;
+    padding-left: 5vw;
+  }
+
+  input {
+    width: 60vw;
+    margin-top: 1vh;
+  }
+  textarea {
+    width: 75vw;
+  }
+  button {
+    width: 60vw;
+    height: 7vh;
   }
   .order1 {
     order: 2;
@@ -119,7 +174,7 @@ button {
   }
 }
 
-@media (min-width: 400px) and (max-width: 767px) {
+@media (min-width: 720px) and (max-width: 767px) {
   .colCon {
     height: 8vh;
     width: 94vw;
@@ -127,11 +182,15 @@ button {
     color: aliceblue;
     font-family: "lato";
     font-size: 2vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 30vw 0 0;
     text-align: end;
   }
   .col-md {
-    margin-left: -1vw;
-    margin-right: 1vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
     padding-left: 0vw;
   }
   .col-sm {
@@ -167,10 +226,14 @@ button {
     color: aliceblue;
     font-family: "lato";
     font-size: 2vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 30vw 0 0;
     text-align: end;
   }
   .col-md {
-    margin-left: 2vw;
+    margin-left: 1vw;
     margin-right: 1vw;
     padding-left: 0vw;
   }

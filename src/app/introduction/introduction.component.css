@@ -21,15 +21,16 @@
   font-size: 2vh;
   color: aliceblue;
   z-index: 1;
-  margin-right: -2vw;
+  margin-right: 0vw;
   /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
 }
 
 .src1Div {
   position: relative;
   margin-top: -20px;
+  margin-left: -10vw;
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
 .src1 {
@@ -110,7 +111,7 @@
   max-width: 60vw;
   position: absolute;
   top: 80%;
-  left: -23%;
+  left: -1%;
   transform: translate(0%, 0vh);
   z-index: 1;
   background-color: #007ae4;
@@ -192,14 +193,14 @@
     max-width: 90vw;
     height: auto;
     margin-top: -10px;
-    margin-left: 8vw;
+    margin-left: 17vw;
     display: flex;
   }
 
   .btnBlue {
     position: absolute;
-    top: 110%;
-    left: 15%;
+    top: 34vh;
+    left: 25vw;
     transform: translate(0%, 0vh);
     min-width: 70vw;
     height: 10vh;
@@ -225,13 +226,13 @@
   .src2 {
     max-width: 90vw;
     height: auto;
-    margin-left: -2vw;
+    margin-left: 0vw;
   }
 
   .text2Div {
     background-color: rgb(23, 130, 60);
     text-align: start;
-    padding: 4vh 6vw 4vh 6vw;;
+    padding: 4vh 6vw 4vh 6vw;
     /* align-items: center; */
     display: flex;
     justify-content: right;
@@ -241,7 +242,7 @@
     font-size: 2vh;
     color: aliceblue;
     z-index: 1;
-    margin-right: 3vw;
+    margin-right: 2vw;
     margin-left: 0vw;
     /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
     margin-top: -5vh;
@@ -304,7 +305,6 @@
     color: aliceblue;
     z-index: 1;
     margin-left: -3vw;
-
   }
 
   .src1Div {
