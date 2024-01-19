@@ -18,28 +18,11 @@ legend {
   background-color: black;
 }
 
-.src {
-  width: auto;
-  height: 30vh;
-  margin: auto;
-  display: block;
-
-  /* na małym max 25vh i zmienic number na mniejszy */
-}
-.srcMail {
-  width: auto;
-  height: 30vh;
-  margin: auto;
-  display: block;
-  cursor: pointer;
-  /* na małym max 25vh i zmienic number na mniejszy */
-}
-
 .btnBlue {
   margin: auto;
   display: block;
   height: 15vh;
-  width: 50vw;
+  width: 40vw;
   background-color: #007ae4;
   cursor: pointer;
 }
@@ -55,28 +38,72 @@ legend {
   display: flex;
   flex-wrap: wrap;
 
-  font-family: "lato";
-  font-size: 2vh;
+  font-family: "changa";
+  font-size: 5vh;
   color: aliceblue;
   z-index: 1;
 
   /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
 }
-.div {
+.divRelative {
+  position: relative;
   text-align: center;
-  background-color: rgb(23, 130, 60);
-  height: fit-content;
-  padding: 2% 2% 2% 2%;
-  width: 25vw;
-  height: fit-content;
-  border-radius: 2%;
+  background-color: rgba(23, 130, 60, 0);
+  width: 80vw;
+  height: 27vh;
+  border-radius: 0%;
 }
-.number {
-  font-family: "lato";
-  font-size: 7vh;
-  color: aliceblue;
+.rectangle {
+  position: absolute;
+  top: 0%;
+  right: 42%;
+  width: 12vw;
+  height: 11vh;
+  background: rgb(23, 130, 60);
+  border-color: rgb(23, 130, 60);
+  border-style: solid;
+  border-radius: 0%;
 }
 
+.triangle-down {
+  width: 0;
+  height: 10vh;
+  border-left: 16vw solid transparent;
+  border-right: 16vw solid transparent;
+  border-top: 17vh solid rgb(23, 130, 60);
+  position: absolute;
+  right: 29.5%;
+  top: 37%;
+}
+.number {
+  font-family: "changa";
+  font-size: 5vh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textTriangleDown {
+  position: absolute;
+  top: -16vh;
+  right: -10vw;
+  font-family: "lato";
+  font-size: 2vh;
+  color: aliceblue;
+  width: 20vw;
+}
+.divEnd {
+  position: relative;
+  text-align: center;
+  background-color: rgb(23, 130, 60);
+  width: 40vw;
+  height: 27vh;
+  border-radius: 0%;
+  font-family: "lato";
+  font-size: 2vh;
+  color: aliceblue;
+}
 @media (min-width: 250px) and (max-width: 399px) {
   legend {
     width: 60vw;
@@ -88,25 +115,14 @@ legend {
   fieldset {
     padding: 0vw 15vw;
   }
-  .src {
-    width: 95vw;
-    height: auto;
-    margin: auto;
-    display: block;
-  }
-  .div1 {
-    background-color: rgb(23, 130, 60);
-    height: 30vh;
-    padding: 2% 2% 2% 2%;
-    width: 100vw;
-  }
-  .div {
+
+  .divRelative {
+    position: relative;
     text-align: center;
-    background-color: rgb(23, 130, 60);
-    height: 32vh;
-    padding: 2% 2% 2% 2%;
-    width: 85vw;
-    border-radius: 2%;
+    background-color: rgba(23, 130, 60, 0);
+    width: 90vw;
+    height: 27vh;
+    border-radius: 0%;
   }
   .textDiv {
     text-align: center;
@@ -114,6 +130,36 @@ legend {
     font-family: "lato";
     font-size: 2vh;
     color: aliceblue;
+  }
+  .rectangle {
+    position: absolute;
+    top: 0%;
+    right: 30%;
+    width: 35vw;
+    height: 11vh;
+    background: rgb(23, 130, 60);
+    border-color: rgb(23, 130, 60);
+    border-style: solid;
+    border-radius: 0%;
+  }
+  .triangle-down {
+    width: 0;
+    height: 10vh;
+    border-left: 45vw solid transparent;
+    border-right: 45vw solid transparent;
+    border-top: 17vh solid rgb(23, 130, 60);
+    position: absolute;
+    right: 0%;
+    top: 37%;
+  }
+  .textTriangleDown {
+    position: absolute;
+    top: -16.7vh;
+    right: -30vw;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    width: 60vw;
   }
   .btnBlue {
     height: 15vh;
@@ -126,14 +172,26 @@ legend {
   .textBtn {
     font-size: 2vh;
   }
+
   .number {
+    font-family: "changa";
     font-size: 5vh;
-  }
-  .adres {
-    font-size: 1.7vh;
-  }
-  .row {
+    color: aliceblue;
+    display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  .divEnd {
+    position: relative;
+    text-align: center;
+    background-color: rgb(23, 130, 60);
+    width: 90vw;
+    height: 27vh;
+    border-radius: 0%;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
   }
 }
 @media (min-width: 400px) and (max-width: 524px) {
@@ -147,25 +205,13 @@ legend {
   fieldset {
     padding: 0vw 15vw;
   }
-  .src {
-    width: 75vw;
-    height: auto;
-    margin: auto;
-    display: block;
-  }
-  .div1 {
-    background-color: rgb(23, 130, 60);
-    height: 30vh;
-    padding: 2% 2% 2% 2%;
-    width: 100vw;
-  }
-  .div {
+  .divRelative {
+    position: relative;
     text-align: center;
-    background-color: rgb(23, 130, 60);
-    height: 25vh;
-    padding: 2% 2% 2% 2%;
-    width: 85vw;
-    border-radius: 2%;
+    background-color: rgba(23, 130, 60, 0);
+    width: 90vw;
+    height: 27vh;
+    border-radius: 0%;
   }
   .textDiv {
     text-align: center;
@@ -173,6 +219,36 @@ legend {
     font-family: "lato";
     font-size: 2vh;
     color: aliceblue;
+  }
+  .rectangle {
+    position: absolute;
+    top: 0%;
+    right: 30%;
+    width: 35vw;
+    height: 11vh;
+    background: rgb(23, 130, 60);
+    border-color: rgb(23, 130, 60);
+    border-style: solid;
+    border-radius: 0%;
+  }
+  .triangle-down {
+    width: 0;
+    height: 10vh;
+    border-left: 45vw solid transparent;
+    border-right: 45vw solid transparent;
+    border-top: 17vh solid rgb(23, 130, 60);
+    position: absolute;
+    right: 0%;
+    top: 37%;
+  }
+  .textTriangleDown {
+    position: absolute;
+    top: -16.7vh;
+    right: -30vw;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    width: 60vw;
   }
   .btnBlue {
     height: 15vh;
@@ -185,18 +261,30 @@ legend {
   .textBtn {
     font-size: 2vh;
   }
+
   .number {
+    font-family: "changa";
     font-size: 5vh;
-  }
-  .adres {
-    font-size: 1.7vh;
-  }
-  .row {
+    color: aliceblue;
+    display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  .divEnd {
+    position: relative;
+    text-align: center;
+    background-color: rgb(23, 130, 60);
+    width: 90vw;
+    height: 27vh;
+    border-radius: 0%;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
   }
 }
 
-@media (min-width: 525px) and (max-width: 575px) {
+@media (min-width: 525px) and (max-width: 768px) {
   legend {
     width: 60vw;
     height: 8vh;
@@ -207,20 +295,13 @@ legend {
   fieldset {
     padding: 0vw 15vw;
   }
-  .src {
-    width: 75vw;
-    height: auto;
-    margin: auto;
-    display: block;
-  }
-
-  .div {
+  .divRelative {
+    position: relative;
     text-align: center;
-    background-color: rgb(23, 130, 60);
-    height: 32vh;
-    padding: 2% 2% 2% 2%;
-    width: 75vw;
-    border-radius: 2%;
+    background-color: rgba(23, 130, 60, 0);
+    width: 90vw;
+    height: 27vh;
+    border-radius: 0%;
   }
   .textDiv {
     text-align: center;
@@ -229,9 +310,39 @@ legend {
     font-size: 2vh;
     color: aliceblue;
   }
+  .rectangle {
+    position: absolute;
+    top: 0%;
+    right: 30%;
+    width: 35vw;
+    height: 11vh;
+    background: rgb(23, 130, 60);
+    border-color: rgb(23, 130, 60);
+    border-style: solid;
+    border-radius: 0%;
+  }
+  .triangle-down {
+    width: 0;
+    height: 10vh;
+    border-left: 45vw solid transparent;
+    border-right: 45vw solid transparent;
+    border-top: 17vh solid rgb(23, 130, 60);
+    position: absolute;
+    right: 0%;
+    top: 37%;
+  }
+  .textTriangleDown {
+    position: absolute;
+    top: -15vh;
+    right: -30vw;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    width: 60vw;
+  }
   .btnBlue {
     height: 15vh;
-    width: 75vw;
+    width: 85vw;
     z-index: 0;
     background-color: #007ae4;
     cursor: pointer;
@@ -240,24 +351,104 @@ legend {
   .textBtn {
     font-size: 2vh;
   }
+
   .number {
+    font-family: "changa";
     font-size: 5vh;
-  }
-  .adres {
-    font-size: 1.7vh;
-  }
-  .row {
+    color: aliceblue;
+    display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  .divEnd {
+    position: relative;
+    text-align: center;
+    background-color: rgb(23, 130, 60);
+    width: 90vw;
+    height: 27vh;
+    border-radius: 0%;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
   }
 }
-@media (min-width: 576px) and (max-width: 991px) {
-  .btnBlue {
-    width: 75vw;
+@media (min-width: 769px) and (max-width: 991px) {
+  .divRelative {
+    position: relative;
+    text-align: center;
+    background-color: rgba(23, 130, 60, 0);
+    width: 90vw;
+    height: 27vh;
+    border-radius: 0%;
   }
-  .col-sm-6 {
-    flex: 0 0 auto;
-    width: 50%;
+  .textDiv {
+    text-align: center;
     justify-content: center;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+  }
+  .rectangle {
+    position: absolute;
+    top: 0%;
+    right: 32%;
+    width: 30vw;
+    height: 11vh;
+    background: rgb(23, 130, 60);
+    border-color: rgb(23, 130, 60);
+    border-style: solid;
+    border-radius: 0%;
+  }
+  .triangle-down {
+    width: 0;
+    height: 10vh;
+    border-left: 35vw solid transparent;
+    border-right: 35vw solid transparent;
+    border-top: 17vh solid rgb(23, 130, 60);
+    position: absolute;
+    right: 10%;
+    top: 37%;
+  }
+  .textTriangleDown {
+    position: absolute;
+    top: -16vh;
+    right: -30vw;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    width: 60vw;
+  }
+  .btnBlue {
+    height: 15vh;
+    width: 85vw;
+    z-index: 0;
+    background-color: #007ae4;
+    cursor: pointer;
+    margin-top: 1vh;
+  }
+  .textBtn {
+    font-size: 2vh;
+  }
+
+  .number {
+    font-family: "changa";
+    font-size: 5vh;
+    color: aliceblue;
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divEnd {
+    position: relative;
+    text-align: center;
+    background-color: rgb(23, 130, 60);
+    width: 90vw;
+    height: 27vh;
+    border-radius: 0%;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
   }
 }
