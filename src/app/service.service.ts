@@ -39,8 +39,8 @@ export class ServiceService {
 getSponsors():Observable<string>{
   return this.http.get('assets/sponsors/sponsorsList.txt', {responseType:'text'})
 }
-  getBoard():Observable<string>{
-    return this.http.get('assets/zarzad/zarzadLista.txt', {responseType:'text'});
+  getManagement():Observable<string>{
+    return this.http.get('assets/management/managementList.txt', {responseType:'text'});
   }
 
   getAktualnosciFile(): Observable<string> {
@@ -86,7 +86,7 @@ export interface Aktualnosci {
   content: string;
 }
 
-export interface Board{
+export interface Management{
   url: string;
   alt: string;
   name: string;

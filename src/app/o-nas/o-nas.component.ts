@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { Board, ServiceService } from '../service.service';
+import { Management, ServiceService } from '../service.service';
 @Component({
   selector: 'app-o-nas',
   templateUrl:'./o-nas.component.html',
@@ -32,14 +32,14 @@ export class ONasComponent {
     nav: true
   }
 
-  board: Board[] = [];
+  management: Management[] = [];
   
   constructor(private serviceService:ServiceService){
   }
   
 ngOnInit() {
-  this.serviceService.getBoard().subscribe((response:string) => { 
-    this.board = JSON.parse(response) as Board[];
+  this.serviceService.getManagement().subscribe((response:string) => { 
+    this.management = JSON.parse(response) as Management[];
   });
 
 }
