@@ -1,0 +1,291 @@
+
+  .abtn{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .btnBlue {
+    margin: 10vh 0 0 0;
+    display: block;
+    height: 30vh;
+    width: 60vw;
+    margin: -15vh 0 0 0;
+    background-color: #007ae4;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .textBtn {
+    font-family: "changa";
+    font-size: 7vh;
+    color: aliceblue;
+  }
+
+  .divRectangle {
+    position: relative;
+    text-align: center;
+    background-color: rgba(23, 130, 60, 0.45);
+    width: 80vw;
+    height: 80vh;
+    margin: 5vh 0 5vh 0;
+    border-radius: 0%;
+  }
+  
+  .number {
+    font-family: "changa";
+    font-size: 7vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+  .textRectangle {
+    font-family: "lato";
+    font-size: 5vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 4vh;
+  }
+ 
+  [data-aos="example-anim3"] {
+    transform: rotate(360deg);
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  @media (min-width: 250px) and (max-width: 399px) {
+    .abtn{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+      }
+      .btnBlue {
+        margin: 10vh 0 0 0;
+        display: block;
+        height: 30vh;
+        width: 60vw;
+        margin: -15vh 0 0 0;
+        background-color: #007ae4;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        z-index: 1;
+      }
+      .textBtn {
+        font-family: "changa";
+        font-size: 7vh;
+        color: aliceblue;
+      }
+    
+      .divRectangle {
+        position: relative;
+        text-align: center;
+        background-color: rgba(23, 130, 60, 0.45);
+        width: 80vw;
+        height: 80vh;
+        margin: 5vh 0 5vh 0;
+        border-radius: 0%;
+      }
+      
+      .number {
+        font-family: "changa";
+        font-size: 7vh;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+      }
+      
+      .textRectangle {
+        font-family: "lato";
+        font-size: 5vh;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        padding-top: 4vh;
+      }
+  }
+  @media (min-width: 400px) and (max-width: 524px) {
+    .abtn{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+      }
+      .btnBlue {
+        margin: 10vh 0 0 0;
+        display: block;
+        height: 30vh;
+        width: 60vw;
+        margin: -15vh 0 0 0;
+        background-color: #007ae4;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        z-index: 1;
+      }
+      .textBtn {
+        font-family: "changa";
+        font-size: 7vh;
+        color: aliceblue;
+      }
+    
+      .divRectangle {
+        position: relative;
+        text-align: center;
+        background-color: rgba(23, 130, 60, 0.45);
+        width: 80vw;
+        height: 80vh;
+        margin: 5vh 0 5vh 0;
+        border-radius: 0%;
+      }
+      
+      .number {
+        font-family: "changa";
+        font-size: 7vh;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+      }
+      
+      .textRectangle {
+        font-family: "lato";
+        font-size: 5vh;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        padding-top: 4vh;
+      }
+  }
+  
+  @media (min-width: 525px) and (max-width: 768px) {
+    .abtn{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+      }
+      .btnBlue {
+        margin: 10vh 0 0 0;
+        display: block;
+        height: 30vh;
+        width: 60vw;
+        margin: -15vh 0 0 0;
+        background-color: #007ae4;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        z-index: 1;
+      }
+      .textBtn {
+        font-family: "changa";
+        font-size: 7vh;
+        color: aliceblue;
+      }
+    
+      .divRectangle {
+        position: relative;
+        text-align: center;
+        background-color: rgba(23, 130, 60, 0.45);
+        width: 80vw;
+        height: 80vh;
+        margin: 5vh 0 5vh 0;
+        border-radius: 0%;
+      }
+      
+      .number {
+        font-family: "changa";
+        font-size: 7vh;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+      }
+      
+      .textRectangle {
+        font-family: "lato";
+        font-size: 5vh;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        padding-top: 4vh;
+      }
+  }
+  @media (min-width: 769px) and (max-width: 991px) {
+    .abtn{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+      }
+      .btnBlue {
+        margin: 10vh 0 0 0;
+        display: block;
+        height: 30vh;
+        width: 60vw;
+        margin: -15vh 0 0 0;
+        background-color: #007ae4;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        z-index: 1;
+      }
+      .textBtn {
+        font-family: "changa";
+        font-size: 7vh;
+        color: aliceblue;
+      }
+    
+      .divRectangle {
+        position: relative;
+        text-align: center;
+        background-color: rgba(23, 130, 60, 0.45);
+        width: 80vw;
+        height: 80vh;
+        margin: 5vh 0 5vh 0;
+        border-radius: 0%;
+      }
+      
+      .number {
+        font-family: "changa";
+        font-size: 7vh;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+      }
+      
+      .textRectangle {
+        font-family: "lato";
+        font-size: 5vh;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        padding-top: 4vh;
+      }
+  }
+  

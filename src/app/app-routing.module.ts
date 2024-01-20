@@ -27,6 +27,7 @@ const routes: Routes = [
   { path: '#o-nas/:id', component:  StatutComponent }, 
   { path: '#sekcje', component:  SportGroupsListComponent }, //osobna strona lista sekcji
   { path: '#formularz', component:  FormComponent }, //osobna strona lista sekcji
+  { path: '#galeria', component:  GaleriaComponent }, //osobna strona lista sekcji
   
   { path: '#sekcje/#siatkowka', component:  VolleyballTeamComponent }, //konkretna sekcja/:nazwaSekcji dodawaj kolejne przy tworzeniu następnych sekcji
   { path: '#sekcje/#morsowanie', component:  WinterSwimmingTeamComponent }, //konkretna sekcja/:nazwaSekcji dodawaj kolejne przy tworzeniu następnych sekcji
