@@ -1,7 +1,115 @@
-.adCol{
-    max-width: 600px;
-    height: auto;
-    margin-top: 10vh;
-    
-    /* background-color: aliceblue; */
+.adCol {
+  max-width: 600px;
+  height: auto;
+  margin-top: 10vh;
+
+  /* background-color: aliceblue; */
 }
+.divRectangleRelativeNarrow {
+  position: relative;
+  text-align: center;
+  background-color: rgba(23, 130, 60, 0.45);
+  width: 20vw;
+  height: 80vh;
+  margin: 5vh 0 5vh 0;
+  border-radius: 0%;
+}
+
+.vl {
+  border-left: 6px solid rgba(23, 130, 60, 0.45);
+  height: 500px;
+  margin: 10vh 0 10vh 10vw;
+}
+.circle {
+  position: absolute;
+  top: 30vh;
+  right: 4vw;
+  width: 10vw;
+  height: 10vw;
+  background: #007ae4;
+  border-radius: 50%;
+}
+.number {
+  font-family: "changa";
+  font-size: 7vh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divRectangleRelaviteWide {
+  position: relative;
+  text-align: center;
+  background-color: rgba(23, 130, 60, 0.35);
+  width: 70%;
+  height: 80vh;
+  margin: 5vh 0 5vh 0;
+  border-radius: 0%;
+}
+.textRectangleRelaviteWide {
+  font-family: "lato";
+  font-size: 5vh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 15vh;
+}
+.textRectangleRelaviteWide1 {
+  font-family: "lato";
+  font-size: 5vh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 35vh;
+}
+
+.abtn {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+.btnBlue {
+    height: 15vh;
+    width: fit-content;
+    margin: 10vh 0vw 0 0vw;
+    background-color: #007ae4;
+    cursor: pointer;
+    z-index: 1;
+}
+.textBtn {
+  font-family: "changa";
+  font-size: 5vh;
+  color: aliceblue;
+}
+.copyBtn {
+    width: auto;
+    height: auto;
+    background-color:  #007ae4;
+    color: aliceblue;
+    font-family: "changa";
+    font-size: 2vh;
+    border-style: hidden;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .vBall {
+    position: absolute;
+    top: 25vh;
+    right: 4vw;
+    width: 10vw;
+    height: 10vw;
+
+  }
+  [data-aos="example-anim3"] {
+    transform: rotate(360deg);
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+      transform: rotate(0);
+      opacity: 1;
+
+    }
+  }

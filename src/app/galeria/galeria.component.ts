@@ -9,7 +9,7 @@ import * as AOS from 'aos';
 export class GaleriaComponent implements OnInit  {
   ngOnInit() { 
 AOS.init({
-   duration:1000
+
 });
   }
  
