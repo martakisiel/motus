@@ -24,21 +24,6 @@
   color: aliceblue;
 }
 
-.divRectangleBg {
-  position: relative;
-  text-align: center;
-  background-color: rgba(23, 130, 60, 0.45);
-  width: 80vw;
-  height: 80vh;
-  margin: 5vh 0 5vh 0;
-  border-radius: 0%;
-  background-image: url(/assets/FreeVector-Running-Man.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.4;
-  
-}
 .divRectangle {
   position: relative;
   text-align: center;
