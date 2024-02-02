@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as Aos from 'aos';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-welcome-banner',
@@ -7,10 +7,9 @@ import * as Aos from 'aos';
   styleUrls: ['./welcome-banner.component.css']
 })
 export class WelcomeBannerComponent implements OnInit{
-ngOnInit(): void {
-  Aos.init({
-    duration:1000,
-      easing: 'ease-in-out-back'
-  })
-}
+  ngOnInit() { 
+    AOS.init({
+    
+    });
+      }
 }

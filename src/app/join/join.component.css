@@ -5,6 +5,10 @@
 
   /* background-color: aliceblue; */
 }
+.row {
+  display: flex;
+  justify-content: center;
+}
 .divRectangleRelativeNarrow {
   position: relative;
   text-align: center;
@@ -151,9 +155,6 @@
   }
 }
 @media (min-width: 250px) and (max-width: 400px) {
-  .row {
-    margin-left: 0;
-  }
   .divRectangleRelaviteWide {
     width: 75%;
     height: 40vh;

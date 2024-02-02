@@ -1,44 +1,55 @@
-.pdf{
-    width: 60vw;
-    height: 50vh;
+.pdf {
+  width: 60vw;
+  height: 50vh;
 }
-h3 {
-    font-family: "changa";
-    font-size: 7vh;
-    color: aliceblue;
+.divRectangleRelativeNarrow {
+  position: relative;
+  text-align: center;
+  background-color: rgba(23, 130, 60, 0.45);
+  width: 20vw;
+  height: 40vh;
+  margin: 5vh 0 5vh 0;
+  border-radius: 0%;
+}
 
-  }
-  fieldset {
-    border-width: 5px 0px 0px 0px;
-    border-style: solid;
-    border-color: rgb(23, 130, 60);
-    padding: 0vw 12vw;
-    /*20 na małym*/
-    margin-bottom: 5vh;
-    margin-top: 10vh;
-    height: fit-content;
-    width: fit-content;
-  }
-  
-  legend {
-    width: 35vw;
-    height: 9vh;
-    margin-top: -23px;
-    margin-left: 2vw;
-    background-color: black;
-  }
-  .title {
-    color: aliceblue;
-    margin-bottom: 0%;
-    font-family: "lato";
-    font-size: 3vh;
-  }
-  .text {
-    color: aliceblue;
-    margin-bottom: 0;
-    margin-top: 15px;
-    font-family: "lato";
-    font-size: 2vh;
-    
-    /* text truncation */
-  }
+.vl {
+  border-left: 6px solid rgba(23, 130, 60, 0.45);
+  height: 40vh;
+  margin: 0vh 0 10vh 10vw;
+}
+.circle {
+  position: absolute;
+  top: 11vh;
+  right: 4vw;
+  width: 10vw;
+  height: 10vw;
+  background: #007ae4;
+  border-radius: 50%;
+}
+.number {
+  font-family: "changa";
+  font-size: 7vh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divRectangleRelaviteWide {
+  position: relative;
+  text-align: center;
+  background-color: rgba(23, 130, 60, 0.35);
+  width: 60%;
+  height: 40vh;
+  margin: 5vh 0 5vh 0;
+  border-radius: 0%;
+}
+.textRectangleRelaviteWide {
+  font-family: "lato";
+  font-size: 5vh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 15vh;
+}
