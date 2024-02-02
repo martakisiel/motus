@@ -1,0 +1,44 @@
+.pdf{
+    width: 60vw;
+    height: 50vh;
+}
+h3 {
+    font-family: "changa";
+    font-size: 7vh;
+    color: aliceblue;
+
+  }
+  fieldset {
+    border-width: 5px 0px 0px 0px;
+    border-style: solid;
+    border-color: rgb(23, 130, 60);
+    padding: 0vw 12vw;
+    /*20 na małym*/
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+    height: fit-content;
+    width: fit-content;
+  }
+  
+  legend {
+    width: 35vw;
+    height: 9vh;
+    margin-top: -23px;
+    margin-left: 2vw;
+    background-color: black;
+  }
+  .title {
+    color: aliceblue;
+    margin-bottom: 0%;
+    font-family: "lato";
+    font-size: 3vh;
+  }
+  .text {
+    color: aliceblue;
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-family: "lato";
+    font-size: 2vh;
+    
+    /* text truncation */
+  }
