@@ -1,45 +1,63 @@
 <div class="container-fluid bgFooter intro">
-    <div class="row">
-        <div class="col-md justify-content-start p-3">
-            <div class="textFooterHeader"> KS MOTUS Lesko <div>
-                    <div class="textFooter"><i class="fa-solid fa-at" style="color: #ffffff;"></i> <a
-                            href="mailto:ksmotus@gmail.com"> ksmotus@gmail.com</a> | <i
-                            class="fa-solid fa-mobile-screen" style="color: #ffffff;"></i> <a href="+48515052545">
-                            515052545</a> | <i class="fa-solid fa-envelope" style="color: #ffffff;"></i> ul. Osiedlowa
-                        17, 38-600 Lesko </div>
-                    <div class="textFooter">NIP: 6881306830 | REGON: 525809436</div>
-                    <div class="textFooter">numer konta bankowego: 60 1020 2980 0000 2502 0152 4834</div>
-
-                </div>
-            </div>
+  <div class="row">
+    <div class="col-md justify-content-start p-3">
+      <div class="textFooterHeader">
+        KS MOTUS Lesko
+        <div>
+          <div class="textFooter">
+            <i class="fa-solid fa-at" style="color: #ffffff"></i>
+            <a href="mailto:ksmotus@gmail.com"> ksmotus@gmail.com</a> |
+            <i class="fa-solid fa-mobile-screen" style="color: #ffffff"></i>
+            <a href="+48515052545"> 515052545</a> |
+            <i class="fa-solid fa-envelope" style="color: #ffffff"></i> ul.
+            Osiedlowa 17, 38-600 Lesko
+          </div>
+          <div class="textFooter">NIP: 6881306830 | REGON: 525809436</div>
+          <div class="textFooter">
+            numer konta bankowego: 60 1020 2980 0000 2502 0152 4834
+          </div>
         </div>
-        <div class="col-md text-center align-items-center p-3 order-first order-md-0 ">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-
-                    <div *ngFor='let sponsor of sponsors' class="carousel-item active">
-                        <a [href]="sponsor.url" target="_blank">
-                            <img [src]="sponsor.logo" [alt]="sponsor.name" class=" justify-content-center ">
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="col-md logo">
-            <img src="assets/Logo KS Motus/Logo 4.png" alt="KS motus Lesko" class="logo cos">
-
-
-        </div>
-        <div class="row order-last mb-2">
-            <div class="bgFooter container-fluid textFooterMK d-flex justify-content-center">
-                <div><a href="https://github.com/martakisiel" target="_blank">
-                        <i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
-                    Created by <a href="https://martak.pl"> Marta
-                        Kisiel</a> | 2023
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    
+    <div
+      class="col-md text-center align-items-center p-3 order-first order-md-0"
+    >
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div *ngFor="let sponsor of sponsors" class="carousel-item active">
+            <a [href]="sponsor.url" target="_blank">
+              <img
+                [src]="sponsor.logo"
+                [alt]="sponsor.name"
+                class="justify-content-center"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md logo">
+      <img
+        src="assets/Logo KS Motus/Logo 4.png"
+        alt="KS motus Lesko"
+        class="logo cos"
+      />
+    </div>
+    <div class="row order-last mb-2">
+      <div
+        class="bgFooter container-fluid textFooterMK d-flex justify-content-center"
+      >
+        <div>
+          <a href="https://github.com/martakisiel" target="_blank">
+            <i class="fa-brands fa-github" style="color: #ffffff"></i
+          ></a>
+          Created by <a href="https://kisielem.pl"> Marta Kisiel</a> | 2023
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

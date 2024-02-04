@@ -1,6 +1,6 @@
 .pdf {
-  width: 60vw;
-  height: 50vh;
+  width: 100%;
+  height: 90vh;
 }
 .divRectangleRelativeNarrow {
   position: relative;
@@ -52,4 +52,67 @@
   justify-content: center;
   align-items: baseline;
   padding-top: 15vh;
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  .divRectangleRelaviteWide {
+    width: 75%;
+    height: 20vh;
+    margin: 3vh 0 3vh 0;
+  }
+  .divRectangleRelativeNarrow {
+    height: 20vh;
+    margin: 3vh 0 3vh 0;
+  }
+  .vl {
+    height: 20vh;
+    margin: 0vh 0 10vh 6vw;
+  }
+  .circle {
+    top: 6vh;
+    right: 1vw;
+    width: 18vw;
+    height: 18vw;
+  }
+  .number {
+    font-size: 5vh;
+  }
+  .textRectangleRelaviteWide {
+    font-size: 2vh;
+    padding-top: 7vh;
+  }
+  .btnBlue {
+    height: 8vh;
+    width: 56vw;
+    margin: 1vh 0vw 0px -3vw;
+  }
+  .textBtn {
+    font-size: 2vh;
+  }
+  .divRectangleRelaviteWideEnd {
+    width: 75%;
+    height: 40vh;
+    margin: 3vh 0 3vh 0;
+  }
+  .textdivRectangleRelaviteWideEnd {
+    font-size: 2vh;
+    padding-top: 4vh;
+    margin-bottom: 3vh;
+  }
+  .btnBlueEnd {
+    height: 8vh;
+    width: 56vw;
+    margin: 1vh 0vw 0px -3vw;
+  }
+  .btnTransparentEnd {
+    height: 8vh;
+    width: 56vw;
+    margin: 1vh 0vw 0px -3vw;
+  }
+  .vBall {
+    top: 6vh;
+    right: 2vw;
+    width: 15vw;
+    height: 15vw;
+  }
 }
