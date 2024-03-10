@@ -19,24 +19,6 @@
   color: aliceblue;
 }
 
-fieldset {
-  border-width: 5px 0px 0px 0px;
-  border-style: solid;
-  border-color: rgb(23, 130, 60);
-  padding: 0px 30vw 3vh 32vw;
-  /*20 na małym*/
-  filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
-  height: fit-content;
-  width: fit-content;
-  margin-bottom: 3%;
-}
-
-legend {
-  width: 350px;
-  height: fit-content;
-  background-color: black;
-  margin: -42px 0px 0px 0px;
-}
 .topMargin {
   margin-top: 15vh;
 }
@@ -47,17 +29,6 @@ legend {
   /* margin-top: 20vh; */
 }
 
-.pdf {
-  width: 55vw;
-  height: 95vh;
-}
-.adCol {
-  max-width: 600px;
-  height: auto;
-  margin-top: 10vh;
-
-  /* background-color: aliceblue; */
-}
 .row {
   display: flex;
   justify-content: center;
@@ -104,15 +75,7 @@ legend {
   margin: 5vh 0 5vh 0;
   border-radius: 0%;
 }
-.divRectangleRelaviteWideEnd {
-  position: relative;
-  text-align: center;
-  background-color: rgba(23, 130, 60, 0.35);
-  width: 60%;
-  height: 80vh;
-  margin: 5vh 0 5vh 0;
-  border-radius: 0%;
-}
+
 .textRectangleRelaviteWide {
   font-family: "lato";
   font-size: 5vh;
@@ -122,7 +85,7 @@ legend {
   align-items: baseline;
   padding-top: 15vh;
 }
-.textRectangleRelaviteWide1 {
+.textRectangleRelaviteWideCenter {
   font-family: "lato";
   font-size: 5vh;
   color: aliceblue;
@@ -130,6 +93,15 @@ legend {
   justify-content: center;
   align-items: baseline;
   padding-top: 35vh;
+}
+.textRectangleRelaviteWide1 {
+  font-family: "lato";
+  font-size: 5vh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 25vh;
 }
 .textdivRectangleRelaviteWideEnd {
   font-family: "lato";
@@ -173,18 +145,7 @@ legend {
   cursor: pointer;
   z-index: 1;
 }
-.btnTransparentEnd {
-  height: 10vh;
-  width: 25vw;
-  margin: 3vh 0vw 0 0vw;
-  background-color: transparent;
-  border: #007ae4;
-  border-radius: -1%;
-  border-style: solid;
-  border-width: 2%;
-  cursor: pointer;
-  z-index: 1;
-}
+
 .textBtn {
   font-family: "changa";
   font-size: 4vh;
@@ -200,12 +161,9 @@ legend {
   border-style: hidden;
   border-radius: 10px 10px 10px 10px;
 }
-.vBall {
-  position: absolute;
-  top: 25vh;
-  right: 4vw;
-  width: 10vw;
-  height: 10vw;
+
+img {
+  width: 20vw;
 }
 [data-aos="example-anim3"] {
   transform: rotate(360deg);
