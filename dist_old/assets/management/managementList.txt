@@ -1,0 +1,41 @@
+ [
+    { 
+      "url": "assets/zarzad/1.JPG", 
+      "alt": "CEO", 
+      "name":"Fabian", 
+      "surname":"Mach", 
+      "position":"Prezes",
+      "id":"0" },
+    { 
+      "url": "assets/zarzad/2.JPG",
+      "name":"Kamil", 
+      "surname":"Gronek",
+      "alt": "CEO",      
+      "position":"Wiceprezes z funkcją sekretarza", 
+      "id":"1"
+      },
+    { 
+      "url": "assets/zarzad/2.JPG",
+      "alt": "CEO", 
+      "name":"Beata", 
+      "surname":"Mach", 
+      "position":"Wiceprezes z funkcją skarbnika", 
+      "id":"2"
+      },
+	  { 
+      "url": "assets/zarzad/2.JPG",
+      "alt": "CEO", 
+      "name":"Paweł", 
+      "surname":"Goliński", 
+      "position":"Przewodniczący komisji rewizyjnej", 
+      "id":"3"
+      },
+    { 
+      "url": "assets/zarzad/2.JPG",
+      "alt": "CEO", 
+      "name":"Dawid", 
+      "surname":"Poniewski", 
+      "position":"Członek komisji rewizyjnej", 
+      "id":"4"
+      }
+  ]

@@ -1,0 +1,12 @@
+[
+{ 
+      "url": "https://skyworldgames.com/", 
+      "logo": "assets/sponsors/0.png", 
+      "name":"Sky World Games", 
+      "id":"0" },
+{ 
+      "url": "https://www.lesko.pl/", 
+      "logo": "assets/sponsors/1.jpg", 
+      "name":"Gmina lesko", 
+      "id":"1" }
+]

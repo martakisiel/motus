@@ -12,15 +12,15 @@
 }
 .colCon {
   height: 8vh;
-  width: 94vw;
+  width: 40vw;
   background-color: rgb(23, 130, 60);
   color: aliceblue;
   font-family: "lato";
   font-size: 2vh;
   display: flex;
-  justify-content: end;
+  justify-content: start;
   align-items: center;
-  padding: 0 35vw 0 0;
+  padding: 0 0 0 12vw;
   text-align: end;
 }
 .col-md {
@@ -34,8 +34,10 @@
 }
 iframe {
   height: 50vh;
-  width: 80vw;
+  width: 40vw;
 }
+
+
 .contactForm {
   color: aliceblue;
   font-family: "lato";
@@ -105,7 +107,12 @@ button {
     width: auto;
     padding-left: 5vw;
   }
-
+  iframe {
+    margin: 2vh 0 0 0 ;
+    height: 50vh;
+    width: 94vw;
+  }
+  
   input {
     width: 60vw;
     margin-top: 1vh;
