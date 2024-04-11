@@ -6,11 +6,7 @@ import * as AOS from 'aos';
   templateUrl: './galeria.component.html',
   styleUrls: ['./galeria.component.css']
 })
-export class GaleriaComponent implements OnInit  {
-  ngOnInit() { 
-AOS.init({
+export class GaleriaComponent  {
 
-});
-  }
  
 }
