@@ -150,7 +150,7 @@ button {
   }
   .row1 {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 5vh;
   }
@@ -176,7 +176,7 @@ button {
     position: relative;
     margin-top: -6vh;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin-left: -2vw;
     z-index: 1;
   }
@@ -227,7 +227,7 @@ button {
     position: relative;
     margin-top: -4vh;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     z-index: 0;
     margin-right: 2vw;
   }
@@ -240,7 +240,7 @@ button {
 /* @media (min-width: 400px) and (max-width: 700px) {
   .row1 {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 5vh;
   }

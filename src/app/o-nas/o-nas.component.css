@@ -177,7 +177,7 @@ legend {
   .row1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 5vh;
     margin-bottom: 10vh;
@@ -286,7 +286,7 @@ legend {
   .row1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 5vh;
     margin-bottom: 10vh;

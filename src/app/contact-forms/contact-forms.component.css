@@ -18,7 +18,7 @@
   font-family: "lato";
   font-size: 2vh;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding: 0 0 0 12vw;
   text-align: end;
@@ -92,7 +92,7 @@ button {
     font-family: "lato";
     font-size: 1.5vh;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     padding: 0 17vw 0 0;
     text-align: end;
@@ -145,7 +145,7 @@ button {
     font-family: "lato";
     font-size: 1.5vh;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     padding: 0 17vw 0 0;
     text-align: end;
@@ -190,7 +190,7 @@ button {
     font-family: "lato";
     font-size: 2vh;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     padding: 0 30vw 0 0;
     text-align: end;
@@ -234,7 +234,7 @@ button {
     font-family: "lato";
     font-size: 2vh;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     padding: 0 30vw 0 0;
     text-align: end;

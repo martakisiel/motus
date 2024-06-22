@@ -39,6 +39,7 @@ import { SupportButtonComponent } from './support-button/support-button.componen
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormComponent } from './form/form.component';
 import { ElementAppComponent } from './element-app/element-app.component';
+import { AlbumNameComponent } from './album-name/album-name.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,7 +66,8 @@ import { ElementAppComponent } from './element-app/element-app.component';
     SupportButtonComponent,
     ContactFormComponent,
     FormComponent,
-    ElementAppComponent
+    ElementAppComponent,
+    AlbumNameComponent
  
   ],
   imports: [

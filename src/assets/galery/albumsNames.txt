@@ -1,0 +1,19 @@
+[ 
+   {
+   "coverUrl":"assets/galery/Mecz1/IMG_2682_2560_70_350.JPG",
+   "name":"Mecz1",
+    "alt":"Mecz1"
+
+    }, 
+   {
+   "coverUrl":"assets/galery/Mecz2/IMG_2682_2560_70_350.JPG",
+   "name":"Mecz2",
+   "alt":"Mecz2"
+    }, 
+   {
+   "coverUrl":"assets/galery/Zawody/IMG_2682_2560_70_350.JPG",
+   "name":"Zawody",
+   "alt":"Zawody"
+    }
+  
+]

@@ -63,3 +63,23 @@ a:hover {
   font-family: impact, sans-serif;
   background: none;
 }
+
+.buttonUp {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 1%;
+  background-color: rgb(23, 130, 60);
+  border-color: aliceblue;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 3vw;
+  color: aliceblue;
+  font-family: "lato";
+  font-size: 2vh;
+  border-radius: 0%;
+}
+.arrow {
+  height: 15px;
+  margin: 0px 4px 3px;
+}

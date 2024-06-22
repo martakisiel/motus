@@ -1,0 +1,13 @@
+
+
+<div class="container mt-5 center">
+    <div class="row">
+  <div class="col-sm-4 center" *ngFor="let item of albumsNames">
+    <div class="card">
+      <img class="card-img-top" [src]="item.coverUrl" [alt]="item.alt" />
+      <div class="card-body">
+        <h5 class="card-title">{{ item.name }}</h5>
+      </div>
+    </div>
+  </div>
+</div>

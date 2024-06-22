@@ -1,308 +1,88 @@
-.abtn {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+.row {
+  /* WAZNE! INACZEJ STRONA POSZERZA SIĘ POZA MENU */
+  border: 0px;
+  padding: 0%;
+  margin: 0px;
 }
-.btnBlue {
-  margin: 10vh 0 0 0;
-  display: block;
-  height: 30vh;
-  width: 60vw;
-  margin: -15vh 0 0 0;
-  background-color: #007ae4;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  z-index: 1;
+.col-sm{
+  max-width: 50%;
 }
-.textBtn {
-  font-family: "changa";
-  font-size: 7vh;
+.container{
+  min-height: 60vh;
+}
+.buttonUp {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 1%;
+  background-color: rgb(23, 130, 60);
+  border-color: aliceblue;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 3vw;
   color: aliceblue;
-}
-
-.divRectangle {
-  position: relative;
-  text-align: center;
-  background-color: rgba(23, 130, 60, 0.45);
-  width: 80vw;
-  height: 80vh;
-  margin: 5vh 0 5vh 0;
-  border-radius: 0%;
-  
-}
-
-.number {
-  font-family: "changa";
-  font-size: 7vh;
-  color: aliceblue;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-}
-
-.textRectangle {
   font-family: "lato";
-  font-size: 5vh;
-  color: aliceblue;
-  display: flex;
+  font-size: 2vh;
+  border-radius: 0%;
+}
+.arrow {
+  height: 15px;
+  margin: 0px 4px 3px;
+}
+.albumList {
   justify-content: center;
-  align-items: baseline;
-  padding-top: 4vh;
 }
-.vBall {
-  height: 20%;
-  width: 20%;
+
+.card {
+  margin-top: 10%;
+  width: 100%;
+  /*na małym ekranie zmienić do 100%*/
+  background-color: black;
+  margin-bottom: 4vh;
+  border-color: black;
+  border-radius: 0%;
+  border-style: none;
 }
-[data-aos="example-anim3"] {
-  transform: rotate(360deg);
-  opacity: 0;
-  transition-property: transform, opacity;
-  &.aos-animate {
-    transform: rotate(0);
-    opacity: 1;
-  }
+.card {
+  border: 0%;
+  width: 30vw;
+  background-color: black;
+  margin-bottom: 2vh;
 }
-@media (min-width: 250px) and (max-width: 399px) {
-  .abtn {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-  }
-  .btnBlue {
-    margin: 10vh 0 0 0;
-    display: block;
-    height: 30vh;
-    width: 100vw;
-    margin: -15vh 0 1vh 0;
-    background-color: #007ae4;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    z-index: 1;
-  }
-  .textBtn {
-    font-family: "changa";
-    font-size: 6vh;
-    color: aliceblue;
-  }
-
-  .divRectangle {
-    position: relative;
-    text-align: center;
-    background-color: rgba(23, 130, 60, 0.45);
-    width: 100vw;
-    height: 90vh;
-    margin: 0vh 0 1vh 0;
-    border-radius: 0%;
-  }
-
-  .number {
-    font-family: "changa";
-    font-size: 6vh;
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    line-height: 10vh;
-  }
-
-  .textRectangle {
-    font-family: "lato";
-    font-size: 4.5vh;
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    padding-top: 4vh;
-  }
-  .vBall {
-    height: 40%;
-    width: 40%;
-  }
+.card-body {
+  border: 0%;
+  background-color: rgb(23, 130, 60);
 }
-@media (min-width: 400px) and (max-width: 524px) {
-    .abtn {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-      }
-      .btnBlue {
-        margin: 10vh 0 0 0;
-        display: block;
-        height: 30vh;
-        width: 100vw;
-        margin: -15vh 0 1vh 0;
-        background-color: #007ae4;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        z-index: 1;
-      }
-      .textBtn {
-        font-family: "changa";
-        font-size: 6vh;
-        color: aliceblue;
-      }
-    
-      .divRectangle {
-        position: relative;
-        text-align: center;
-        background-color: rgba(23, 130, 60, 0.45);
-        width: 100vw;
-        height: 90vh;
-        margin: 0vh 0 1vh 0;
-        border-radius: 0%;
-      }
-    
-      .number {
-        font-family: "changa";
-        font-size: 6vh;
-        color: aliceblue;
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        line-height: 10vh;
-      }
-    
-      .textRectangle {
-        font-family: "lato";
-        font-size: 4.5vh;
-        color: aliceblue;
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        padding-top: 4vh;
-      }
-      .vBall {
-        height: 40%;
-        width: 40%;
-      }
-    }
-
-@media (min-width: 525px) and (max-width: 768px) {
-    .abtn {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-      }
-      .btnBlue {
-        margin: 10vh 0 0 0;
-        display: block;
-        height: 30vh;
-        width: 100vw;
-        margin: -15vh 0 1vh 0;
-        background-color: #007ae4;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        z-index: 1;
-      }
-      .textBtn {
-        font-family: "changa";
-        font-size: 6vh;
-        color: aliceblue;
-      }
-    
-      .divRectangle {
-        position: relative;
-        text-align: center;
-        background-color: rgba(23, 130, 60, 0.45);
-        width: 100vw;
-        height: 90vh;
-        margin: 0vh 0 1vh 0;
-        border-radius: 0%;
-      }
-    
-      .number {
-        font-family: "changa";
-        font-size: 6vh;
-        color: aliceblue;
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        line-height: 10vh;
-      }
-    
-      .textRectangle {
-        font-family: "lato";
-        font-size: 4.5vh;
-        color: aliceblue;
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        padding-top: 4vh;
-      }
-      .vBall {
-        height: 30%;
-        width: 30%;
-      }
+.card-img-top {
+  object-fit:cover;
+  object-position: top;
+  height: 30vh;
+  /* margin: 10px 5px 2px 1px; */
 }
-@media (min-width: 769px) and (max-width: 991px) {
-  .abtn {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+
+.card-title {
+  color: aliceblue;
+  margin-bottom: 0%;
+  font-family: "lato";
+  font-size: 3vh;
+}
+
+
+
+@media (min-width: 250px) and (max-width: 767px) {
+  .container{
+    min-height:auto;
   }
-  .btnBlue {
-    margin: 10vh 0 0 0;
-    display: block;
-    height: 30vh;
-    width: 60vw;
-    margin: -15vh 0 0 0;
-    background-color: #007ae4;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    z-index: 1;
-  }
-  .textBtn {
-    font-family: "changa";
-    font-size: 7vh;
-    color: aliceblue;
+ 
+  .row {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+  } 
+/* co tu jest nie taaak????!!!!!! */
+
+  .card{
+    width: 80vw;
+    margin-bottom: 4vh;
   }
 
-  .divRectangle {
-    position: relative;
-    text-align: center;
-    background-color: rgba(23, 130, 60, 0.45);
-    width: 100vw;
-    height: 100vh;
-    margin: 5vh 0 5vh 0;
-    border-radius: 0%;
-  }
-
-  .number {
-    font-family: "changa";
-    font-size: 7vh;
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-  }
-
-  .textRectangle {
-    font-family: "lato";
-    font-size: 5vh;
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    padding-top: 4vh;
-  }
 }

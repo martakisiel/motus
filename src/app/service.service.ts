@@ -34,7 +34,9 @@ export class ServiceService {
     { url: "assets/galerySample/gs7_2100_300_70.JPG", alt: "kajaki" }
 
   ]
-
+  getAlbumsNames(): Observable<string> {
+    return this.http.get('assets/galery/albumsNames.txt', {responseType:'text'});
+  }
  
 getSponsors():Observable<string>{
   return this.http.get('assets/sponsors/sponsorsList.txt', {responseType:'text'})
@@ -101,3 +103,11 @@ export interface SportGroupsList{
   title: string;
   
 }
+export interface AlbumsNames { //nowy typ danych
+  coverUrl : string | undefined
+  name: string | undefined;
+  alt: string | undefined;
+
+}
+
+
