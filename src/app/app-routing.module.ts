@@ -33,7 +33,7 @@ const routes: Routes = [
   { path: '#galeria', component:  GaleriaComponent }, //osobna strona lista sekcji
   { path: '#ad', component:  AdsComponent }, //osobna strona lista sekcji
   { path: '#komunikator', component:  ElementAppComponent }, 
-  { path: '#galeria', component:  GaleriaComponent }, 
+  // { path: '#galeria', component:  GaleriaComponent }, 
   //{ path: '#album/:albumName', component: AlbumsNames },album  - sekcja/:która to sekcja
 
   { path: '#sekcje/#siatkowka', component:  VolleyballTeamComponent }, //konkretna sekcja/:nazwaSekcji dodawaj kolejne przy tworzeniu następnych sekcji

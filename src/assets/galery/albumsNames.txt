@@ -6,13 +6,18 @@
 
     }, 
    {
-   "coverUrl":"assets/galery/Mecz2/IMG_2682_2560_70_350.JPG",
+   "coverUrl":"assets/galery/Mecz2/IMG_2830_1_2560_180_70.JPG",
    "name":"Mecz2",
    "alt":"Mecz2"
     }, 
    {
-   "coverUrl":"assets/galery/Zawody/IMG_2682_2560_70_350.JPG",
+   "coverUrl":"assets/galery/Zawody/gs1_2100_300_70.JPG",
    "name":"Zawody",
+   "alt":"Zawody"
+    },
+   {
+   "coverUrl":"assets/galery/Zawody/gs1_2100_300_70.JPG",
+   "name":"Zawody2",
    "alt":"Zawody"
     }
   
