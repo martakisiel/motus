@@ -18,6 +18,7 @@ import { FormComponent } from './form/form.component';
 import { AdsComponent } from './ads/ads.component';
 import { ElementAppComponent } from './element-app/element-app.component';
 import { AlbumsNames } from './service.service';
+import { AlbumComponent } from './album/album.component';
 
 
 const routes: Routes = [
@@ -31,13 +32,14 @@ const routes: Routes = [
   { path: '#sekcje', component:  SportGroupsListComponent }, //osobna strona lista sekcji
   { path: '#formularz', component:  FormComponent }, //osobna strona lista sekcji
   { path: '#galeria', component:  GaleriaComponent }, //osobna strona lista sekcji
+  { path: '#galeria/:albumName', component: AlbumComponent },//album  - sekcja/:która to sekcja
   { path: '#ad', component:  AdsComponent }, //osobna strona lista sekcji
   { path: '#komunikator', component:  ElementAppComponent }, 
   // { path: '#galeria', component:  GaleriaComponent }, 
   //{ path: '#album/:albumName', component: AlbumsNames },album  - sekcja/:która to sekcja
 
-  { path: '#sekcje/#siatkowka', component:  VolleyballTeamComponent }, //konkretna sekcja/:nazwaSekcji dodawaj kolejne przy tworzeniu następnych sekcji
-  { path: '#sekcje/#morsowanie', component:  WinterSwimmingTeamComponent }, //konkretna sekcja/:nazwaSekcji dodawaj kolejne przy tworzeniu następnych sekcji
+  { path: '#sekcje/:siatkowka', component:  VolleyballTeamComponent }, //konkretna sekcja/:nazwaSekcji dodawaj kolejne przy tworzeniu następnych sekcji
+  { path: '#sekcje/:morsowanie', component:  WinterSwimmingTeamComponent }, //konkretna sekcja/:nazwaSekcji dodawaj kolejne przy tworzeniu następnych sekcji
   { path: '#siatkowka', component: VolleyballTeamComponent }, 
   { path: '#morsowanie', component:WinterSwimmingTeamComponent  }, //dodaj kolejną ścieżkę dla nowych componentów żeby działał link w menu
   // { path: '#sekcja/:groupName', component:  SportGroupComponent }, //konkretna sekcja/:nazwaSekcji

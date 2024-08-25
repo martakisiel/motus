@@ -1,0 +1,23 @@
+[ 
+   {
+   "url":"assets/galery/Mecz1/IMG_2682_2560_70_350.JPG",
+   "name":" "
+
+    }, 
+   {
+   "url":"assets/galery/Mecz1/IMG_2760_1_2560_180_70.JPG",
+   "name":" "
+
+    },
+{
+   "url":"assets/galery/Mecz1/IMG_2682_2560_70_350.JPG",
+   "name":" "
+
+    }, 
+   {
+   "url":"assets/galery/Mecz1/IMG_2760_1_2560_180_70.JPG",
+   "name":" "
+
+    }
+  
+]

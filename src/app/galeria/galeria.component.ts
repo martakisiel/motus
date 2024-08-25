@@ -11,7 +11,7 @@ import { ServiceService, AlbumsNames, Management } from '../service.service';
 export class GaleriaComponent  implements OnInit {
   albumsNames: AlbumsNames[] = [];
  
-  constructor(private serviceService:ServiceService){
+  constructor(private route:ActivatedRoute, private serviceService:ServiceService){
  
   }
   ngOnInit(): void {

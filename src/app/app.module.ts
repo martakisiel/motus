@@ -40,6 +40,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormComponent } from './form/form.component';
 import { ElementAppComponent } from './element-app/element-app.component';
 import { AlbumNameComponent } from './album-name/album-name.component';
+import { AlbumComponent } from './album/album.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +68,8 @@ import { AlbumNameComponent } from './album-name/album-name.component';
     ContactFormComponent,
     FormComponent,
     ElementAppComponent,
-    AlbumNameComponent
+    AlbumNameComponent,
+    AlbumComponent
  
   ],
   imports: [

@@ -37,6 +37,9 @@ export class ServiceService {
   getAlbumsNames(): Observable<string> {
     return this.http.get('assets/galery/albumsNames.txt', {responseType:'text'});
   }
+  getPhotos() {
+    return this.http.get('assets/galery/photosList.txt', {responseType:'text'});
+  }
  
 getSponsors():Observable<string>{
   return this.http.get('assets/sponsors/sponsorsList.txt', {responseType:'text'})
@@ -109,5 +112,8 @@ export interface AlbumsNames { //nowy typ danych
   alt: string | undefined;
 
 }
-
+export class Photos {
+  public name: string | undefined;
+  public url: string = '';
+}
 

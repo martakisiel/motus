@@ -4,10 +4,13 @@
     <div class="row">
   <div class="col-sm-4 center" *ngFor="let item of albumsNames">
     <div class="card">
+      <a [routerLink]="['/#album', item.name]"
+      routerLinkActive="active">
       <img class="card-img-top" [src]="item.coverUrl" [alt]="item.alt" />
       <div class="card-body">
         <h5 class="card-title">{{ item.name }}</h5>
       </div>
+      </a>
     </div>
   </div>
 </div>
