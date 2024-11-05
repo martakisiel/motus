@@ -8,5 +8,15 @@
       "url": "https://www.lesko.pl/", 
       "logo": "assets/sponsors/1.jpg", 
       "name":"Gmina lesko", 
-      "id":"1" }
+      "id":"1" },
+{ 
+      "url": "https://bosz.com.pl/", 
+      "logo": "assets/sponsors/2.png", 
+      "name":"Bosz", 
+      "id":"2" },
+{ 
+      "url": "https://drezynyrowerowe.pl/", 
+      "logo": "assets/sponsors/3.png", 
+      "name":"Drezyny Rowerowe", 
+      "id":"3" }
 ]
