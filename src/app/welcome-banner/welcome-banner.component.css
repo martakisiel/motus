@@ -1,5 +1,5 @@
 .welcomeBanner {
-  background: url(src/assets/banner1.jpg) no-repeat center top fixed;
+  background: url('/assets/banner1.jpg') no-repeat center top fixed;
   background-size: cover;
   height: 140vh;
   width: 100vw;

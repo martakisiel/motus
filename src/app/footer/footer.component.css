@@ -26,7 +26,7 @@ i{
     font-size: 1.5vh;
 
 }
-.sponsors{
+/* .sponsors{
     animation:forwards slide-left 5s linear ;
   }
     @keyframes slide-left {
@@ -38,12 +38,12 @@ i{
           -webkit-transform: translateX(-40%);
                   transform: translateX(-40%);
         }
-      }
-      .logo {
-        height: 17vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      } */
+.logo {
+   height: 17vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
       }
      /* @media screen and (orientation: portrait) and (max-width: 620px) {
    

@@ -20,7 +20,7 @@
       </div>
     </div>
     <div
-      class="col-md text-center align-items-center p-3 order-first order-md-0"
+      class="col-md text-center p-3"
     >
       <div
         id="carouselExampleAutoplaying"
@@ -28,7 +28,7 @@
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div *ngFor="let sponsor of sponsors" class="carousel-item active">
+          <div *ngFor="let sponsor of sponsors; let i = index" class="carousel-item" [class.active]="i === 0">
             <a [href]="sponsor.url" target="_blank">
               <img
                 [src]="sponsor.logo"
