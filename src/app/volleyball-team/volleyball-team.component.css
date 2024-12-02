@@ -19,31 +19,55 @@ background-size: cover;
     background-attachment: fixed;
     opacity:0.7;
   } */
+  /* .alert {
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  /* iframe {
+  height: 50vh;
+  width: 25vw;
+} */
+ 
   .row {
     --bs-gutter-x: 0rem;
     --bs-gutter-y: 0;
   }
 .container {
-  height: 70vh;
+  height: max-content;
+  margin-top: 10vh;
 }
-iframe {
-  height: 50vh;
-  width: 25vw;
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 .textDiv {
   background-color: rgb(23, 130, 60);
-  background-size: cover;
+  /* background-size: cover;
   position: relative;
-  text-align: start;
-  padding-bottom: 2vh;
-  padding-right: 2vw;
+  text-align: start; */
+  padding-bottom: 3vh;
+  padding-right: 3vw;
   padding-left: 2vw;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   height: fit-content;
-  width: 35vw;
-  padding-top: 3vw;
+  /* width: 35vw; */
+  padding-top: 2vw;
   font-family: "lato";
   font-size: 2vh;
   color: aliceblue;
@@ -51,19 +75,47 @@ iframe {
   /* margin-right: -2vw;
     /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
 }
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-.alert {
+.module {
+  margin: 0 0 1em 0;
+  overflow: hidden;
+}
+.card-text:last-child {
+  color: aliceblue;
+  margin-bottom: 0;
+  margin-top: 15px;
+  font-family: "lato";
+  font-size: 2vh;
+  
+  /* text truncation */
+}
+.card {
+  width: 100%;
+  align-items: center;
+  /*na małym ekranie zmienić do 100%*/
+  background-color: black;
+  margin-bottom: 4vh;
+  border-color: black;
+  border-radius: 0%;
+  border-style: none;
+ 
+}
+.card-body {
+  /* min-height: 27vh; */
+  background-color: rgb(23, 130, 60);
+}
+.card-img-top {
+  object-fit: cover;
+  object-position: top;
+  height: 52vh;
+  border-radius: 0%;
+}
+.card-title {
+  color: aliceblue;
+  margin-bottom: 0%;
   font-family: "lato";
   font-size: 3vh;
-  color: aliceblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
 @media (min-width: 250px) and (max-width: 399px) {
   .container {
     height: auto;
