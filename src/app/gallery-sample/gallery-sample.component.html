@@ -1,13 +1,13 @@
-<div class="row g-0 caruselTop">
-  <div class="col-sm-6">
+<div class="row caruselTop g-0 ">
+  <div class="col-sm-6 ">
     <div
       id="carouselExample"
-      class="carousel slide caruselTop"
+      class="carousel slide"
     >
       <div class="carousel-inner">
         <div
-          *ngFor="let item of galerySampleImages; let i = index"
-          class="carousel-item" [class.active]="i === 0"
+          *ngFor="let item of galerySampleImages"
+          class="carousel-item" 
         >
           <!-- <a routerLink="#galeria"
             >!-->
