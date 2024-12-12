@@ -51,11 +51,7 @@
   font-family: "lato";
   font-size: 3vh;
 }
-.line-clamp4 {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-}
+
 .module {
   margin: 0 0 1em 0;
   overflow: hidden;

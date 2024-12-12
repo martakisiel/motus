@@ -32,7 +32,7 @@ const routes: Routes = [
   { path: '#sekcje', component:  SportGroupsListComponent }, //osobna strona lista sekcji
   { path: '#formularz', component:  FormComponent }, //osobna strona lista sekcji
   { path: '#galeria', component:  GaleriaComponent }, //osobna strona lista sekcji
-  { path: '#galeria/:albumName', component: AlbumComponent },//album  - sekcja/:która to sekcja
+  { path: '#album/:albumName', component: AlbumComponent },//album/:ktory to album
   { path: '#ad', component:  AdsComponent }, //osobna strona lista sekcji
   { path: '#komunikator', component:  ElementAppComponent }, 
   // { path: '#galeria', component:  GaleriaComponent }, 
