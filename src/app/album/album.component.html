@@ -20,5 +20,10 @@
                 *ngIf="item.width && item.height"
       [style.width.px]="!isPortrait(item) ? 400 : 'auto'"
       [style.height.px]="isPortrait(item) ? 270 : 'auto'"
+       (click)="viewFullscreen(item.url)" />
               />
               </div></div></div></div></div>
+              <!-- Fullscreen image container -->
+<div #fullscreenContainer class="fullscreen-container" (click)="exitFullscreen()" hidden>
+  <img #fullscreenImage class="fullscreen-img" />
+</div>

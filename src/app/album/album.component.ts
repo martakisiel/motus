@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { AlbumNameComponent } from '../album-name/album-name.component';
 import { Photos, ServiceService } from '../service.service';
 import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-album',
@@ -48,4 +49,31 @@ loadImageSize(url: string): Promise<{ width: number; height: number }> {
 isPortrait(photo: Photos): boolean {
   return photo.height! > photo.width!;
 }
+@ViewChild('fullscreenContainer') fullscreenContainer!: ElementRef;
+  @ViewChild('fullscreenImage') fullscreenImage!: ElementRef;
+
+  viewFullscreen(url: string): void {
+    const container = this.fullscreenContainer.nativeElement;
+    const image = this.fullscreenImage.nativeElement;
+
+    image.src = url;
+    container.hidden = false;
+
+    if (container.requestFullscreen) {
+      container.requestFullscreen();
+    } else if ((container as any).webkitRequestFullscreen) {
+      (container as any).webkitRequestFullscreen();
+    } else if ((container as any).msRequestFullscreen) {
+      (container as any).msRequestFullscreen();
+    }
+  }
+
+  exitFullscreen(): void {
+    const container = this.fullscreenContainer.nativeElement;
+    container.hidden = true;
+
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    }
+  }
 }
