@@ -115,5 +115,7 @@ export interface AlbumsNames { //nowy typ danych
 export class Photos {
   public name: string | undefined;
   public url: string = '';
+    width?: number;    // szerokość zdjęcia (opcjonalna)
+  height?: number;   // wysokość zdjęcia (opcjonalna)
 }
 

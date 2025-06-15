@@ -7,8 +7,8 @@
     </fieldset>
 
 
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+    <div class="container ">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
           <!-- if za miast ngfor?-->
           <div class="col" *ngFor="let item of pictures">
             <!--ngFor multyply the whole div element by the number of picures in API-->
@@ -17,8 +17,8 @@
     
               <img
                 [src]="item.url"
-                width="300"
-                height="200"
-                priority
+                *ngIf="item.width && item.height"
+      [style.width.px]="!isPortrait(item) ? 400 : 'auto'"
+      [style.height.px]="isPortrait(item) ? 270 : 'auto'"
               />
               </div></div></div></div></div>

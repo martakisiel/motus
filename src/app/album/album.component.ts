@@ -20,9 +20,32 @@ export class AlbumComponent {
   this.albumName = this.route.snapshot.paramMap.get('albumName');
     this.pageTitle = `${this.albumName}`; //!!!!!!!!tutaj powiazana jest nazwa albumu z nazwą w linku!!!!!!!!!!!!
 
-    this.serviceservice.getPhotos().subscribe((response:string) => { 
-      this.pictures = JSON.parse(response) as Photos[];
+    this.serviceservice.getPhotos().subscribe((response: string) => {
+    this.pictures = JSON.parse(response) as Photos[];
+
+    // teraz ładujemy rozmiary każdego zdjęcia asynchronicznie
+    this.pictures.forEach(photo => {
+      this.loadImageSize(photo.url).then(size => {
+        photo.width = size.width;
+        photo.height = size.height;
+      });
     });
+  });
 }
-  
+
+// metoda do pobrania wymiarów obrazka
+loadImageSize(url: string): Promise<{ width: number; height: number }> {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => {
+      resolve({ width: img.naturalWidth, height: img.naturalHeight });
+    };
+    img.src = url;
+  });
+}
+
+// metoda pomocnicza, czy zdjęcie jest pionowe
+isPortrait(photo: Photos): boolean {
+  return photo.height! > photo.width!;
+}
 }

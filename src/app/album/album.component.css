@@ -10,3 +10,9 @@
     margin-bottom: 5vh;
 
   }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
