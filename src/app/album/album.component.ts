@@ -1,62 +1,64 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, HostListener } from '@angular/core';
 import { AlbumNameComponent } from '../album-name/album-name.component';
 import { Photos, ServiceService } from '../service.service';
 import { ActivatedRoute } from '@angular/router';
 
-
 @Component({
   selector: 'app-album',
   templateUrl: './album.component.html',
-  styleUrls: ['./album.component.css']
+  styleUrls: ['./album.component.css'],
 })
 export class AlbumComponent {
-  pageTitle: string = "Album name"; 
-  pictures : Photos[] = [];
+  pageTitle: string = 'Album name';
+  pictures: Photos[] = [];
   albumName: string | null = null; //!!!!
   albums: AlbumNameComponent[] = [];
+  @ViewChild('fullscreenContainer') fullscreenContainer!: ElementRef;
+  @ViewChild('fullscreenImage') fullscreenImage!: ElementRef;
+  currentIndex = 0; // Index of the currently displayed image
 
-  constructor(private route: ActivatedRoute, private serviceservice: ServiceService){}
-  ngOnInit(): void{
-  
-  this.albumName = this.route.snapshot.paramMap.get('albumName');
+  constructor(
+    private route: ActivatedRoute,
+    private serviceservice: ServiceService
+  ) {}
+  ngOnInit(): void {
+    this.albumName = this.route.snapshot.paramMap.get('albumName');
     this.pageTitle = `${this.albumName}`; //!!!!!!!!tutaj powiazana jest nazwa albumu z nazwą w linku!!!!!!!!!!!!
 
     this.serviceservice.getPhotos().subscribe((response: string) => {
-    this.pictures = JSON.parse(response) as Photos[];
+      this.pictures = JSON.parse(response) as Photos[];
 
-    // teraz ładujemy rozmiary każdego zdjęcia asynchronicznie
-    this.pictures.forEach(photo => {
-      this.loadImageSize(photo.url).then(size => {
-        photo.width = size.width;
-        photo.height = size.height;
+      // teraz ładujemy rozmiary każdego zdjęcia asynchronicznie
+      this.pictures.forEach((photo) => {
+        this.loadImageSize(photo.url).then((size) => {
+          photo.width = size.width;
+          photo.height = size.height;
+        });
       });
     });
-  });
-}
+  }
 
-// metoda do pobrania wymiarów obrazka
-loadImageSize(url: string): Promise<{ width: number; height: number }> {
-  return new Promise((resolve) => {
-    const img = new Image();
-    img.onload = () => {
-      resolve({ width: img.naturalWidth, height: img.naturalHeight });
-    };
-    img.src = url;
-  });
-}
+  // metoda do pobrania wymiarów obrazka
+  loadImageSize(url: string): Promise<{ width: number; height: number }> {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => {
+        resolve({ width: img.naturalWidth, height: img.naturalHeight });
+      };
+      img.src = url;
+    });
+  }
 
-// metoda pomocnicza, czy zdjęcie jest pionowe
-isPortrait(photo: Photos): boolean {
-  return photo.height! > photo.width!;
-}
-@ViewChild('fullscreenContainer') fullscreenContainer!: ElementRef;
-  @ViewChild('fullscreenImage') fullscreenImage!: ElementRef;
+  // metoda pomocnicza, czy zdjęcie jest pionowe
+  isPortrait(photo: Photos): boolean {
+    return photo.height! > photo.width!;
+  }
 
   viewFullscreen(url: string): void {
-    const container = this.fullscreenContainer.nativeElement;
-    const image = this.fullscreenImage.nativeElement;
+    this.currentIndex = this.pictures.findIndex((pic) => pic.url === url);
+    this.showImage(this.currentIndex);
 
-    image.src = url;
+    const container = this.fullscreenContainer.nativeElement;
     container.hidden = false;
 
     if (container.requestFullscreen) {
@@ -68,12 +70,43 @@ isPortrait(photo: Photos): boolean {
     }
   }
 
+  showImage(index: number): void {
+    const image = this.fullscreenImage.nativeElement;
+    image.src = this.pictures[index].url;
+  }
+
+  showNext(event: MouseEvent): void {
+    event.stopPropagation();
+    this.currentIndex = (this.currentIndex + 1) % this.pictures.length;
+    this.showImage(this.currentIndex);
+  }
+
+  showPrevious(event: MouseEvent): void {
+    event.stopPropagation();
+    this.currentIndex =
+      (this.currentIndex - 1 + this.pictures.length) % this.pictures.length;
+    this.showImage(this.currentIndex);
+  }
+
   exitFullscreen(): void {
     const container = this.fullscreenContainer.nativeElement;
     container.hidden = true;
 
     if (document.fullscreenElement) {
       document.exitFullscreen();
+    }
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  handleKeydown(event: KeyboardEvent): void {
+    if (document.fullscreenElement) {
+      if (event.key === 'ArrowRight') {
+        this.showNext(new MouseEvent('click'));
+      } else if (event.key === 'ArrowLeft') {
+        this.showPrevious(new MouseEvent('click'));
+      } else if (event.key === 'Escape') {
+        this.exitFullscreen();
+      }
     }
   }
 }
