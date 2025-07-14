@@ -11,7 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { JoinComponent } from './join/join.component';
 import { GallerySampleComponent } from './gallery-sample/gallery-sample.component';
 import { ContactFormsComponent } from './contact-forms/contact-forms.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CalendarComponent } from './calendar/calendar.component';
