@@ -1,0 +1,9 @@
+<div *ngIf="loading">Ładowanie danych...</div>
+<div *ngIf="error">{{ error }}</div>
+
+<ul *ngIf="!loading && !error">
+  <li *ngFor="let post of posts">
+    <h3 [innerHTML]="post.title.rendered"></h3>
+    <div [innerHTML]="post.excerpt.rendered"></div>
+  </li>
+</ul>
