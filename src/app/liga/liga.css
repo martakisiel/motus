@@ -1,0 +1,45 @@
+fieldset {
+  border-width: 5px 0px 0px 0px;
+  border-style: solid;
+  border-color: rgb(23, 130, 60);
+  padding: 0 30vw;
+  /*20 na małym*/
+  filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
+  height: fit-content;
+  width: fit-content;
+}
+
+legend {
+  width: 260px;
+  /*50vw na małym*/
+  height: 50px;
+  margin-top: -24px;
+  margin-left: 1vw;
+  padding-left: 2vw;
+  /*20 na małym*/
+  background-color: black;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  background-color: rgb(23, 130, 60);
+  text-align: start;
+  padding-bottom: 3vh;
+  padding-right: 4vw;
+  padding-left: 3vw;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 35vh;
+  width: 35vw;
+  padding-top: 3vw;
+  font-family: "lato";
+  font-size: 2vh;
+  color: aliceblue;
+  z-index: 1;
+  margin-right: 0vw;
+  /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
+}
