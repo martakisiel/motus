@@ -19,6 +19,7 @@ import { AdsComponent } from './ads/ads.component';
 import { ElementAppComponent } from './element-app/element-app.component';
 import { AlbumsNames } from './service.service';
 import { AlbumComponent } from './album/album.component';
+import { LigaComponent } from './liga/liga';
 
 
 const routes: Routes = [
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: '#o-nas', component:  ONasComponent }, 
   { path: '#o-nas/:id', component:  StatutComponent }, 
   { path: '#sekcje', component:  SportGroupsListComponent }, //osobna strona lista sekcji
+  { path: '#liga', component:  LigaComponent }, //osobna strona liga
   { path: '#formularz', component:  FormComponent }, //osobna strona lista sekcji
   { path: '#galeria', component:  GaleriaComponent }, //osobna strona lista sekcji
   { path: '#album/:albumName', component: AlbumComponent },//album/:ktory to album

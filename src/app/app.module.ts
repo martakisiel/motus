@@ -41,7 +41,7 @@ import { FormComponent } from './form/form.component';
 import { ElementAppComponent } from './element-app/element-app.component';
 import { AlbumNameComponent } from './album-name/album-name.component';
 import { AlbumComponent } from './album/album.component';
-
+import { LigaComponent } from './liga/liga';
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,7 +70,8 @@ import { AlbumComponent } from './album/album.component';
     FormComponent,
     ElementAppComponent,
     AlbumNameComponent,
-    AlbumComponent
+    AlbumComponent,
+    LigaComponent
  
   ],
   imports: [
