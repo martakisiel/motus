@@ -1,12 +1,15 @@
+
+
 fieldset {
-  border-width: 5px 0px 0px 0px;
-  border-style: solid;
-  border-color: rgb(23, 130, 60);
-  padding: 0 30vw;
-  /*20 na małym*/
-  filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
-  height: fit-content;
-  width: fit-content;
+   border-width: 5px 0px 0px 0px;
+    border-style: solid;
+    border-color: rgb(23, 130, 60);
+    padding: 0 20vw;
+    /*20 na małym*/
+    filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
+    height: fit-content;
+    width: 83vw !important; /*ważne! inaczej linia jest na całą szerokość strony*/
+
 }
 
 legend {
@@ -42,4 +45,71 @@ legend {
   z-index: 1;
   margin-right: 0vw;
   /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
+}
+
+/* Nadpisz kolory i tło */
+.sp-event-list {
+  background-color: #000000; /* ciemne tło */
+  color: aliceblue;            /* jasny tekst */
+  border-collapse: collapse;
+  width: 100%;
+  font-family: "lato";
+}
+
+.sp-event-list th,
+.sp-event-list td {
+  /* border: 1px solid  rgb(23, 130, 60); */
+  padding: 10px;
+  text-align: center;
+}
+
+.sp-event-list th {
+  background-color:  rgb(23, 130, 60);
+  font-weight: bold;
+}
+
+.sp-event-list tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+/* Linki */
+.sp-event-list a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.sp-event-list a:hover {
+  text-decoration: underline;
+}
+
+/* Logo drużynowe */
+.team-logo img {
+  max-height: 24px;
+  margin-left: 4px;
+}
+
+/* Nagłówek kolejki */
+.sp-table-caption {
+  color: aliceblue;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+   display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+
+th.data-venue,
+td.data-venue,
+th.data-league,
+td.data-league,
+th.data-season,
+td.data-season,
+th.data-day,
+td.data-day,
+th.data-article,
+td.data-article
+ {
+  display: none;
 }

@@ -1,11 +1,14 @@
 <div class="row g-0 center aktualnosci mt-5">
 
-    <fieldset role="presentation"> <!--obejmuje wszystkie elementy ligi-->
+    <fieldset role="presentation" class="center"> <!--obejmuje wszystkie elementy ligi-->
         <legend role="presentation">
            <h2 class="textChanga mb-2"> TERMINARZ LIGI </h2>
         </legend>
     </fieldset>
-     <div class="center" *ngIf="terminarzData">
- <!-- <h2>{{ terminarzData.title }}</h2> -->
-  <div class="text" [innerHTML]="terminarzData.content"></div>
+    <!-- <div *ngIf="loading">Ładowanie terminarza...</div>
+    <div *ngIf="error">{{ error }}</div> -->
+     <div class="center" *ngIf="terminarzHtml">
+  <div [innerHTML]="terminarzHtml"></div>
 </div>
+
+
