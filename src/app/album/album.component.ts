@@ -89,24 +89,34 @@ export class AlbumComponent {
   }
 
   exitFullscreen(): void {
+  const container = this.fullscreenContainer.nativeElement;
+
+  // Hide modal container first
+  container.hidden = true;
+
+  // Then try to exit fullscreen if it's still active
+  if (document.fullscreenElement) {
+    document.exitFullscreen();
+  }
+}
+
+@HostListener('document:keydown', ['$event'])
+handleKeydown(event: KeyboardEvent): void {
+  if (event.key === 'ArrowRight' && document.fullscreenElement) {
+    this.showNext(new MouseEvent('click'));
+  } else if (event.key === 'ArrowLeft' && document.fullscreenElement) {
+    this.showPrevious(new MouseEvent('click'));
+  } else if (event.key === 'Escape' && document.fullscreenElement) {
+    document.exitFullscreen(); // Only exits fullscreen — modal will be hidden by fullscreenchange listener
+  }
+}
+  
+@HostListener('document:fullscreenchange')
+onFullscreenChange(): void {
+  // If browser has exited fullscreen, hide the modal
+  if (!document.fullscreenElement) {
     const container = this.fullscreenContainer.nativeElement;
     container.hidden = true;
-
-    if (document.fullscreenElement) {
-      document.exitFullscreen();
-    }
   }
-
-  @HostListener('document:keydown', ['$event'])
-  handleKeydown(event: KeyboardEvent): void {
-    if (document.fullscreenElement) {
-      if (event.key === 'ArrowRight') {
-        this.showNext(new MouseEvent('click'));
-      } else if (event.key === 'ArrowLeft') {
-        this.showPrevious(new MouseEvent('click'));
-      } else if (event.key === 'Escape') {
-        this.exitFullscreen();
-      }
-    }
-  }
+}
 }
