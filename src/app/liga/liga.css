@@ -1,32 +1,33 @@
-
-
 fieldset {
-   border-width: 5px 0px 0px 0px;
-    border-style: solid;
-    border-color: rgb(23, 130, 60);
-    padding: 0 20vw;
-    /*20 na małym*/
-    filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
-    height: fit-content;
-    width: 83vw !important; /*ważne! inaczej linia jest na całą szerokość strony*/
+  border-width: 5px 0px 0px 0px;
+  border-style: solid;
+  border-color: rgb(23, 130, 60);
+  padding: 0 20vw;
+  /*20 na małym*/
+  filter: drop-shadow(0 1px 1px rgba(grey, 0.25));
+  height: fit-content;
+  width: 83vw !important;
+  /*ważne! inaczej linia jest na całą szerokość strony*/
 
 }
 
 legend {
-  width: 260px;
+  width: 635px;
+  height: 79px;
   /*50vw na małym*/
-  height: 50px;
   margin-top: -24px;
   margin-left: 1vw;
   padding-left: 2vw;
   /*20 na małym*/
   background-color: black;
 }
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .text {
   background-color: rgb(23, 130, 60);
   text-align: start;
@@ -49,8 +50,10 @@ legend {
 
 /* Nadpisz kolory i tło */
 .sp-event-list {
-  background-color: #000000; /* ciemne tło */
-  color: aliceblue;            /* jasny tekst */
+  background-color: #000000;
+  /* ciemne tło */
+  color: aliceblue;
+  /* jasny tekst */
   border-collapse: collapse;
   width: 100%;
   font-family: "lato";
@@ -64,7 +67,7 @@ legend {
 }
 
 .sp-event-list th {
-  background-color:  rgb(23, 130, 60);
+  background-color: rgb(23, 130, 60);
   font-weight: bold;
 }
 
@@ -94,7 +97,7 @@ legend {
   font-size: 1.5rem;
   margin-bottom: 10px;
   text-align: center;
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center
 }
@@ -109,7 +112,536 @@ td.data-season,
 th.data-day,
 td.data-day,
 th.data-article,
-td.data-article
- {
+td.data-article {
   display: none;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0vh;
+  margin-bottom: 10vh;
+}
+
+.textDiv1 {
+  background-color: rgb(23, 130, 60);
+  text-align: start;
+  padding-bottom: 3vh;
+  padding-right: 4vw;
+  padding-left: 3vw;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 35vh;
+  width: 35vw;
+  padding-top: 3vw;
+  font-family: "lato";
+  font-size: 2vh;
+  color: aliceblue;
+  z-index: 1;
+  margin-right: 0vw;
+  /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
+}
+
+.src1Div {
+  position: relative;
+  margin-top: -20px;
+  margin-left: -10vw;
+  display: flex;
+  justify-content: center;
+}
+
+.src1 {
+  height: 50vh;
+  width: auto;
+}
+
+.pI {
+  font-style: italic;
+}
+
+
+.src2 {
+  height: 45vh;
+  width: auto;
+  margin-left: -4vw;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+}
+
+.text2Div {
+  background-color: rgb(23, 130, 60);
+  text-align: start;
+  padding-bottom: 3vh;
+  padding-right: 4vw;
+  padding-left: 3vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 35vh;
+  width: 35vw;
+  padding-top: 3vw;
+  font-family: "lato";
+  font-size: 2vh;
+  color: aliceblue;
+  z-index: 1;
+  margin-right: 0vw;
+  margin-left: -22vw;
+  /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
+}
+
+.textOnPic {
+  align-items: center;
+  height: 40vh;
+  padding: 50px;
+
+  width: 35vw;
+  z-index: 1;
+  margin-right: -20px;
+
+  font-family: "lato";
+  font-size: 2vh;
+  color: aliceblue;
+}
+
+.textOnPic2 {
+  align-items: center;
+  height: 40vh;
+  padding: 50px;
+
+  width: 35vw;
+  z-index: 1;
+
+  font-family: "lato";
+  font-size: 2vh;
+  color: aliceblue;
+}
+
+.btnBlue {
+  max-width: 60vw;
+  position: absolute;
+  top: 80%;
+  left: -1%;
+  transform: translate(0%, 0vh);
+  z-index: 1;
+  background-color: #007ae4;
+  color: aliceblue;
+  margin: auto;
+  display: block;
+  height: 15vh;
+  width: 25vw;
+  cursor: pointer;
+  font-family: "changa";
+  font-size: 3vh;
+}
+
+.btnBlue:hover {
+  background-color: #007ae4;
+}
+
+.aOnButton {
+  color: aliceblue;
+  box-shadow: inset;
+}
+
+.onPicCenter {
+  position: absolute;
+  top: 110vh;
+  left: 50%;
+  transform: translate(-49%, 470%);
+  /* font-size: 18px; */
+}
+
+.join {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgGreen {
+  background-color: rgb(23, 130, 60);
+}
+
+@media (min-width: 250px) and (max-width: 399px) {
+  .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5vh;
+  }
+
+  .textDiv1 {
+    background-color: rgb(23, 130, 60);
+    text-align: start;
+    padding: 4vh 10vw 2vh 8vw;
+    margin-left: 3vw;
+    align-items: center;
+    display: flex;
+    height: 37vh;
+    width: 85vw;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+  }
+
+  .src1Div {
+    position: relative;
+    margin-top: -20px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .src1 {
+    max-width: 90vw;
+    height: auto;
+    margin-top: -10px;
+    margin-left: 17vw;
+    display: flex;
+  }
+
+  .btnBlue {
+    position: absolute;
+    top: 34vh;
+    left: 25vw;
+    transform: translate(0%, 0vh);
+    min-width: 70vw;
+    height: 10vh;
+    /* width: 25vw; */
+    z-index: 1;
+    background-color: #007ae4;
+  }
+
+  .intro {
+    margin-top: 30vh;
+  }
+
+  .intro1 {
+    margin-top: 5vh;
+  }
+
+  .row2 {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: right;
+  }
+
+  .src2 {
+    max-width: 90vw;
+    height: auto;
+    margin-left: 0vw;
+  }
+
+  .text2Div {
+    background-color: rgb(23, 130, 60);
+    text-align: start;
+    padding: 4vh 6vw 4vh 6vw;
+    /* align-items: center; */
+    display: flex;
+    justify-content: right;
+    height: 40vh;
+    width: 85vw;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+    margin-right: 2vw;
+    margin-left: 0vw;
+    /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
+    margin-top: -5vh;
+  }
+
+  .join {
+    margin-top: -20px;
+    display: flex;
+    justify-content: right;
+    margin-bottom: -70px;
+  }
+
+  .onPicCenter {
+    position: absolute;
+    top: 155vh;
+    left: 50%;
+    transform: translate(-32%, -310%);
+  }
+
+  .textIntro {
+    padding-bottom: 0%;
+  }
+
+  .textOnPic {
+    text-align: start;
+    padding-bottom: 5vh;
+    padding-right: 15vw;
+    align-items: center;
+    height: 30vh;
+    width: 40vh;
+  }
+
+  .textOnPic2 {
+    text-align: revert;
+    padding-bottom: 5vh;
+    padding-left: 4vw;
+    height: 25vh;
+    width: 75vw;
+    margin-left: 25vw;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .row1 {
+    display: block;
+    /* justify-content: start;
+    align-items: center; */
+    margin-top: 5vh;
+  }
+
+  .textDiv1 {
+    background-color: rgb(23, 130, 60);
+    text-align: start;
+    padding: 4vh 10vw 2vh 8vw;
+    align-items: center;
+    display: flex;
+    height: 38vh;
+    width: 85vw;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+    margin-left: -3vw;
+  }
+
+  .src1Div {
+    position: relative;
+    margin-top: -20px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .src1 {
+    max-width: 90vw;
+    height: auto;
+    margin-top: -10px;
+    display: flex;
+    z-index: -1;
+  }
+
+  .btnBlue {
+    max-width: 90vw;
+    position: absolute;
+    top: 92%;
+    left: 0%;
+    transform: translate(0%, 0vh);
+    z-index: 1;
+    background-color: #007ae4;
+    color: aliceblue;
+    margin: auto;
+    display: block;
+    height: 15vh;
+    width: 85vw;
+    cursor: pointer;
+    font-family: "changa";
+    font-size: 3vh;
+  }
+
+  .btnBlue:hover {
+    background-color: #007ae4;
+  }
+
+  .intro1 {
+    margin-top: 5vh;
+  }
+
+  .row2 {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: right;
+  }
+
+  .src2 {
+    max-width: 90vw;
+    height: auto;
+    margin-right: 0%;
+    margin-left: -1vw;
+  }
+
+  .text2Div {
+    background-color: rgb(23, 130, 60);
+    text-align: start;
+    padding: 4vh 10vw 2vh 8vw;
+    /* align-items: center; */
+    display: flex;
+    justify-content: right;
+    height: 38vh;
+    width: 85vw;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+    margin-right: 0vw;
+    margin-left: 0vw;
+    /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
+    margin-top: -5vh;
+  }
+
+  .join {
+    margin-top: -20px;
+    display: flex;
+    justify-content: right;
+    margin-bottom: -70px;
+  }
+
+  .onPicCenter {
+    position: absolute;
+    top: 155vh;
+    left: 50%;
+    transform: translate(-32%, -310%);
+  }
+
+  .textIntro {
+    padding-bottom: 0%;
+  }
+
+  .textOnPic {
+    text-align: start;
+    padding-bottom: 5vh;
+    padding-right: 15vw;
+    align-items: center;
+    height: 30vh;
+    width: 40vh;
+  }
+
+  .textOnPic2 {
+    text-align: revert;
+    padding-bottom: 5vh;
+    padding-left: 4vw;
+    height: 25vh;
+    width: 75vw;
+    margin-left: 25vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .row1 {
+    display: block;
+    /* justify-content: start;
+    align-items: center; */
+    margin-top: 5vh;
+  }
+
+  .textDiv1 {
+    background-color: rgb(23, 130, 60);
+    text-align: start;
+    /* padding-bottom: 3vh; */
+    padding-right: 7vw;
+    padding-left: 7vw;
+    align-items: center;
+    display: flex;
+    height: 30vh;
+    width: 85vw;
+    padding-top: 5vh;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+    padding-bottom: 4vh;
+  }
+
+  .src1Div {
+    position: relative;
+    margin-top: -20px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .src1 {
+    max-width: 77vw;
+    height: auto;
+    margin-top: -10px;
+    display: flex;
+    margin-left: 4vw;
+  }
+
+  .btn1 {
+    position: absolute;
+    top: 110%;
+    left: 15%;
+    transform: translate(0%, 0vh);
+
+    min-width: 70vw;
+
+    height: 10vh;
+    /* width: 25vw; */
+    z-index: 1;
+  }
+
+  .btnBlue {
+    max-width: 60vw;
+    position: absolute;
+    top: 94%;
+    left: 25%;
+    transform: translate(0%, 0vh);
+    z-index: 1;
+    background-color: #007ae4;
+    color: aliceblue;
+    margin: auto;
+    display: block;
+    height: 15vh;
+    width: 60vw;
+    cursor: pointer;
+    font-family: "changa";
+    font-size: 3vh;
+  }
+
+  .btnBlue:hover {
+    background-color: #007ae4;
+  }
+
+  .text2Div {
+    background-color: rgb(23, 130, 60);
+    text-align: start;
+    padding-bottom: 3vh;
+    padding-right: 4vw;
+    padding-left: 3vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 29vh;
+    width: 85vw;
+    padding-top: 6vw;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+    margin-right: 0vw;
+    margin-left: 0px;
+    margin-top: -10vh;
+    position: absolute;
+    /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
+  }
+
+  .row2 {
+    margin-top: 18vh;
+    display: block;
+    margin-bottom: 28vh;
+  }
+
+  .src2 {
+    height: 50vh;
+    width: auto;
+    margin-right: 0vw;
+  }
 }
