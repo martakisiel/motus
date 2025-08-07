@@ -1,0 +1,24 @@
+[ 
+   {
+   "url":"assets/galery/Zawody/gs1_2100_300_70.JPG",
+   "name":"img00",
+   "id":0
+
+    }, 
+   {
+   "url":"assets/galery/Zawody/gs2_2100_300_70.JPG",
+   "name":"img01"
+   "id":1
+    },
+{
+   "url":"assets/galery/Zawody/gs3_2100_300_70.JPG",
+   "name":"img02"
+   "id":2
+    }, 
+   {
+   "url":"assets/galery/Zawody/gs4_2100_300_70.JPG",
+   "name":"img03"
+   "id":3
+    }
+  
+]

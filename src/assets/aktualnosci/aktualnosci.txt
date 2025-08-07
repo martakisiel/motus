@@ -1,5 +1,26 @@
 [ 
    {
+    "url":"assets/logoliga.png",
+    "alt":"Liga",
+    "title": "Bieszczadzka Amatorska Liga Siatkówki",
+    "date": "06.08.2025",
+    "content": "Ruszamy z Bieszczadzką Amatorską Ligą Siatkówki!! Sportowe emocje przez cały rok gwarantowane! Wszystkich zainteresowanych zapraszamy na stronę www.liga.ksmotus.pl"
+    },
+   {
+    "url":"assets/turniej.jpg",
+    "alt":"siatkówka",
+    "title": "Węgry plażowe 2025",
+    "date": "19.07.2025",
+    "content": "Siatkówka plażowa to jeszcze nie jest nasze królestwo ale nie poddajemy się i już planujemy co dalej. Niemniej jednak Nagykallo (Węgry) polecamy."
+    },
+   {
+    "url":"assets/grupowe1.jpg",
+    "alt":"siatkówka",
+    "title": "Turniej o puchar Piotra Kmity, Lesko 2025",
+    "date": "10.07.2025",
+    "content": "Wystawiliśmy dwie drużyny na turnieju im. Piotra Kmity w Lesku. Turniej został zorganizowany przez Leskie Stowarzyszenie Inicjatyw Lokalnych im. Piotra Kmity. KS MOTUS Junior uplasowali się o pozycję wyżej od starszych kolegów z ekipy."
+    },   
+   {
     "url":"assets/podatek.jpg",
     "alt":"siatkówka",
     "title": "Przekaż 1,5% podatku",
@@ -27,18 +48,18 @@
     "date": "23.06.2023",
     "content": "Założenie KS Motus Lesko zostaje oficjalnie potwierdzone przez starostę Leskiego."
   },
+{
+	"url":"assets/IMG_3491_2100_300_70.JPG",
+    "alt":"mecz siatkówki",
+    "title": "Pierwsza rozgrywka",
+    "date": "28.07.2022",
+    "content": "Pierwsza, nieformalna, rozgrywka siatkarska założycieli Klubu."
+  },
   {
 	"url":"assets/management/managementTeam_2100_300_70.JPG",
     "alt":"ks Motus",
     "title": "Spotkanie założycielskie",
     "date": "16.06.2023",
     "content": "Zapadła decyzja! Chcemy rozwijać nasze sportowe pasje, dlatego zakładamy KS."
-  },
-{
-	"url":"assets/IMG_3491_2100_300_70.JPG",
-    "alt":"mecz siatkowki",
-    "title": "Pierwsza rozgywka",
-    "date": "28.07.2022",
-    "content": "Pierwsza, nieformalna, rozgrywka siatkarska założycieli Klubu."
   }
 ]
