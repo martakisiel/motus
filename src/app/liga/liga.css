@@ -312,7 +312,7 @@ td.data-article {
     display: flex;
   }
 
-  .btnBlue {
+  .btnYellow {
     position: absolute;
     top: 34vh;
     left: 25vw;
@@ -321,6 +321,11 @@ td.data-article {
     height: 10vh;
     /* width: 25vw; */
     z-index: 1;
+    background-color: #ffb41d;
+    color: #003e67;
+  }
+
+  .btnYellow:hover {
     background-color: #007ae4;
   }
 
@@ -438,15 +443,15 @@ td.data-article {
     z-index: -1;
   }
 
-  .btnBlue {
+  .btnYellow {
     max-width: 90vw;
     position: absolute;
     top: 92%;
     left: 0%;
     transform: translate(0%, 0vh);
     z-index: 1;
-    background-color: #007ae4;
-    color: aliceblue;
+    background-color: #ffb41d;
+    color: #003e67;
     margin: auto;
     display: block;
     height: 15vh;
@@ -456,7 +461,7 @@ td.data-article {
     font-size: 3vh;
   }
 
-  .btnBlue:hover {
+  .btnYellow:hover {
     background-color: #007ae4;
   }
 
@@ -587,15 +592,15 @@ td.data-article {
     z-index: 1;
   }
 
-  .btnBlue {
+  .btnYellow {
     max-width: 60vw;
     position: absolute;
     top: 94%;
     left: 25%;
     transform: translate(0%, 0vh);
     z-index: 1;
-    background-color: #007ae4;
-    color: aliceblue;
+    background-color: #ffb41d;
+    color: #003e67;
     margin: auto;
     display: block;
     height: 15vh;
@@ -605,7 +610,7 @@ td.data-article {
     font-size: 3vh;
   }
 
-  .btnBlue:hover {
+  .btnYellow:hover {
     background-color: #007ae4;
   }
 
