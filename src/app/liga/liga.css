@@ -222,15 +222,15 @@ td.data-article {
   color: aliceblue;
 }
 
-.btnBlue {
+.btnYellow{
   max-width: 60vw;
   position: absolute;
   top: 80%;
   left: -1%;
   transform: translate(0%, 0vh);
   z-index: 1;
-  background-color: #007ae4;
-  color: aliceblue;
+  background-color: #ffb41d;
+  color: #003e67;
   margin: auto;
   display: block;
   height: 15vh;
@@ -240,7 +240,7 @@ td.data-article {
   font-size: 3vh;
 }
 
-.btnBlue:hover {
+.btnYellow:hover {
   background-color: #007ae4;
 }
 
