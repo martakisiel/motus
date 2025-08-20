@@ -1,3 +1,7 @@
+.margin-top {
+  margin-top: 15vh;
+}
+
 fieldset {
   border-width: 5px 0px 0px 0px;
   border-style: solid;
@@ -12,13 +16,11 @@ fieldset {
 }
 
 legend {
-  width: 635px;
-  height: 79px;
-  /*50vw na małym*/
-  margin-top: -24px;
-  margin-left: 1vw;
+  width: 670px;
+  height: 80px;
+  margin-top: -22px;
+  margin-left: 0vw;
   padding-left: 2vw;
-  /*20 na małym*/
   background-color: black;
 }
 
@@ -126,10 +128,10 @@ td.data-article {
 
 .textDiv1 {
   background-color: rgb(23, 130, 60);
-  text-align: start;
+  text-align: center;
   padding-bottom: 3vh;
   padding-right: 4vw;
-  padding-left: 3vw;
+  padding-left: 7vw;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
