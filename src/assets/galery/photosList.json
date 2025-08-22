@@ -1,43 +1,74 @@
 [ 
-{
-   "url":"assets/galery/Mecz1/IMG_2682_2560_70_350.JPG",
-   "albumName":"Mecz1",
-   "id":0
+    {
+    "url":"assets/galery/wegryplazowe2025/gra1.jpeg",
+    "albumName":"Siatkówka Plażowa - Węgry 2025",
+    "id":0
     }, 
-   {
-   "url":"assets/galery/Mecz1/IMG_2760_1_2560_180_70.JPG",
-   "albumName":"Mecz1",
-   "id":1
-    },
-{
-   "url":"assets/galery/Mecz1/IMG_2682_2560_70_350.JPG",
-   "albumName":"Mecz1",
-   "id":2
-    }, 
-   {
-   "url":"assets/galery/Mecz1/IMG_2760_1_2560_180_70.JPG",
-   "albumName":"Mecz1",
-   "id":3
+    {
+    "url":"assets/galery/wegryplazowe2025/gra2.jpeg",
+    "albumName":"Siatkówka Plażowa - Węgry 2025",
+    "id":1
     },
     {
-   "url":"assets/galery/Zawody/IMG_2682_2560_70_350.JPG",
-   "albumName":"Zawody",
-   "id":0
+    "url":"assets/galery/wegryplazowe2025/turniej.jpg",
+    "albumName":"Siatkówka Plażowa - Węgry 2025",
+    "id":2
     }, 
-   {
-   "url":"assets/galery/Zawody/IMG_2760_1_2560_180_70.JPG",
-   "albumName":"Zawody",
-   "id":1
+    {
+    "url":"assets/galery/wegryplazowe2025/myimichalkowice.jpeg",
+    "albumName":"Siatkówka Plażowa - Węgry 2025",
+    "id":3
     },
-{
-   "url":"assets/galery/Zawody/IMG_2682_2560_70_350.JPG",
-   "albumName":"Zawody",
-   "id":2
-    }, 
-   {
-   "url":"assets/galery/Zawody/IMG_2760_1_2560_180_70.JPG",
-   "albumName":"Zawody",
-   "id":3
-    }     
+    {
+    "url":"assets/galery/wegryplazowe2025/wegryplazowe2025grupowe.jpg",
+    "albumName":"Siatkówka Plażowa - Węgry 2025",
+    "id":4
+    },
+    {
+    "url":"assets/galery/leskoplazowe2025/gra1.jpg",
+    "albumName":"Turniej o puchar Piotra Kmity 2025",
+    "id":0
+    },
+    {
+    "url":"assets/galery/leskoplazowe2025/gra2.jpg",
+    "albumName":"Turniej o puchar Piotra Kmity 2025",
+    "id":1
+    },
+    {
+    "url":"assets/galery/leskoplazowe2025/gra3.jpg",
+    "albumName":"Turniej o puchar Piotra Kmity 2025",
+    "id":2
+    },
+    {
+    "url":"assets/galery/leskoplazowe2025/gra4.jpg",
+    "albumName":"Turniej o puchar Piotra Kmity 2025",
+    "id":3
+    },
+    {
+    "url":"assets/galery/leskoplazowe2025/grupowe1.jpg",
+    "albumName":"Turniej o puchar Piotra Kmity 2025",
+    "id":4
+    },
+    {
+    "url":"assets/galery/treningi/gs1_2100_300_70.JPG",
+    "albumName":"Treningi w Lesku",
+    "id":0
+    },
+    {
+    "url":"assets/galery/treningi/gs2_2100_300_70.JPG",
+    "albumName":"Treningi w Lesku",
+    "id":1
+    },
+    {
+    "url":"assets/galery/treningi/gs3_2100_300_70.JPG",
+    "albumName":"Treningi w Lesku",
+    "id":2
+    },
+    {
+    "url":"assets/galery/treningi/gs4_2100_300_70.JPG",
+    "albumName":"Treningi w Lesku",
+    "id":3
+    }
+     
   
 ]
