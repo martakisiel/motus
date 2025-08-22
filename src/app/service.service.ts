@@ -36,15 +36,20 @@ export class ServiceService {
   getGalerySample(): Observable<GalerySample[]> {
     return this.http.get<GalerySample[]>('assets/galerySample/galerySampleList.json');
   }
-  getAlbumsNames(): Observable<string> {
-    return this.http.get('assets/galery/albumsNames.txt', {
-      responseType: 'text',
-    });
+
+ // 🔹 Pobranie listy albumów
+  getAlbums(): Observable<Album[]> {
+    return this.http.get<Album[]>('assets/galery/albumsNames.json');
   }
-  getPhotos() {
-    return this.http.get('assets/galery/photosList.txt', {
-      responseType: 'text',
-    });
+  
+ // 🔹 Pobranie nazw albumów
+  getAlbumsNames() {
+  return this.http.get<AlbumsNames[]>('assets/galery/albumsNames.json');
+}
+
+ // 🔹 Pobranie listy zdjęć
+  getPhotos(): Observable<Photos[]> {
+    return this.http.get<Photos[]>('assets/galery/photosList.json');
   }
 
   getSponsors(): Observable<string> {
@@ -118,16 +123,25 @@ export interface SportGroupsList {
   alt: string;
   title: string;
 }
+
 export interface AlbumsNames {
-  //nowy typ danych
-  coverUrl: string | undefined;
-  name: string | undefined;
-  alt: string | undefined;
+  coverUrl: string;
+  name: string;
+  alt: string;
 }
+
+// 🔹 model Album – zgodny z albumsNames.json
+export interface Album {
+  coverUrl: string;
+  name: string;
+  alt: string;
+}
+
+// 🔹 model Photos – zgodny z photosList.json
 export class Photos {
-  public name: string | undefined;
-  public url: string = '';
-  public id: string= '';
-  width?: number; // szerokość zdjęcia (opcjonalna)
-  height?: number; // wysokość zdjęcia (opcjonalna)
+  url: string = '';          // ścieżka do zdjęcia
+  albumName: string = '';    // nazwa albumu (np. Mecz1, Zawody)
+  id: number = 0;            // unikalne ID zdjęcia
+  width?: number;            // szerokość zdjęcia (opcjonalnie)
+  height?: number;           // wysokość zdjęcia (opcjonalnie)
 }

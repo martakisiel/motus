@@ -19,8 +19,9 @@ export class AlbumNameComponent implements OnInit {
  
   }
    ngOnInit(): void { 
-    this.serviceService.getAlbumsNames().subscribe((response:string) => { 
-      this.albumsNames = JSON.parse(response) as AlbumsNames[];
+    this.serviceService.getAlbumsNames().subscribe({
+      next: (albums: AlbumsNames[]) => this.albumsNames = albums,
+      error: (err) => console.error('Nie udało się wczytać listy albumów', err)
     });
   }
   onClick():void{

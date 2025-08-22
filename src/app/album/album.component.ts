@@ -1,18 +1,21 @@
-import { Component, ElementRef, ViewChild, HostListener } from '@angular/core';
+import { Component, ElementRef, ViewChild, HostListener, Input, OnInit } from '@angular/core';
 import { AlbumNameComponent } from '../album-name/album-name.component';
 import { Photos, ServiceService } from '../service.service';
 import { ActivatedRoute } from '@angular/router';
-
+//import photosList from '../../assets/photosList.json';
 @Component({
   selector: 'app-album',
   templateUrl: './album.component.html',
   styleUrls: ['./album.component.css'],
 })
-export class AlbumComponent {
+export class AlbumComponent implements OnInit {
+
   pageTitle: string = 'Album name';
   pictures: Photos[] = [];
-  albumName: string | null = null; //!!!!
+  albumName: string | null = null; //!!!! nazwa albumu z parametru URL
   albums: AlbumNameComponent[] = [];
+//  @Input() albumName!: string;   // nazwa albumu przekazywana z GaleriaComponent
+
   @ViewChild('fullscreenContainer') fullscreenContainer!: ElementRef;
   @ViewChild('fullscreenImage') fullscreenImage!: ElementRef;
   currentIndex = 0; // Index of the currently displayed image
@@ -22,11 +25,17 @@ export class AlbumComponent {
     private serviceservice: ServiceService
   ) {}
   ngOnInit(): void {
+   // this.photos = photosList.filter(photo => photo.albumName === this.albumName);
+  
+  // 🔥 Pobranie nazwy albumu z parametru w ścieżce
     this.albumName = this.route.snapshot.paramMap.get('albumName');
     this.pageTitle = `${this.albumName}`; //!!!!!!!!tutaj powiazana jest nazwa albumu z nazwą w linku!!!!!!!!!!!!
 
-    this.serviceservice.getPhotos().subscribe((response: string) => {
-      this.pictures = JSON.parse(response) as Photos[];
+  // 🔥 Pobranie listy zdjęć i filtrowanie po albumName
+    this.serviceservice.getPhotos().subscribe((allPhotos: Photos[]) => {
+  this.pictures = allPhotos.filter(photo => photo.albumName === this.albumName);
+    // this.serviceservice.getPhotos().subscribe((response: string) => {
+    // this.pictures = JSON.parse(response) as Photos[];
 
       // teraz ładujemy rozmiary każdego zdjęcia asynchronicznie
       this.pictures.forEach((photo) => {

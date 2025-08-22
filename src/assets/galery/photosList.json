@@ -1,0 +1,43 @@
+[ 
+{
+   "url":"assets/galery/Mecz1/IMG_2682_2560_70_350.JPG",
+   "albumName":"Mecz1",
+   "id":0
+    }, 
+   {
+   "url":"assets/galery/Mecz1/IMG_2760_1_2560_180_70.JPG",
+   "albumName":"Mecz1",
+   "id":1
+    },
+{
+   "url":"assets/galery/Mecz1/IMG_2682_2560_70_350.JPG",
+   "albumName":"Mecz1",
+   "id":2
+    }, 
+   {
+   "url":"assets/galery/Mecz1/IMG_2760_1_2560_180_70.JPG",
+   "albumName":"Mecz1",
+   "id":3
+    },
+    {
+   "url":"assets/galery/Zawody/IMG_2682_2560_70_350.JPG",
+   "albumName":"Zawody",
+   "id":0
+    }, 
+   {
+   "url":"assets/galery/Zawody/IMG_2760_1_2560_180_70.JPG",
+   "albumName":"Zawody",
+   "id":1
+    },
+{
+   "url":"assets/galery/Zawody/IMG_2682_2560_70_350.JPG",
+   "albumName":"Zawody",
+   "id":2
+    }, 
+   {
+   "url":"assets/galery/Zawody/IMG_2760_1_2560_180_70.JPG",
+   "albumName":"Zawody",
+   "id":3
+    }     
+  
+]

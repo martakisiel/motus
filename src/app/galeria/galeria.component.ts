@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 import { ActivatedRoute, RouterModule } from '@angular/router';
-import { ServiceService, AlbumsNames, Management } from '../service.service';
+import { ServiceService, Album, Management } from '../service.service';
 @Component({
   selector: 'app-galeria',
   templateUrl: './galeria.component.html',
@@ -9,14 +9,13 @@ import { ServiceService, AlbumsNames, Management } from '../service.service';
   providers: [ServiceService]
 })
 export class GaleriaComponent  implements OnInit {
-  albumsNames: AlbumsNames[] = [];
- 
+  albums: Album[] = []; 
   constructor(private route:ActivatedRoute, private serviceService:ServiceService){
  
   }
   ngOnInit(): void {
-      this.serviceService.getAlbumsNames().subscribe((response:string) => { 
-        this.albumsNames = JSON.parse(response) as AlbumsNames[];
+      this.serviceService.getAlbums().subscribe((albums: Album[]) => {
+    this.albums = albums;
       });
   }
  
