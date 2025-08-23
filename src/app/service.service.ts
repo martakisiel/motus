@@ -127,6 +127,7 @@ export interface AlbumsNames {
   coverUrl: string;
   name: string;
   alt: string;
+  //slug?: string; // <-- dodajemy opcjonalne pole slug
 }
 
 // 🔹 model Album – zgodny z albumsNames.json
@@ -134,6 +135,7 @@ export interface Album {
   coverUrl: string;
   name: string;
   alt: string;
+  slug?: string; // <-- dodajemy opcjonalne pole slug
 }
 
 // 🔹 model Photos – zgodny z photosList.json
@@ -143,4 +145,5 @@ export class Photos {
   id: number = 0;            // unikalne ID zdjęcia
   width?: number;            // szerokość zdjęcia (opcjonalnie)
   height?: number;           // wysokość zdjęcia (opcjonalnie)
+  slug?: string; // <-- dodajemy opcjonalne pole slug
 }

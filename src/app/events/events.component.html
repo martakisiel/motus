@@ -31,7 +31,7 @@
                 {{ item.date }}
               </span>
               <span class="date" *ngIf="item.AlbumName && item.AlbumName.trim().length > 0">
-                <a [routerLink]="['/#album', item.AlbumName]" routerLinkActive="active">
+                <a [routerLink]="['/#album', slugify(item.AlbumName)]" routerLinkActive="active">
                   zobacz galerię zdjęć
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                     fill="currentColor" style="color: aliceblue;" class="ms-2 bi bi-arrow-right-square"

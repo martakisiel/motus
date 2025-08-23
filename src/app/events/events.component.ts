@@ -35,5 +35,16 @@ export class EventsComponent implements OnInit {
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+  slugify(text: string): string {
+    return text
+      .toLowerCase()
+      .normalize("NFD") // usuwa polskie znaki diakrytyczne
+      .replace(/[\u0300-\u036f]/g, "") // czyści akcenty
+      .replace(/\s+/g, '-') // spacje → myślniki
+      .replace(/[^\w\-]+/g, '') // usuwa niedozwolone znaki
+      .replace(/\-\-+/g, '-') // usuwa podwójne myślniki
+      .replace(/^-+/, '') // usuwa myślniki z początku
+      .replace(/-+$/, ''); // usuwa myślniki z końca
+  }
 }
 

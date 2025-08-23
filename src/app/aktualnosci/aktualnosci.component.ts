@@ -24,4 +24,15 @@ export class AktualnosciComponent implements OnInit {
   getRemainingAktualnosci(): Aktualnosci[] {
     return this.aktualnosci.slice(2); // Returns an array starting from the 1st element
   }
+  slugify(text: string): string {
+    return text
+      .toLowerCase()
+      .normalize("NFD") // usuwa polskie znaki diakrytyczne
+      .replace(/[\u0300-\u036f]/g, "") // czyści akcenty
+      .replace(/\s+/g, '-') // spacje → myślniki
+      .replace(/[^\w\-]+/g, '') // usuwa niedozwolone znaki
+      .replace(/\-\-+/g, '-') // usuwa podwójne myślniki
+      .replace(/^-+/, '') // usuwa myślniki z początku
+      .replace(/-+$/, ''); // usuwa myślniki z końca
+  }
 }
