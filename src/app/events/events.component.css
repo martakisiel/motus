@@ -31,25 +31,20 @@
 }
 
 .card {
-  width: 100%;
+  width: 31vw;
   /*na małym ekranie zmienić do 100%*/
   background-color: black;
-  margin-bottom: 4vh;
-  border-color: black;
-  border-radius: 0%;
-  border-style: none;
- 
+  margin-bottom: 2vh;
 }
 .card-body {
-  min-height: 27vh;
-
+  min-height: 28vh;
   background-color: rgb(23, 130, 60);
 }
 .card-img-top {
   object-fit: cover;
-  object-position: top;
-  height: 52vh;
-  border-radius: 0%;
+  object-position: center;
+  height: 50vh;
+  /* margin: 10px 5px 2px 1px; */
 }
 .card-title {
   color: aliceblue;

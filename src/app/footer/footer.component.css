@@ -7,23 +7,23 @@
 
 .textFooterHeader{
     font-family: 'changa';
-    font-size: 2vh;
+    font-size: 3vh;
     color: aliceblue;
 }
 .textFooter{
     font-family: 'lato';
-    font-size: 1.5vh;
+    font-size: 2vh;
     color: aliceblue;
     line-height: 1.5;
 }
 .textFooterMK{
     font-family: 'lato';
-    font-size: 1vh;
+    font-size: 2vh;
     color: aliceblue;
 
 }
 i{
-    font-size: 1.5vh;
+    font-size: 2vh;
 
 }
 /* .sponsors{

@@ -102,6 +102,7 @@ background-size: cover;
 .card-body {
   /* min-height: 27vh; */
   background-color: rgb(23, 130, 60);
+  width: 600px;
 }
 .card-img-top {
   object-fit: cover;

@@ -6,29 +6,30 @@
 }
 
 .textDiv1 {
-  background-color: rgb(23, 130, 60);
-  text-align: start;
-  padding-bottom: 3vh;
-  padding-right: 4vw;
-  padding-left: 3vw;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  height: 35vh;
-  width: 35vw;
-  padding-top: 3vw;
-  font-family: "lato";
-  font-size: 2vh;
-  color: aliceblue;
-  z-index: 1;
-  margin-right: 0vw;
+    background-color: rgb(23, 130, 60);
+    text-align: start;
+    padding-bottom: 6vh;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 35vh;
+    width: 35vw;
+    padding-top: 4vw;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+    margin-right: 0vw;
+
   /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
 }
 
 .src1Div {
   position: relative;
   margin-top: -20px;
-  margin-left: -10vw;
+  margin-left: -13vw;
   display: flex;
   justify-content: center;
 }
@@ -38,6 +39,10 @@
   width: auto;
 }
 
+.rowRead{
+  display: flex;
+  justify-content:right;
+}
 .pI {
   font-style: italic;
 }
@@ -51,7 +56,7 @@
 .src2 {
   height: 45vh;
   width: auto;
-  margin-left: -4vw;
+  margin-left: 0vw;
 }
 
 .align {
@@ -60,24 +65,22 @@
 }
 
 .text2Div {
-  background-color: rgb(23, 130, 60);
-  text-align: start;
-  padding-bottom: 3vh;
-  padding-right: 4vw;
-  padding-left: 3vw;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  height: 35vh;
-  width: 35vw;
-  padding-top: 3vw;
-  font-family: "lato";
-  font-size: 2vh;
-  color: aliceblue;
-  z-index: 1;
-  margin-right: 0vw;
-  margin-left: -22vw;
+    background-color: rgb(23, 130, 60);
+    text-align: end;
+    padding-bottom: 6vh;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    height: 35vh;
+    width: 35vw;
+    padding-top: 4vw;
+    font-family: "lato";
+    font-size: 2vh;
+    color: aliceblue;
+    z-index: 1;
+    margin-right: 0vw;
   /*to w poączeniu z .center (w row2) odpowiada za NAKŁADANIE SIĘ ELEMENTÓW NA SIEBIE*/
 }
 
