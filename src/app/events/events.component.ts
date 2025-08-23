@@ -1,19 +1,27 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
-import { ServiceService, Aktualnosci } from '../service.service';
+import { ServiceService, Aktualnosci, Album } from '../service.service';
 @Component({
   selector: 'app-events',
   templateUrl: './events.component.html',
   styleUrls: ['./events.component.css']
 })
-export class EventsComponent {
+export class EventsComponent implements OnInit {
   aktualnosci: Aktualnosci[] = []; // Make sure data is of type string
+  albums: Album[] = []; 
   isTopButtonVisible: boolean = false;
   constructor(private route:ActivatedRoute, private serviceService: ServiceService){}
-  ngOnInit() {
-    this.serviceService.getAktualnosciFile().subscribe((response: string) => {
-      this.aktualnosci = JSON.parse(response) as Aktualnosci[];
-      // console.log(this.aktualnosci); 
+  ngOnInit(){
+    // this.serviceService.getAktualnosciFile().subscribe((response: string) => {
+    //   this.aktualnosci = JSON.parse(response) as Aktualnosci[];
+    //   // console.log(this.aktualnosci); 
+    // });
+    this.serviceService.getAktualnosciFile().subscribe(
+      (data: Aktualnosci[]) => { this.aktualnosci = data; },
+      (err) => console.error('Błąd wczytywania aktualności', err)
+    );
+    this.serviceService.getAlbums().subscribe((albums: Album[]) => {
+    this.albums = albums;
     });
   }
   @HostListener('window:scroll', ['$event'])

@@ -17,6 +17,12 @@
   overflow: auto;
 }
 
+.divDateLink{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vh;
+}
+
 .date {
   color: aliceblue;
   font-family: "lato";

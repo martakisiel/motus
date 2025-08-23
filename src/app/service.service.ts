@@ -62,11 +62,9 @@ export class ServiceService {
       responseType: 'text',
     });
   }
-
-  getAktualnosciFile(): Observable<string> {
-    return this.http.get('assets/aktualnosci/aktualnosci.txt', {
-      responseType: 'text',
-    });
+ // 🔹 Pobranie listy Aktualności
+  getAktualnosciFile(): Observable<Aktualnosci[]> {
+    return this.http.get<Aktualnosci[]>('assets/aktualnosci/aktualnosci.json');
   }
   getSportGroupsList(): Observable<string> {
     return this.http.get('assets/sportGroups/sportGroupsList.txt', {
@@ -106,6 +104,7 @@ export interface Aktualnosci {
   alt: string;
   title: string;
   date: string;
+  AlbumName: string;
   content: string;
 }
 
