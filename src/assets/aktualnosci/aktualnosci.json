@@ -1,4 +1,12 @@
 [ 
+  {
+    "url":"assets/aktualnosci/nowaSkladka.png",
+    "alt":"Składka",
+    "title": "Zmiana w składce klubowej",
+    "date": "19.01.2026",
+    "AlbumName":"",
+    "content": "Decyją Zarządu zmianie ulega składka członkowska: 120 zł za rok (płatne do końca lutego) lub w dwóch ratach po 70 zł (I płatne do końca lutego i II do końca lipca)."
+    },
    {
     "url":"assets/aktualnosci/logoliga.png",
     "alt":"Liga",
