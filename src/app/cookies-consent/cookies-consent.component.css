@@ -1,0 +1,209 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+}
+
+.modal {
+     position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(23, 130, 60);
+  padding: 24px;
+  width: 90%;
+  max-width: 500px;
+    height: 50vh;
+  border-radius: 10px;
+  text-align: center;
+  color: aliceblue;
+    font-family: "lato";
+  font-size: 3vh;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+  display: block; 
+}
+ h3{
+    font-family: "changa";
+    font-size: 8vh;
+ }
+ h2{
+      font-family: "changa";
+    font-size: 4vh;  
+    margin-bottom: 0vh;
+      color: aliceblue;
+  box-shadow: inset;
+ }
+ a{
+   color: black; 
+   font-weight: 1000;
+ }
+.btnBlue{
+  max-width: 60vw;
+  position: static;
+  top: 80%;
+  left: -1%;
+  transform: translate(0%, 0vh);
+  z-index: 1;
+  background-color: #007ae4;
+  margin: auto;
+  display: block;
+  height: 15vh;
+  width: 25vw;
+  cursor: pointer;
+  font-family: "changa";
+  font-size: 4vh;
+  border-radius: 12px;
+  border-color: transparent;
+}
+
+@media (min-width: 250px) and (max-width: 399px) {
+ h3{
+    font-family: "changa";
+    font-size: 4vh;
+ }
+ h2{
+      font-family: "changa";
+    font-size: 2vh;  
+    margin-bottom: 0vh;
+      color: aliceblue;
+  box-shadow: inset;
+ }   
+    .modal {
+     position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(23, 130, 60);
+  padding: 24px;
+  width: 90%;
+        max-width: 300px;
+        height: 40vh;
+  border-radius: 10px;
+  text-align: center;
+  color: aliceblue;
+    font-family: "lato";
+  font-size: 2vh;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+  display: block; 
+}
+    .btnBlue {
+    position: absolute;
+top: 25vh;
+        left: 7vw;
+    transform: translate(0%, 0vh);
+    min-width: 70vw;
+    height: 10vh;
+    /* width: 25vw; */
+    z-index: 1;
+  background-color: #007ae4;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+ h3{
+    font-family: "changa";
+    font-size: 4vh;
+ }
+ h2{
+      font-family: "changa";
+    font-size: 2vh;  
+    margin-bottom: 0vh;
+      color: aliceblue;
+  box-shadow: inset;
+ }   
+    .modal {
+     position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(23, 130, 60);
+  padding: 24px;
+  width: 90%;
+        max-width: 300px;
+        height: 40vh;
+  border-radius: 10px;
+  text-align: center;
+  color: aliceblue;
+    font-family: "lato";
+  font-size: 2vh;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+  display: block; 
+}
+    .btnBlue {
+    position: absolute;
+top: 25vh;
+        left: 2vw;
+    transform: translate(0%, 0vh);
+    min-width: 70vw;
+    height: 10vh;
+    width: 30vw;
+    z-index: 1;
+  background-color: #007ae4;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h3{
+            font-family: "changa";
+    font-size: 6vh;
+    }
+    h2{
+            font-family: "changa";
+    font-size: 4vh;
+    margin-bottom: 0vh;
+    color: aliceblue;
+    }
+.modal{
+        position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(23, 130, 60);
+    padding: 24px;
+    width: 90%;
+    max-width: 570px;
+    height: 45vh;
+    border-radius: 10px;
+    text-align: center;
+    color: aliceblue;
+    font-family: "lato";
+    font-size: 3vh;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+.btnBlue{
+        max-width: 60vw;
+    position: static;
+    top: 80%;
+    left: -1%;
+    transform: translate(0%, 0vh);
+    z-index: 1;
+    background-color: #007ae4;
+    margin: auto;
+    display: block;
+    height: 15vh;
+    width: 45vw;
+    cursor: pointer;
+    font-family: "changa";
+    font-size: 4vh;
+    border-radius: 12px;
+    border-color: transparent;
+}
+
+
+
+}
+

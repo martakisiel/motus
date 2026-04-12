@@ -42,6 +42,7 @@ import { ElementAppComponent } from './element-app/element-app.component';
 import { AlbumNameComponent } from './album-name/album-name.component';
 import { AlbumComponent } from './album/album.component';
 import { LigaComponent } from './liga/liga';
+import { CookiesConsentComponent } from './cookies-consent/cookies-consent.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,7 +72,8 @@ import { LigaComponent } from './liga/liga';
     ElementAppComponent,
     AlbumNameComponent,
     AlbumComponent,
-    LigaComponent
+    LigaComponent,
+    CookiesConsentComponent
  
   ],
   imports: [
