@@ -56,7 +56,7 @@ fieldset {
 
 legend {
   width: fit-content;
-  height: 115px;
+  height: 25px;
   margin-top: -20px;
   /* margin-top: -47px; */
   margin-left: -5vw;
