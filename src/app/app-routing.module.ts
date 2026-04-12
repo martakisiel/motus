@@ -20,6 +20,7 @@ import { ElementAppComponent } from './element-app/element-app.component';
 import { AlbumsNames } from './service.service';
 import { AlbumComponent } from './album/album.component';
 import { LigaComponent } from './liga/liga';
+import { PolicyComponent } from './policy/policy.component';
 
 
 const routes: Routes = [
@@ -48,6 +49,7 @@ const routes: Routes = [
 
 //  { path: '#galeria', component:  GaleriaComponent }, 
   { path: '#noweWydarzenie', component: NewEventComponent },
+  { path: '#polityka-prywatnosci', component: PolicyComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
